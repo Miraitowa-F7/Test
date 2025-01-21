@@ -1,0 +1,38 @@
+Breakpoint 1 at 0x1236: file print_array_2.c, line 12.
+Starting program: /home/ubuntu64/Task/Week4/b.out 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, main () at print_array_2.c:12
+12	    int *array = (int *)malloc(5 * sizeof(int));
+13	    if (array == NULL) {
+18	    for (int i = 0; i < 5; i++) {
+19	        array[i] = i + 1;
+18	    for (int i = 0; i < 5; i++) {
+19	        array[i] = i + 1;
+18	    for (int i = 0; i < 5; i++) {
+19	        array[i] = i + 1;
+18	    for (int i = 0; i < 5; i++) {
+19	        array[i] = i + 1;
+18	    for (int i = 0; i < 5; i++) {
+19	        array[i] = i + 1;
+18	    for (int i = 0; i < 5; i++) {
+22	    printf("Original array: ");
+0x5555555592a0:	1	2	3	4
+0x5555555592b0:	5
+23	    print_array(array, 5);
+25	    int *ptr = array + 5; 
+26	    *ptr = 10; 
+0x5555555592a0:	1	2	3	4
+0x5555555592b0:	5	0	1041	0
+0x5555555592c0:	1734963791	1818324585
+28	    printf("Modified array: ");
+0x5555555592a0:	1	2	3	4
+0x5555555592b0:	5	10	1041	0
+0x5555555592c0:	1734963791	1818324585
+29	    print_array(array, 6);    //Modified: print_array(array, 5) --> print_array(array, 6)
+31	    free(array);
+32	    return 0;
+33	}
+__libc_start_call_main (main=main@entry=0x55555555522a <main>, argc=argc@entry=1, argv=argv@entry=0x7fffffffe0b8) at ../sysdeps/nptl/libc_start_call_main.h:74
+74	../sysdeps/nptl/libc_start_call_main.h: 没有那个文件或目录.
