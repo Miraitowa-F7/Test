@@ -1,0 +1,320 @@
+Script started on 2025-02-07 10:57:22+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7mmkdir -p rootfs/{dev,etc/init.d,lib}[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p rootfs/{dev,etc/init.d,lib}
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34m公共的[0m  [01;34m音乐[0m                    [01;34mqemu[0m               [01;34msnap[0m
+[01;34m模板[0m    [01;34m桌面[0m                    Record2_Week5.log  [01;34mTask[0m
+[01;34m视频[0m    [01;34mbusybox-1.36.0[0m          Record4_Week5.log  Terminal_week5.log
+[01;34m图片[0m    [01;31mbusybox-1.36.0.tar.bz2[0m  Record5_Week5.log  [01;34mtest[0m
+[01;34m文档[0m    [01;34mlinux-6.6.68[0m            Record6_Week5.log
+[01;34m下载[0m    [01;31mlinux-6.6.68.tar.xz[0m     [01;34mrootfs[0m
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ cd roots[Kfs
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/rootfs[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs[00m$ ls
+[?2004l[0m[01;34mdev[0m  [01;34metc[0m  [01;34mlib[0m
+[?2004h]0;ubuntu64@ubuntu64: ~/rootfs[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs[00m$ cd
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudo cp busybox-1.36.0/_Install[K[K[K[K[K[K[Kin[K[KInstall/* -r rootfs/
+[?2004l[sudo] ubuntu64 的密码： 
+cp: 对 'busybox-1.36.0/_Install/*' 调用 stat 失败: 没有那个文件或目录
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ cd busybox-1.36.0
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/busybox-1.36.0[01;32mubuntu64@ubuntu64[00m:[01;34m~/busybox-1.36.0[00m$ sudo[K[K[K[Kcd _Install
+[?2004lbash: cd: _Install: 没有那个文件或目录
+[?2004h]0;ubuntu64@ubuntu64: ~/busybox-1.36.0[01;32mubuntu64@ubuntu64[00m:[01;34m~/busybox-1.36.0[00m$ ls
+[?2004l[0m[01;34mapplets[0m                      [01;34mexamples[0m                [01;34mnetworking[0m
+[01;34mapplets_sh[0m                   [01;34mfindutils[0m               NOFORK_NOEXEC.lst
+[01;34march[0m                         [01;34minclude[0m                 [01;32mNOFORK_NOEXEC.sh[0m
+[01;34marchival[0m                     [01;34minit[0m                    [01;34mprintutils[0m
+AUTHORS                      [01;34m_install[0m                [01;34mprocps[0m
+[01;32mbusybox[0m                      INSTALL                 [01;34mqemu_multiarch_testing[0m
+busybox_ldscript.README.txt  [01;34mklibc-utils[0m             README
+busybox.links                [01;34mlibbb[0m                   [01;34mrunit[0m
+[01;32mbusybox_unstripped[0m           [01;34mlibpwdgrp[0m               [01;34mscripts[0m
+busybox_unstripped.map       LICENSE                 [01;34mselinux[0m
+busybox_unstripped.out       [01;34mloginutils[0m              [01;34mshell[0m
+Config.in                    [01;34mmailutils[0m               [01;32msize_single_applets.sh[0m
+[01;34mconfigs[0m                      Makefile                [01;34msysklogd[0m
+[01;34mconsole-tools[0m                Makefile.custom         [01;34mtestsuite[0m
+[01;34mcoreutils[0m                    Makefile.flags          TODO
+[01;34mdebianutils[0m                  Makefile.help           TODO_unicode
+[01;34mdocs[0m                         [01;32mmake_single_applets.sh[0m  [01;34mutil-linux[0m
+[01;34me2fsprogs[0m                    [01;34mmiscutils[0m
+[01;34meditors[0m                      [01;34mmodutils[0m
+[?2004h]0;ubuntu64@ubuntu64: ~/busybox-1.36.0[01;32mubuntu64@ubuntu64[00m:[01;34m~/busybox-1.36.0[00m$ cd o[Kinstall
+[?2004lbash: cd: install: 没有那个文件或目录
+[?2004h]0;ubuntu64@ubuntu64: ~/busybox-1.36.0[01;32mubuntu64@ubuntu64[00m:[01;34m~/busybox-1.36.0[00m$ cd _install
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/busybox-1.36.0/_install[01;32mubuntu64@ubuntu64[00m:[01;34m~/busybox-1.36.0/_install[00m$ cd
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudo cp nusi[K[K[K[Kbusibox[K[K[K[Kyv[Kbox-1.36.0/_install/* -r rootfs/
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ cd rootfs/
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/rootfs[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mlib[0m  [01;36mlinuxrc[0m  [01;34msbin[0m  [01;34musr[0m
+[?2004h]0;ubuntu64@ubuntu64: ~/rootfs[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs[00m$ cd
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo cp -P /usr/arm-linux-gnueabi/lib/* rootfs/lib/[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo cp -P /usr/arm-linux-gnueabi/lib/* rootfs/lib/
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ cd rootfs/lib
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/rootfs/lib[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/lib[00m$ ls
+[?2004lcrt1.o                  libc.so             libnss_hesiod.so.2
+crti.o                  libc.so.6           libpcprofile.so
+crtn.o                  libdl.a             libpthread.a
+gcrt1.o                 libdl.so.2          libpthread.so.0
+[0m[01;32mld-linux.so.3[0m           libg.a              libresolv.a
+libanl.a                libgcc_s.so.1       [01;36mlibresolv.so[0m
+[01;36mlibanl.so[0m               [01;36mlibgomp.so.1[0m        libresolv.so.2
+libanl.so.1             libgomp.so.1.0.0    librt.a
+[01;36mlibasan.so.6[0m            libm.a              librt.so.1
+libasan.so.6.0.0        libmcheck.a         [01;36mlibstdc++.so.6[0m
+[01;36mlibatomic.so.1[0m          libmemusage.so      libstdc++.so.6.0.30
+libatomic.so.1.2.0      [01;36mlibm.so[0m             [01;36mlibthread_db.so[0m
+libBrokenLocale.a       libm.so.6           libthread_db.so.1
+[01;36mlibBrokenLocale.so[0m      libnsl.so.1         [01;36mlibubsan.so.1[0m
+libBrokenLocale.so.1    [01;36mlibnss_compat.so[0m    libubsan.so.1.0.0
+libc.a                  libnss_compat.so.2  libutil.a
+[01;36mlibc_malloc_debug.so[0m    libnss_dns.so.2     libutil.so.1
+libc_malloc_debug.so.0  libnss_files.so.2   Mcrt1.o
+libc_nonshared.a        [01;36mlibnss_hesiod.so[0m    Scrt1.o
+[?2004h]0;ubuntu64@ubuntu64: ~/rootfs/lib[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/lib[00m$ [K]0;ubuntu64@ubuntu64: ~/rootfs/lib[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/lib[00m$ sudo[K[K[K[Kcd
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ su[K[Ksudp[Ko mknod rootfs[K[Kfs/dev/yy[K[Ktty1 c 4 1 [K
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudo[K[K[K[Kcd [7mrootfs/dev[27mrootfs/dev
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/rootfs/dev[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/dev[00m$ ls
+[?2004l[0m[40;33;01mtty1[0m
+[?2004h]0;ubuntu64@ubuntu64: ~/rootfs/dev[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/dev[00m$ cd [K
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo mknod rootfs/dev/tty1 c 4[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo mknod rootfs/dev/tty1 c 4 2
+[?2004lmknod: rootfs/dev/tty1: 文件已存在
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo mknod rootfs/dev/tty1 c 4[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psudo mknod rootfs/dev/tty1 c [K[K[K[K2 c 4 2
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo mknod rootfs/dev/tty[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo mknod rootfs/dev/tty3 c 4 3
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo mknod rootfs/dev/tty[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo mknod rootfs/dev/tty4 v[Kc 4 4
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ cd rootfs/dev
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~/rootfs/dev[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/dev[00m$ ls
+[?2004l[0m[40;33;01mtty1[0m  [40;33;01mtty2[0m  [40;33;01mtty3[0m  [40;33;01mtty4[0m
+[?2004h]0;ubuntu64@ubuntu64: ~/rootfs/dev[01;32mubuntu64@ubuntu64[00m:[01;34m~/rootfs/dev[00m$ cd
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ dd if=/fev[K[K[Kdev/zero of=a9rootfs.ext3 bs=1M count-32[K[K[K=32
+[?2004l记录了32+0 的读入
+记录了32+0 的写出
+33554432字节（34 MB，32 MiB）已复制，0.20016 s，168 MB/s
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ md[Kkfs.ext3 a9rootfs.ext3
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+丢弃设备块：    0/8192         完成                            
+创建含有 8192 个块（每块 4k）和 8192 个 inode 的文件系统
+
+正在分配组表： 0/1   完成                            
+正在写入 inode表： 0/1   完成                            
+创建日志（1024 个块）： 完成
+写入超级块和文件系统账户统计信息： 0/1   已完成
+
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudp[Ko makdir tmpfs
+[?2004lsudo: makdir：找不到命令
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudo mkdir tmpfs
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ -t [K[K[Ksudo mount -t ext3 a9rootfs.ext3 tmpfs/ -o loop
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudo cp -r rootfs/* tmpfs/
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ sudo umount tmpfs
+[?2004l[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ qu[Kemu-system-arm -M vexpress-a9 -m 512M -kernel /path/to/ker nel/dir/arch/arm/boot/zInage[K[K[K[Kmage -dtb /path/to/kernel/dir/arch/arm/boot/dts/vexpress /[K-v2p-ca9.dtb -nog[K[A[A]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel /path/to/kernel/dir/arch/arm/boot/zImage -dtb /path/to/kernel/dir/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -nog[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2025-02-07 11:44:47+08:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-02-07 16:06:34+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="135" LINES="28"]
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a9 -m 512M -kernel /path/to/kernel/dir/arch/arm/boot/zImage -dtb  /path/to/kernel/dir/[27m[7ma[27m[7mrch/arm/boot/dts/vexpress-v2p-ca9.dtb -nographic -append "root=/dev/mmcblk0  console=ttyAMA0" -sd a9rootfs.ext3 [27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqemu-system-arm -M vexpress-a9 -m 512M -kernel /path/to/kernel/dir/arch/arm/boot/zImage -dtb  /path/to/kernel/dir/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -nographic -append "root=/dev/mmcblk0  console=ttyAMA0" -sd a9rootfs.ext3
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lWARNING: Image format was not specified for 'a9rootfs.ext3' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+qemu-system-arm: could not load kernel '/path/to/kernel/dir/arch/arm/boot/zImage'
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ find zInm[K[Kmage
+[?2004lfind: ‘zImage’: 没有那个文件或目录
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo find / -name "zImage"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo find / -name "zImage"
+[?2004l[sudo] ubuntu64 的密码： 
+/home/ubuntu64/linux-6.6.68/arch/arm/boot/zImage
+find: ‘/run/user/1000/gvfs’: 权限不够
+find: ‘/run/user/1000/doc’: 权限不够
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7msudo find / -name "vexpress-v2p-ca9.dtb"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo find / -name "vexpress-v2p-ca9.dtb"
+[?2004l/home/ubuntu64/linux-6.6.68/arch/arm/boot/dts/arm/vexpress-v2p-ca9.dtb
+find: ‘/run/user/1000/gvfs’: 权限不够
+find: ‘/run/user/1000/doc’: 权限不够
+[?2004h]0;ubuntu64@ubuntu64: ~[01;32mubuntu64@ubuntu64[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a9 -m 512M -kernel[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqemu-system-arm -M vexpress-a9 -m 512M -kernel [7mlinux-6.6.68/arch/arm/boot/zImage[27mlinux-6.6.68/arch/arm/boot/zImage -dtb [7mlinux-6.6.68/arch/arm/boot/d[27m[7mt[27m[7ms/arm/vexpress-v2p-ca9.dtb[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clinux-6.6.68/arch/arm/boot/dts/arm/vexpress-v2p-ca9.dtb [7m-nographic -append "root=/dev/mmcblk0  console=ttyAMA0" -sd a9rootfs.ext3[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-nographic -append "root=/dev/mmcblk0  console=ttyAMA0" -sd a9rootfs.ext3
+[?2004lWARNING: Image format was not specified for 'a9rootfs.ext3' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64@ubuntu64) (arm-linux-gnueabihf-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #1 SMP Thu Feb  6 18:48:58 CST 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0  console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14932(91%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:off, heap alloc:off, heap free:off
+Memory: 488696K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19208K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 94.07MHz.
+Calibrating delay loop... 1816.98 BogoMIPS (lpj=9084928)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (1816.98 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-02-07T08:24:29 UTC (1738916669)
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+mmc0: new SD card at address 263d
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input0
+mmcblk0: mmc0:263d QEMU! 32.0 MiB
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 1
