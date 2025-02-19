@@ -1,0 +1,2 @@
+成功写入 14 字节: Hello, device!
+从设备读取了 14 字节: Hello, device!
