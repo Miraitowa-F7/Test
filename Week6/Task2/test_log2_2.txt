@@ -1,0 +1,5 @@
+Setting buffer size to 1024 bytes...
+Buffer size set successfully.
+Writing message to /dev/simple_char_driver2: 'Hello, simple char driver with dynamic buffer!'
+Received message from /dev/simple_char_driver2: 'Hello, simple char driver with dynamic buffer!'
+Test passed, data matches.
