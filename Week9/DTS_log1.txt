@@ -1,0 +1,1055 @@
+Script started on 2025-03-13 18:00:44+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7msudo apt  install device-tree[27m[7m-[27m[7mcompiler[27m[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ sudo apt  install device-tree-compiler
+[?2004l[sudo] ubuntu64-f7 的密码： 
+正在读取软件包列表... 0%正在读取软件包列表... 100%正在读取软件包列表... 完成
+正在分析软件包的依赖关系树... 0%正在分析软件包的依赖关系树... 0%正在分析软件包的依赖关系树... 50%正在分析软件包的依赖关系树... 50%正在分析软件包的依赖关系树... 完成
+正在读取状态信息... 0%                   正在读取状态信息... 0%正在读取状态信息... 完成
+下列软件包是自动安装的并且现在不需要了：
+  libllvm17t64 python3-netifaces
+使用'sudo apt autoremove'来卸载它(它们)。
+下列【新】软件包将被安装：
+  device-tree-compiler
+升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 5 个软件包未被升级。
+需要下载 228 kB 的归档。
+解压缩后会消耗 426 kB 的额外空间。
+[33m0% [执行中][0m              获取:1 http://hk.archive.ubuntu.com/ubuntu noble/main amd64 device-tree-compiler amd64 1.7.0-2build1 [228 kB]
+[33m5% [1 device-tree-compiler 14.9 kB/228 kB 7%][0m[33m                                             100% [执行中][0m                已下载 228 kB，耗时 0秒 (936 kB/s)
+
+7[0;23r8[1A正在选中未选择的软件包 device-tree-compiler。
+(正在读取数据库 ... (正在读取数据库 ... 5%(正在读取数据库 ... 10%(正在读取数据库 ... 15%(正在读取数据库 ... 20%(正在读取数据库 ... 25%(正在读取数据库 ... 30%(正在读取数据库 ... 35%(正在读取数据库 ... 40%(正在读取数据库 ... 45%(正在读取数据库 ... 50%(正在读取数据库 ... 55%(正在读取数据库 ... 60%(正在读取数据库 ... 65%(正在读取数据库 ... 70%(正在读取数据库 ... 75%(正在读取数据库 ... 80%(正在读取数据库 ... 85%(正在读取数据库 ... 90%(正在读取数据库 ... 95%(正在读取数据库 ... 100%(正在读取数据库 ... 系统当前共安装有 163599 个文件和目录。)
+准备解压 .../device-tree-compiler_1.7.0-2build1_amd64.deb  ...
+7[24;0f[42m[30m进度：[  0%][49m[39m [..............................................................] 87[24;0f[42m[30m进度：[ 20%][49m[39m [############..................................................] 8正在解压 device-tree-compiler (1.7.0-2build1) ...
+7[24;0f[42m[30m进度：[ 40%][49m[39m [########################......................................] 8正在设置 device-tree-compiler (1.7.0-2build1) ...
+7[24;0f[42m[30m进度：[ 60%][49m[39m [#####################################.........................] 87[24;0f[42m[30m进度：[ 80%][49m[39m [#################################################.............] 8正在处理用于 man-db (2.12.0-4build2) 的触发器 ...
+
+7[0;24r8[1A[J[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mKernel/linux-6.6.68/arch/arm/[27m[7mb[27m[7moot/dts[27m[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ Kernel/linux-6.6.68/arch/arm/boot/dts[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CcKernel/linux-6.6.68/arch/arm/boot/dts[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [CdKernel/linux-6.6.68/arch/arm/boot/dts[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [C[C Kernel/linux-6.6.68/arch/arm/boot/dts[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts[00m$ ls
+[?2004l[0m[01;34mactions[0m       [01;34mcnxt[0m                       my-device.dts  [01;34msunplus[0m
+[01;34mairoha[0m        cros-adc-thermistors.dtsi  [01;34mnspire[0m         [01;34msynaptics[0m
+[01;34mallwinner[0m     cros-ec-keyboard.dtsi      [01;34mnuvoton[0m        [01;34mti[0m
+[01;34malphascale[0m    cros-ec-sbs.dtsi           [01;34mnvidia[0m         tps6507x.dtsi
+[01;34mamazon[0m        [01;34mgemini[0m                     [01;34mnxp[0m            tps65217.dtsi
+[01;34mamlogic[0m       [01;34mhisilicon[0m                  [01;34mqcom[0m           tps65910.dtsi
+[01;34marm[0m           [01;34mhpe[0m                        [01;34mrealtek[0m        [01;34munisoc[0m
+armv7-m.dtsi  [01;34mintel[0m                      [01;34mrenesas[0m        [01;34mvt8500[0m
+[01;34maspeed[0m        Makefile                   [01;34mrockchip[0m       [01;34mxen[0m
+[01;34maxis[0m          [01;34mmarvell[0m                    [01;34msamsung[0m        [01;34mxilinx[0m
+[01;34mbroadcom[0m      [01;34mmediatek[0m                   [01;34msigmastar[0m
+[01;34mcalxeda[0m       [01;34mmicrochip[0m                  [01;34msocionext[0m
+[01;34mcirrus[0m        [01;34mmoxa[0m                       [01;34mst[0m
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts[00m$ [7mdtc -I dts -O dtb -o my-device.dtb my-device.dts[27m[C[C[C[C[C[C[C[C[Cdtc -I dts -O dtb -o my-device.dtb my-device.dts
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts[00m$ ls
+[?2004l[0m[01;34mactions[0m       [01;34mcnxt[0m                       my-device.dtb  [01;34mst[0m
+[01;34mairoha[0m        cros-adc-thermistors.dtsi  my-device.dts  [01;34msunplus[0m
+[01;34mallwinner[0m     cros-ec-keyboard.dtsi      [01;34mnspire[0m         [01;34msynaptics[0m
+[01;34malphascale[0m    cros-ec-sbs.dtsi           [01;34mnuvoton[0m        [01;34mti[0m
+[01;34mamazon[0m        [01;34mgemini[0m                     [01;34mnvidia[0m         tps6507x.dtsi
+[01;34mamlogic[0m       [01;34mhisilicon[0m                  [01;34mnxp[0m            tps65217.dtsi
+[01;34marm[0m           [01;34mhpe[0m                        [01;34mqcom[0m           tps65910.dtsi
+armv7-m.dtsi  [01;34mintel[0m                      [01;34mrealtek[0m        [01;34munisoc[0m
+[01;34maspeed[0m        Makefile                   [01;34mrenesas[0m        [01;34mvt8500[0m
+[01;34maxis[0m          [01;34mmarvell[0m                    [01;34mrockchip[0m       [01;34mxen[0m
+[01;34mbroadcom[0m      [01;34mmediatek[0m                   [01;34msamsung[0m        [01;34mxilinx[0m
+[01;34mcalxeda[0m       [01;34mmicrochip[0m                  [01;34msigmastar[0m
+[01;34mcirrus[0m        [01;34mmoxa[0m                       [01;34msocionext[0m
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts[00m$ cd ..
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ ls
+[?2004l[0m[01;34mbootp[0m       [01;32mdeflate_xip_data.sh[0m  [01;32mImage[0m       Makefile
+[01;34mcompressed[0m  [01;34mdts[0m                  [01;32minstall.sh[0m  [01;32mzImage[0m
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ cd booy[Ktp
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/bootp[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/bootp[00m$ ls
+[?2004lbootp.lds  initrd.S  init.S  kernel.S  Makefile
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/bootp[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/bootp[00m$ cd ..
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ mkdir dtb
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ ls
+[?2004l[0m[01;34mbootp[0m       [01;32mdeflate_xip_data.sh[0m  [01;34mdts[0m    [01;32minstall.sh[0m  [01;32mzImage[0m
+[01;34mcompressed[0m  [01;34mdtb[0m                  [01;32mImage[0m  Makefile
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ cd [K[K[Kcp dts/my_device.dtb dtb/
+[?2004lcp: 对 'dts/my_device.dtb' 调用 stat 失败: 没有那个文件或目录
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ cp dts/my-device.dtb dtb/
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ cd dtb
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dtb[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dtb[00m$ ls
+[?2004lmy-device.dtb
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dtb[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dtb[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd lin[K[K[KTesy[Kt/Week6/Task2
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ ls
+[?2004ldmesg_log2_2.txt       simple_char_driver2.ko     [0m[01;32mtest_driver2[0m
+Makefile               simple_char_driver2.mod    test_log2_2.txt
+modules.order          simple_char_driver2.mod.c  test_log2_3.txt
+Module.symvers         simple_char_driver2.mod.o  test_simple_char_driver2.c
+simple_char_driver2.c  simple_char_driver2.o
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ vi simple_ch ar_driver2.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctsimple_char_driver2.c[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ [C[C[C[Cesimple_char_driver2.c[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ [C[C[C[C[C[Csimple_char_driver2.c[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ [C[C[C[C[C[Ctsimple_char_driver2.c[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ [C[C[C[C[C[C[C_simple_char_driver2.c[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ [C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"test_simple_char_driver2.c" 70L, 2069B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;5H[34m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [31m0[m, [38;5;130msizeof[m(read_buffer));[2;49H[K[3;1H    ret_val = read(fd, read_buffer, strlen(TEST_STRING));[3;58H[K[4;5H[38;5;130mif[m (ret_val < [31m0[m) {[5;9Hperror([31m"Failed to read the message from the device."[m);[6;9Hclose(fd);[7;9H[38;5;130mreturn[m errno;
+    }[10;5H[34m// 显示从设备读取的数据[m
+    printf([31m"Received message from [m[35m%s[m[31m: '[m[35m%s[m[31m'[m[35m\n[m[31m"[m, DEVICE_PATH, read_buffer);[13;5H[34m// 检查读取的数据是否与写入的数据匹配[m
+    [38;5;130mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [31m0[m) {[15;9Hprintf([31m"Test passed, data matches.[m[35m\n[m[31m"[m);
+    } [38;5;130melse[m {[17;9Hprintf([31m"Test failed, data does not match.[m[35m\n[m[31m"[m);
+    }[20;5H[34m// 关闭设备文件[m
+    close(fd);
+    [38;5;130mreturn[m [31m0[m;
+}[24;63H70,1[9C底端[23;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[24;53H0[23;1H[24;54H3[23;1H[24;55H0[23;1H[24;56H/[23;1H[24;57H0[23;1H[24;58Ha[23;1H[24;59H0[23;1H[24;60Ha[23;1H[24;61H/[23;1H[24;62H2[23;1H[24;53H          [23;1H[27m[23m[29m[m[H[2J[1;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[5;9Hperror([95m"Failed to read the message from the device."[m);[6;9Hclose(fd);[7;9H[93mreturn[m errno;
+    }[10;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[13;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[15;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[17;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[20;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[24;63H70,1[9C底端"test_simple_char_driver2.c" 70L, 2069B[23;1H[?25h[?25l[24;53H~@k[23;1H[24;53H   [22;1H[24;63H69[22;1H[?25h[?25l[24;53H~@k[22;1H[24;53H   [21;1H[24;64H8[21;1H[?25h[?25l[24;53H~@k[21;1H[24;53H   [20;1H[24;64H7[20;1H[?25h[?25l[24;53H~@k[20;1H[24;53H   [19;1H[24;64H6,0-1[19;1H[?25h[?25l[24;53H~@k[19;1H[24;53H   [18;1H[24;64H5,1  [18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [17;1H[24;64H4[17;1H[?25h[?25l[24;53H~@k[17;1H[24;53H   [16;1H[24;64H3[16;1H[?25h[?25l[24;53H~@k[16;1H[24;53H   [15;1H[24;64H2[15;1H[?25h[?25l[24;53H~@k[15;1H[24;53H   [14;1H[24;64H1[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [13;1H[24;64H0[13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H   [12;1H[24;63H59,0-1[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [11;1H[24;64H8,1  [11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [10;1H[24;64H7[10;1H[?25h[?25l[24;53H~@k[10;1H[24;53H   [9;1H[24;64H6,0-1[9;1H[?25h[?25l[24;53H~@k[9;1H[24;53H   [8;1H[24;64H5,1  [8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [7;1H[24;64H4[7;1H[?25h[?25l[24;53H~@k[7;1H[24;53H   [6;1H[24;64H3[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;1H[K[24;63H52,1[10C97%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H51,1[10C95%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m errno;[24;63H[K[24;63H50,1[10C93%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hclose(fd);[24;63H[K[24;63H49,1[10C91%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hperror([95m"Failed to write the message to the device."[m);[24;63H[K[24;63H48,1[10C89%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[93mif[m (ret_val < [95m0[m) {[24;63H[K[24;63H47,0-1[8C87%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hret_val = write(fd, TEST_STRING, strlen(TEST_STRING));[24;63H[K[24;63H46,1[10C85%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hprintf([95m"Writing message to [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, TEST_STRING);[24;63H[K[24;63H45,1[10C82%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[96m// 写入数据到设备[m[24;63H[K[24;63H44,1[10C80%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H43,1[10C78%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hprintf([95m"Buffer size set successfully.[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H42,1[10C76%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H41,1[10C74%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m errno;[24;63H[K[24;63H40,1[10C72%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hclose(fd);[24;63H[K[24;63H39,1[10C70%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hperror([95m"Failed to set buffer size via ioctl."[m);[24;63H[K[24;63H38,0-1[8C68%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[93mif[m (ret_val < [95m0[m) {[24;63H[K[24;63H37,1[10C65%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hret_val = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[24;63H[K[24;63H36,1[10C63%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m bytes...[m[38;5;224m\n[m[95m"[m, new_size);[24;63H[K[24;63H35,1[10C61%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[96m// 使用ioctl调整缓冲区大小[m[24;63H[K[24;63H34,1[10C59%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H33,1[10C57%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H32,1[10C55%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m errno;[24;63H[K[24;63H31,1[10C53%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hperror([95m"Failed to open the device..."[m);[24;63H[K[24;63H30,1[10C51%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[93mif[m (fd < [95m0[m) {[24;63H[K[24;63H29,1[10C48%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hfd = open(DEVICE_PATH, O_RDWR);[24;63H[K[24;63H28,0-1[8C46%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[96m// 打开设备文件[m[24;63H[K[24;63H27,1[10C44%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H26,1[10C42%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m ret_val;[24;63H[K[24;63H25,1[10C40%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m[24;63H[K[24;63H24,1[10C38%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mchar[m read_buffer[BUFFER_SIZE];[24;63H[K[24;63H23,1[10C36%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m fd; [96m// 文件描述符[m[24;63H[K[24;63H22,1[10C34%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;121mint[m main() {[24;63H[K[24;63H21,0-1[8C31%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H20,1[10C29%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m[24;63H[K[24;63H19,1[10C27%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m[24;63H[K[24;63H18,1[10C25%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H17,1[10C23%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define BUFFER_SIZE [m[95m256[m[24;63H[K[24;63H16,1[10C21%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m[24;63H[K[24;63H15,0-1[8C19%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m[24;63H[K[24;63H14,1[10C17%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H13,1[10C14%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m[24;63H[K[24;63H12,0-1[8C12%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<sys/ioctl.h>[m[24;63H[K[24;63H11,1[10C10%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<string.h>[m[24;63H[K[24;63H10,1[11C8%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<unistd.h>[m[24;63H[K[24;63H9,1[12C6%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<fcntl.h>[m[24;63H[K[24;63H8,0-1[10C4%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<stdlib.h>[m[24;63H[K[24;63H7,1[12C2%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<stdio.h>[m[24;63H[K[24;63H6,1[10C顶端[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [5;1H[24;63H5[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [3;1H[24;63H3[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;1H[24;63H2[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;1H[24;63H1[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m<stdio.h>[m
+[38;5;81m#include [m[95m<stdlib.h>[m
+[38;5;81m#include [m[95m<fcntl.h>[m
+[38;5;81m#include [m[95m<unistd.h>[m
+[38;5;81m#include [m[95m<string.h>[m
+[38;5;81m#include [m[95m<sys/ioctl.h>[m
+[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m
+
+[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m
+[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m
+[38;5;81m#define BUFFER_SIZE [m[95m256[m
+
+[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m
+[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m
+
+[38;5;121mint[m main() {
+    [38;5;121mint[m fd; [96m// 文件描述符[m
+    [38;5;121mchar[m read_buffer[BUFFER_SIZE];
+    [38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m
+    [38;5;121mint[m ret_val;[22;5H[96m// 打开设备文件[m
+    fd = open(DEVICE_PATH, O_RDWR);
+    [93mif[m (fd < [95m0[m) {[25;9Hperror([95m"Failed to open the device..."[m);[26;9H[93mreturn[m errno;
+    }[29;108H1,1[10C顶端[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m<stdio.h>[m
+[38;5;81m#include [m[95m<stdlib.h>[m
+[38;5;81m#include [m[95m<fcntl.h>[m
+[38;5;81m#include [m[95m<unistd.h>[m
+[38;5;81m#include [m[95m<string.h>[m
+[38;5;81m#include [m[95m<sys/ioctl.h>[m
+[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m
+
+[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m
+[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m
+[38;5;81m#define BUFFER_SIZE [m[95m256[m
+
+[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m
+[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m
+
+[38;5;121mint[m main() {
+    [38;5;121mint[m fd; [96m// 文件描述符[m
+    [38;5;121mchar[m read_buffer[BUFFER_SIZE];
+    [38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m
+    [38;5;121mint[m ret_val;[22;5H[96m// 打开设备文件[m
+    fd = open(DEVICE_PATH, O_RDWR);
+    [93mif[m (fd < [95m0[m) {[25;9Hperror([95m"Failed to open the device..."[m);[26;9H[93mreturn[m errno;[27;103H1,1[10C顶端[1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [2;1H[27;103H2[2;1H[?25h[?25l[27;93H~@k[2;1H[27;93H   [3;1H[27;103H3[3;1H[?25h[?25l[27;93H~@k[3;1H[27;93H   [4;1H[27;103H4[4;1H[?25h[?25l[27;93H~@k[4;1H[27;93H   [5;1H[27;103H5[5;1H[?25h[?25l[27;93H~@k[5;1H[27;93H   [6;1H[27;103H6[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [7;1H[27;103H7[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [8;1H[27;103H8,0-1[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [9;1H[27;103H9,1  [9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [10;1H[27;103H10,1[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [11;1H[27;104H1[11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [12;1H[27;104H2,0-1[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [13;1H[27;104H3,1  [13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [14;1H[27;104H4[14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [15;1H[27;104H5,0-1[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [16;1H[27;104H6,1  [16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [17;1H[27;104H7[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [18;1H[27;104H8[18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [19;1H[27;104H9[19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [20;1H[27;103H20[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [21;1H[27;104H1,0-1[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H22,1[11C2%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H23,1[11C4%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 使用ioctl调整缓冲区大小[m[27;103H[K[27;103H24,1[11C6%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m bytes...[m[38;5;224m\n[m[95m"[m, new_size);[27;103H[K[27;103H25,1[11C9%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret_val = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[27;103H[K[27;103H26,1[10C11%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H27,1[10C13%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"Failed to set buffer size via ioctl."[m);[27;103H[K[27;103H28,0-1[8C15%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H29,1[10C18%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H30,1[10C20%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H31,1[10C22%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Buffer size set successfully.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H32,1[10C25%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H33,1[10C27%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 写入数据到设备[m[27;103H[K[27;103H34,1[10C29%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Writing message to [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, TEST_STRING);[27;103H[K[27;103H35,1[10C31%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret_val = write(fd, TEST_STRING, strlen(TEST_STRING));[27;103H[K[27;103H36,1[10C34%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H37,1[10C36%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"Failed to write the message to the device."[m);[27;103H[K[27;103H38,0-1[8C38%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H39,1[10C40%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H40,1[10C43%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H41,1[10C45%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H42,1[10C47%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 清空读缓冲区并从设备读取数据[m[27;103H[K[27;103H43,1[10C50%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hmemset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));[27;103H[K[27;103H44,1[10C52%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret_val = read(fd, read_buffer, strlen(TEST_STRING));[27;103H[K[27;103H45,1[10C54%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H46,1[10C56%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"Failed to read the message from the device."[m);[27;103H[K[27;103H47,0-1[8C59%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H48,1[10C61%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H49,1[10C63%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H50,1[10C65%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H51,1[10C68%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 显示从设备读取的数据[m[27;103H[K[27;103H52,1[10C70%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[27;103H[K[27;103H53,1[10C72%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H54,1[10C75%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 检查读取的数据是否与写入的数据匹配[m[27;103H[K[27;103H55,1[10C77%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[27;103H[K[27;103H56,0-1[8C79%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H57,1[10C81%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H} [93melse[m {[27;103H[K[27;103H58,1[10C84%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H59,0-1[8C86%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H60,1[10C88%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H61,1[10C90%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 关闭设备文件[m[27;103H[K[27;103H62,1[10C93%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hclose(fd);[27;103H[K[27;103H63,1[10C95%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mreturn[m [95m0[m;[27;103H[K[27;103H64,1[10C97%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;1H}[27;103H[K[27;103H65,1[9C底端[21;1H[?25h[?25l[27;93H^[[21;1H[27;93H  [21;1H[27;93H^[[21;1H[27;93H  [21;1H[?25h[?25l[27;93H^[[21;1H[27;93H  [21;1H[27;93H^[[21;1H[27;93H  [21;1H[?25h[?25l[27;93H^[[21;1H[27;93H  [21;1H[27;93H^[[21;1H[27;93H  [21;1H[?25h[?25l[27;93H:[21;1H[27;93H[K[27;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[27;1H[K[27;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ [7mvi test_simple_char_driver2.c[27mvi test_simple_char_driver2.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"test_simple_char_driver2.c" 70L, 2069B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;9H[38;5;130mreturn[m errno;
+    }[2;6H[K[3;1H[K[4;5H[34m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [31m0[m, [38;5;130msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [38;5;130mif[m (ret_val < [31m0[m) {[8;9Hperror([31m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[38;5;130mreturn[m errno;
+    }[13;5H[34m// 显示从设备读取的数据[m
+    printf([31m"Received message from [m[35m%s[m[31m: '[m[35m%s[m[31m'[m[35m\n[m[31m"[m, DEVICE_PATH, read_buffer);[16;5H[34m// 检查读取的数据是否与写入的数据匹配[m
+    [38;5;130mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [31m0[m) {[18;9Hprintf([31m"Test passed, data matches.[m[35m\n[m[31m"[m);
+    } [38;5;130melse[m {[20;9Hprintf([31m"Test failed, data does not match.[m[35m\n[m[31m"[m);
+    }[23;5H[34m// 关闭设备文件[m
+    close(fd);
+    [38;5;130mreturn[m [31m0[m;
+}[27;103H65,1[9C底端[21;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H:[21;1H[27;94H3[21;1H[27;95H0[21;1H[27;96H3[21;1H[27;97H0[21;1H[27;98H/[21;1H[27;99H0[21;1H[27;100Ha[21;1H[27;101H0[21;1H[27;102Ha[21;1H[27;93H          [21;1H[27m[23m[29m[m[H[2J[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[8;9Hperror([95m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[16;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[18;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[20;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[23;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;103H65,1[9C底端"test_simple_char_driver2.c" 70L, 2069B[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [20;1H[27;104H4[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [19;1H[27;104H3[19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [18;1H[27;104H2[18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [17;1H[27;104H1[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [16;1H[27;104H0[16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [15;1H[27;103H59,0-1[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [14;1H[27;104H8,1  [14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [13;1H[27;104H7[13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [12;1H[27;104H6,0-1[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [11;1H[27;104H5,1  [11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [10;1H[27;104H4[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [9;1H[27;104H3[9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [8;1H[27;104H2[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [7;1H[27;104H1[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [6;1H[27;104H0[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hclose(fd);[27;1H[K[27;103H49,1[10C97%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"Failed to write the message to the device."[m);[27;103H[K[27;103H48,1[10C95%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H47,0-1[8C93%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hret_val = write(fd, TEST_STRING, strlen(TEST_STRING));[27;103H[K[27;103H46,1[10C90%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hprintf([95m"Writing message to [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, TEST_STRING);[27;103H[K[27;103H45,1[10C88%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[96m// 写入数据到设备[m[27;103H[K[27;103H44,1[10C86%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H43,1[10C84%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hprintf([95m"Buffer size set successfully.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H42,1[10C81%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H41,1[10C79%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9H[93mreturn[m errno;[27;103H[K[27;103H40,1[10C77%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hclose(fd);[27;103H[K[27;103H39,1[10C75%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"Failed to set buffer size via ioctl."[m);[27;103H[K[27;103H38,0-1[8C72%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H37,1[10C70%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hret_val = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[27;103H[K[27;103H36,1[10C68%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m bytes...[m[38;5;224m\n[m[95m"[m, new_size);[27;103H[K[27;103H35,1[10C65%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[96m// 使用ioctl调整缓冲区大小[m[27;103H[K[27;103H34,1[10C63%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H33,1[10C61%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H32,1[10C59%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9H[93mreturn[m errno;[27;103H[K[27;103H31,1[10C56%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"Failed to open the device..."[m);[27;103H[K[27;103H30,1[10C54%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (fd < [95m0[m) {[27;103H[K[27;103H29,1[10C52%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hfd = open(DEVICE_PATH, O_RDWR);[27;103H[K[27;103H28,0-1[8C50%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[96m// 打开设备文件[m[27;103H[K[27;103H27,1[10C47%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H26,1[10C45%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m ret_val;[27;103H[K[27;103H25,1[10C43%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m[27;103H[K[27;103H24,1[10C40%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mchar[m read_buffer[BUFFER_SIZE];[27;103H[K[27;103H23,1[10C38%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m fd; [96m// 文件描述符[m[27;103H[K[27;103H22,1[10C36%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;121mint[m main() {[27;103H[K[27;103H21,0-1[8C34%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H20,1[10C31%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m[27;103H[K[27;103H19,1[10C29%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m[27;103H[K[27;103H18,1[10C27%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H17,1[10C25%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define BUFFER_SIZE [m[95m256[m[27;103H[K[27;103H16,1[10C22%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m[27;103H[K[27;103H15,0-1[8C20%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m[27;103H[K[27;103H14,1[10C18%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H13,1[10C15%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m[27;103H[K[27;103H12,0-1[8C13%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<sys/ioctl.h>[m[27;103H[K[27;103H11,1[10C11%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<string.h>[m[27;103H[K[27;103H10,1[11C9%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<unistd.h>[m[27;103H[K[27;103H9,1[12C6%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<fcntl.h>[m[27;103H[K[27;103H8,0-1[10C4%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<stdlib.h>[m[27;103H[K[27;103H7,1[12C2%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<stdio.h>[m[27;103H[K[27;103H6,1[10C顶端[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [5;1H[27;103H5[5;1H[?25h[?25l[27;93H~@k[5;1H[27;93H   [4;1H[27;103H4[4;1H[?25h[?25l[27;93H~@k[4;1H[27;93H   [3;1H[27;103H3[3;1H[?25h[?25l[27;93H~@k[3;1H[27;93H   [2;1H[27;103H2[2;1H[?25h[?25l[27;93H~@k[2;1H[27;93H   [1;1H[27;103H1[1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [2;1H[27;103H2[2;1H[?25h[?25l[27;93H~@k[2;1H[27;93H   [3;1H[27;103H3[3;1H[?25h[?25l[27;93H~@k[3;1H[27;93H   [4;1H[27;103H4[4;1H[?25h[?25l[27;93H~@k[4;1H[27;93H   [5;1H[27;103H5[5;1H[?25h[?25l[27;93H~@k[5;1H[27;93H   [6;1H[27;103H6[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [7;1H[27;103H7[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [8;1H[27;103H8,0-1[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [9;1H[27;103H9,1  [9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [10;1H[27;103H10,1[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [11;1H[27;104H1[11;1H[?25h[?25l[27;93H^[[11;1H[27;93H  [11;1H[27;93H^[[11;1H[27;93H  [11;1H[?25h[?25l[27;93H:[11;1H[27;93H[K[27;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[27;1H[K[27;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ vi test_simple_char_driver2.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"test_simple_char_driver2.c" 70L, 2069B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m[2;20H[K[3;1H[35m#include [m[31m<fcntl.h>[m[3;19H[K[4;1H[35m#include [m[31m<unistd.h>[m
+[35m#include [m[31m<string.h>[m
+[35m#include [m[31m<sys/ioctl.h>[m
+[35m#include [m[31m<errno.h>[m [34m// 包含errno的定义[m
+
+[35m#define DEVICE_PATH [m[31m"/dev/simple_char_driver2"[m
+[35m#define TEST_STRING [m[31m"Hello, simple char driver with dynamic buffer!"[m
+[35m#define BUFFER_SIZE [m[31m256[m
+
+[34m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m
+[35m#define IOCTL_SET_BUFFER_SIZE _IOR([m[31m'p'[m[35m, [m[31m1[m[35m, [m[32mint[m[35m)[m
+
+[32mint[m main() {
+    [32mint[m fd; [34m// 文件描述符[m
+    [32mchar[m read_buffer[BUFFER_SIZE];
+    [32mint[m new_size = [31m1024[m; [34m// 新的缓冲区大小[m
+    [32mint[m ret_val;[22;5H[34m// 打开设备文件[m
+    fd = open(DEVICE_PATH, O_RDWR);
+    [38;5;130mif[m (fd < [31m0[m) {[25;9Hperror([31m"Failed to open the device..."[m);[26;9H[38;5;130mreturn[m errno;[27;103H11,1[9C顶端[11;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H0[11;1H[27;94H3[11;1H[27;95H0[11;1H[27;96H/[11;1H[27;97H0[11;1H[27;98Ha[11;1H[27;99H0[11;1H[27;100Ha[11;1H[27;101H/[11;1H[27;102H2[11;1H[27;93H          [11;1H[27m[23m[29m[m[H[2J[1;1H[38;5;81m#include [m[95m<stdio.h>[m
+[38;5;81m#include [m[95m<stdlib.h>[m
+[38;5;81m#include [m[95m<fcntl.h>[m
+[38;5;81m#include [m[95m<unistd.h>[m
+[38;5;81m#include [m[95m<string.h>[m
+[38;5;81m#include [m[95m<sys/ioctl.h>[m
+[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m
+
+[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m
+[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m
+[38;5;81m#define BUFFER_SIZE [m[95m256[m
+
+[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m
+[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m
+
+[38;5;121mint[m main() {
+    [38;5;121mint[m fd; [96m// 文件描述符[m
+    [38;5;121mchar[m read_buffer[BUFFER_SIZE];
+    [38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m
+    [38;5;121mint[m ret_val;[22;5H[96m// 打开设备文件[m
+    fd = open(DEVICE_PATH, O_RDWR);
+    [93mif[m (fd < [95m0[m) {[25;9Hperror([95m"Failed to open the device..."[m);[26;9H[93mreturn[m errno;[27;103H11,1[9C顶端"test_simple_char_driver2.c" 70L, 2069B[11;1H[?25h[?25l[27;93Hi[11;1H[27;93H [11;1H[27;1H[1m-- 插入 --[m[27;11H[K[27;103H11,1[9C顶端[11;1H[?25h[?25l[27;104H0[10;1H[?25h[?25l[27;103H9,1 [9;1H[?25h[?25l[27;105H2[9;2H[?25h[?25l[27;105H3[9;3H[?25h[?25l[27;105H4[9;4H[?25h[?25l[27;105H5[9;5H[?25h[?25l[27;105H6[9;6H[?25h[?25l[27;105H7[9;7H[?25h[?25l[27;105H8[9;8H[?25h[?25l[27;105H9[9;9H[?25h[?25l[27;105H10[9;10H[?25h[?25l[27;106H1[9;11H[?25h[?25l[27;106H2[9;12H[?25h[?25l[27;106H3[9;13H[?25h[?25l[27;106H4[9;14H[?25h[?25l[27;106H5[9;15H[?25h[?25l[27;106H6[9;16H[?25h[?25l[27;106H7[9;17H[?25h[?25l[27;106H8[9;18H[?25h[?25l[27;106H9[9;19H[?25h[?25l[27;105H20[9;20H[?25h[?25l[27;106H1[9;21H[?25h[?25l[27;106H2[9;22H[?25h[?25l[27;106H3[9;23H[?25h[?25l[27;106H4[9;24H[?25h[?25l[27;106H5[9;25H[?25h[?25l[27;106H6[9;26H[?25h[?25l[27;106H7[9;27H[?25h[?25l[27;106H8[9;28H[?25h[?25l[27;106H9[9;29H[?25h[?25l[27;105H30[9;30H[?25h[?25l[27;106H1[9;31H[?25h[?25l[27;106H2[9;32H[?25h[?25l[27;106H3[9;33H[?25h[?25l[27;106H4[9;34H[?25h[?25l[27;106H5[9;35H[?25h[?25l[27;106H6[9;36H[?25h[?25l[27;106H7[9;37H[?25h[?25l[27;106H8[9;38H[?25h[?25l[27;106H9[9;39H[?25h[?25l[27;105H40[9;40H[?25h[?25l[27;106H1[9;41H[?25h[?25l[27;106H2[9;42H[?25h[?25l[27;106H3[9;43H[?25h[?25l[27;106H4[9;44H[?25h[?25l[27;106H5[9;45H[?25h[?25l[27;106H6[9;46H[?25h[?25l[95m"[m[9;46H[K[27;106H5[9;45H[?25h[?25l[95m"[m[9;45H[K[27;106H4[9;44H[?25h[?25l[95m"[m[9;44H[K[27;106H3[9;43H[?25h[?25l[95m"[m[9;43H[K[27;106H2[9;42H[?25h[?25l[95m"[m[9;42H[K[27;106H1[9;41H[?25h[?25l[95m"[m[9;41H[K[27;106H0[9;40H[?25h[?25l[95m"[m[9;40H[K[27;105H39[9;39H[?25h[?25l[95m"[m[9;39H[K[27;106H8[9;38H[?25h[?25l[95m"[m[9;38H[K[27;106H7[9;37H[?25h[?25l[95m"[m[9;37H[K[27;106H6[9;36H[?25h[?25l[95m"[m[9;36H[K[27;106H5[9;35H[?25h[?25l[95m"[m[9;35H[K[27;106H4[9;34H[?25h[?25l[95m"[m[9;34H[K[27;106H3[9;33H[?25h[?25l[95m"[m[9;33H[K[27;106H2[9;32H[?25h[?25l[95m"[m[9;32H[K[27;106H1[9;31H[?25h[?25l[95m"[m[9;31H[K[27;106H0[9;30H[?25h[?25l[95m"[m[9;30H[K[27;105H29[9;29H[?25h[?25l[95m"[m[9;29H[K[27;106H8[9;28H[?25h[?25l[95ma"[m[27;106H9[9;29H[?25h[?25l[95mm"[m[27;105H30[9;30H[?25h[?25l[95mp"[m[27;106H1[9;31H[?25h[?25l[95ml"[m[27;106H2[9;32H[?25h[?25l[95me"[m[27;106H3[9;33H[?25h[?25l[95m_"[m[27;106H4[9;34H[?25h[?25l[95md"[m[27;106H5[9;35H[?25h[?25l[95me"[m[27;106H6[9;36H[?25h[?25l[95mv"[m[27;106H7[9;37H[?25h[?25l[95mi"[m[27;106H8[9;38H[?25h[?25l[95mc"[m[27;106H9[9;39H[?25h[?25l[95me"[m[27;105H40[9;40H[?25h[27;1H[K[9;39H[?25l[27;93H^[[9;39H[27;93H  [9;40H[27;103H9,39[9C顶端[9;39H[?25h[?25l[27;93H:[9;39H[27;93H[K[27;1H:[?25hwq[?25l[?2004l[>4;m"test_simple_char_driver2.c" 70L, 2063B 已写入[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ vi Makefile
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"Makefile" 12L, 331B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35mifneq[m ([36m$(KERNELRELEASE)[m,)
+[36m    obj-m [m:= simple_char_driver2.o[2;35H[K[3;1H[35melse[m[3;5H[K[4;1H[36m    KERNELDIR [m?= /home/ubuntu64-f7/Kernel/linux-6.6.68 [34m# 内核源码路径[m
+[36m    PWD [m:= [36m$([m[38;5;130mshell[m[36m pwd)
+
+default:[m
+[31m        [m[36m$(MAKE)[m[31m -C [m[36m$(KERNELDIR)[m[31m M=[m[36m$(PWD)[m[31m ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules[m
+
+[36mclean:[m
+[31m        rm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order[m
+[35mendif[m
+[94m~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [m[27;103H12,5[9C全部[12;5H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H:[12;5H[27;94H3[12;5H[27;95H0[12;5H[27;96H3[12;5H[27;97H0[12;5H[27;98H/[12;5H[27;99H0[12;5H[27;100Ha[12;5H[27;101H0[12;5H[27;102Ha[12;5H[27;93H          [12;5H[27m[23m[29m[m[H[2J[1;1H[38;5;81mifneq[m ([1m[96m$(KERNELRELEASE)[m,)
+[1m[96m    obj-m [m:= simple_char_driver2.o
+[38;5;81melse[m
+[1m[96m    KERNELDIR [m?= /home/ubuntu64-f7/Kernel/linux-6.6.68 [96m# 内核源码路径[m
+[1m[96m    PWD [m:= [1m[96m$([m[93mshell[m[1m[96m pwd)
+
+default:[m
+[95m        [m[1m[96m$(MAKE)[m[95m -C [m[1m[96m$(KERNELDIR)[m[95m M=[m[1m[96m$(PWD)[m[95m ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules[m
+
+[1m[96mclean:[m
+[95m        rm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order[m
+[38;5;81mendif[m
+[94m~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [m[27;103H12,5[9C全部"Makefile" 12L, 331B[12;5H[?25h[?25l[27;93H~@k[12;5H[27;93H   [11;8H[27;104H1,1-8[11;8H[?25h[?25l[27;93H~@k[11;8H[27;93H   [10;6H[27;104H0,6  [10;6H[?25h[?25l[27;93H~@k[10;6H[27;93H   [9;1H[27;103H9,0-1[9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [8;8H[27;103H8,1-8[8;8H[?25h[?25l[27;93H~@k[8;8H[27;93H   [7;8H[27;103H7,8  [7;8H[?25h[?25l[27;93H~@k[7;8H[27;93H   [6;1H[27;103H6,0-1[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [5;8H[27;103H5,8  [5;8H[?25h[?25l[27;93H~@k[5;8H[27;93H   [4;8H[27;103H4[4;8H[?25h[?25l[27;93H~@k[4;8H[27;93H   [3;4H[27;103H3,4[3;4H[?25h[?25l[27;93H~@k[3;4H[27;93H   [2;8H[27;103H2,8[2;8H[?25h[?25l[27;93H~@k[2;8H[27;93H   [1;8H[27;103H1[1;8H[?25h[?25l[27;93H~@k[1;8H[27;93H   [1;8H[?25h[?25l[27;93H~@k[1;8H[27;93H   [1;8H[?25h[?25l[27;93H~@k[1;8H[27;93H   [1;8H[?25h[?25l[27;93H~@k[1;8H[27;93H   [1;8H[?25h[?25l[27;93H~@k[1;8H[27;93H   [2;8H[27;103H2[2;8H[?25h[?25l[27;93H~@k[2;8H[27;93H   [3;4H[27;103H3,4[3;4H[?25h[?25l[27;93H~@k[3;4H[27;93H   [2;8H[27;103H2,8[2;8H[?25h[?25l[27;93H~@k[2;8H[27;93H   [2;9H[27;105H9[2;9H[?25h[?25l[27;93H~@k[2;9H[27;93H   [2;10H[27;105H10[2;10H[?25h[?25l[27;93H~@k[2;10H[27;93H   [2;11H[27;106H1[2;11H[?25h[?25l[27;93H~@k[2;11H[27;93H   [2;12H[27;106H2[2;12H[?25h[?25l[27;93H~@k[2;12H[27;93H   [2;13H[27;106H3[2;13H[?25h[?25l[27;93H~@k[2;13H[27;93H   [2;14H[27;106H4[2;14H[?25h[?25l[27;93H~@k[2;14H[27;93H   [2;15H[27;106H5[2;15H[?25h[?25l[27;93H~@k[2;15H[27;93H   [2;16H[27;106H6[2;16H[?25h[?25l[27;93H~@k[2;16H[27;93H   [2;17H[27;106H7[2;17H[?25h[?25l[27;93H~@k[2;17H[27;93H   [2;18H[27;106H8[2;18H[?25h[?25l[27;93H~@k[2;18H[27;93H   [2;19H[27;106H9[2;19H[?25h[?25l[27;93H~@k[2;19H[27;93H   [2;20H[27;105H20[2;20H[?25h[?25l[27;93H~@k[2;20H[27;93H   [2;21H[27;106H1[2;21H[?25h[?25l[27;93H~@k[2;21H[27;93H   [2;22H[27;106H2[2;22H[?25h[?25l[27;93H~@k[2;22H[27;93H   [2;23H[27;106H3[2;23H[?25h[?25l[27;93H~@k[2;23H[27;93H   [2;24H[27;106H4[2;24H[?25h[?25l[27;93H~@k[2;24H[27;93H   [2;25H[27;106H5[2;25H[?25h[?25l[27;93H~@k[2;25H[27;93H   [2;26H[27;106H6[2;26H[?25h[?25l[27;93H~@k[2;26H[27;93H   [2;27H[27;106H7[2;27H[?25h[?25l[27;93H~@k[2;27H[27;93H   [2;28H[27;106H8[2;28H[?25h[?25l[27;93H~@k[2;28H[27;93H   [2;29H[27;106H9[2;29H[?25h[?25l[27;93H~@k[2;29H[27;93H   [2;30H[27;105H30[2;30H[?25h[?25l[27;93H~@k[2;30H[27;93H   [2;31H[27;106H1[2;31H[?25h[?25l[27;93H~@k[2;31H[27;93H   [2;32H[27;106H2[2;32H[?25h[?25l[27;93H~@k[2;32H[27;93H   [2;33H[27;106H3[2;33H[?25h[?25l[27;93H~@k[2;33H[27;93H   [2;32H[27;106H2[2;32H[?25h[?25l[27;93H~@k[2;32H[27;93H   [2;31H[27;106H1[2;31H[?25h[?25l[27;93H~@k[2;31H[27;93H   [2;30H[27;106H0[2;30H[?25h[?25l[27;93Hi[2;30H[27;93H [2;30H[27;1H[1m-- 插入 --[m[27;12H[K[27;103H2,30[9C全部[2;30H[?25h[?25l[27;106H1[2;31H[?25h[?25l[27;106H2[2;32H[?25h[?25l[27;106H3[2;33H[?25h[?25l.o[2;34H[K[27;106H2[2;32H[?25h[?25l.o[2;33H[K[27;106H1[2;31H[?25h[?25l.o[2;32H[K[27;106H0[2;30H[?25h[?25l.o[2;31H[K[27;105H29[2;29H[?25h[?25l.o[2;30H[K[27;106H8[2;28H[?25h[?25l.o[2;29H[K[27;106H7[2;27H[?25h[?25l.o[2;28H[K[27;106H6[2;26H[?25h[?25l.o[2;27H[K[27;106H5[2;25H[?25h[?25l.o[2;26H[K[27;106H4[2;24H[?25h[?25lr.o[27;106H5[2;25H[?25h[?25l_.o[27;106H6[2;26H[?25h[?25ld.o[27;106H7[2;27H[?25h[?25le.o[27;106H8[2;28H[?25h[?25lv.o[27;106H9[2;29H[?25h[?25li.o[27;105H30[2;30H[?25h[?25lc.o[27;106H1[2;31H[?25h[?25le.o[27;106H2[2;32H[?25h[?25l3.o[27;106H3[2;33H[?25h[27;1H[K[2;32H[?25l[27;93H^[[2;32H[27;93H  [2;33H[27;103H2,32[9C全部[2;32H[?25h[?25l[27;93H:[2;32H[27;93H[K[27;1H:[?25hwq[?25l[?2004l[>4;m"Makefile" 12L, 331B 已写入[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ make
+[?2004lmake -C /home/ubuntu64-f7/Kernel/linux-6.6.68  M=/home/ubuntu64-f7/Test/Week6/Task2 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
+make[1]: 进入目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+make[3]: *** 没有规则可制作目标“/home/ubuntu64-f7/Test/Week6/Task2/simple_char_device3.o”，由“/home/ubuntu64-f7/Test/Week6/Task2/modules.order” 需求。 停止。
+make[2]: *** [/home/ubuntu64-f7/Kernel/linux-6.6.68/Makefile:1921：/home/ubuntu64-f7/Test/Week6/Task2] 错误 2
+make[1]: *** [Makefile:234：__sub-make] 错误 2
+make[1]: 离开目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+make: *** [Makefile:8：default] 错误 2
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week6/Task2[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week6/Task2[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd Tesy[Kt/Week9
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ ls
+[?2004lMakefile  simple_char_driver2.c  test_DTS.c  test_simple_char_driver2.c
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ make
+[?2004lmake -C /home/ubuntu64-f7/Kernel/linux-6.6.68  M=/home/ubuntu64-f7/Test/Week9 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
+make[1]: 进入目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+make[3]: *** 没有规则可制作目标“/home/ubuntu64-f7/Test/Week9/simple_char_driver.o”，由“/home/ubuntu64-f7/Test/Week9/” 需求。 停止。
+make[2]: *** [/home/ubuntu64-f7/Kernel/linux-6.6.68/Makefile:1921：/home/ubuntu64-f7/Test/Week9] 错误 2
+make[1]: *** [Makefile:234：__sub-make] 错误 2
+make[1]: 离开目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+make: *** [Makefile:8：default] 错误 2
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi Makefile
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"Makefile" 12L, 330B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35mifneq[m ([36m$(KERNELRELEASE)[m,)
+[36m    obj-m [m:= simple_char_driver.o[2;34H[K[3;1H[35melse[m[3;5H[K[4;1H[36m    KERNELDIR [m?= /home/ubuntu64-f7/Kernel/linux-6.6.68 [34m# 内核源码路径[m
+[36m    PWD [m:= [36m$([m[38;5;130mshell[m[36m pwd)
+
+default:[m
+[31m        [m[36m$(MAKE)[m[31m -C [m[36m$(KERNELDIR)[m[31m M=[m[36m$(PWD)[m[31m ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules[m
+
+[36mclean:[m
+[31m        rm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order[m
+[35mendif[m
+[94m~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [m[27;103H1,1[10C全部[1;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H0[1;1H[27;94H3[1;1H[27;95H0[1;1H[27;96H/[1;1H[27;97H0[1;1H[27;98Ha[1;1H[27;99H0[1;1H[27;100Ha[1;1H[27;101H/[1;1H[27;102H2[1;1H[27;93H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;81mifneq[m ([1m[96m$(KERNELRELEASE)[m,)
+[1m[96m    obj-m [m:= simple_char_driver.o
+[38;5;81melse[m
+[1m[96m    KERNELDIR [m?= /home/ubuntu64-f7/Kernel/linux-6.6.68 [96m# 内核源码路径[m
+[1m[96m    PWD [m:= [1m[96m$([m[93mshell[m[1m[96m pwd)
+
+default:[m
+[95m        [m[1m[96m$(MAKE)[m[95m -C [m[1m[96m$(KERNELDIR)[m[95m M=[m[1m[96m$(PWD)[m[95m ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules[m
+
+[1m[96mclean:[m
+[95m        rm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order[m
+[38;5;81mendif[m
+[94m~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [m[27;103H1,1[10C全部"Makefile" 12L, 330B[1;1H[?25h[?25l[27;93H^[[1;1H[27;93H  [1;1H[27;93H^[[1;1H[27;93H  [1;1H[?25h[?25l[27;93H:[1;1H[27;1H[K[27;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[27;1H[K[27;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ ls
+[?2004lMakefile  simple_char_driver2.c  test_DTS.c  test_simple_char_driver2.c
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi Makefile
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"Makefile" 12L, 330B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35mifneq[m ([36m$(KERNELRELEASE)[m,)
+[36m    obj-m [m:= simple_char_driver.o[2;34H[K[3;1H[35melse[m[3;5H[K[4;1H[36m    KERNELDIR [m?= /home/ubuntu64-f7/Kernel/linux-6.6.68 [34m# 内核源码路径[m
+[36m    PWD [m:= [36m$([m[38;5;130mshell[m[36m pwd)
+
+default:[m
+[31m        [m[36m$(MAKE)[m[31m -C [m[36m$(KERNELDIR)[m[31m M=[m[36m$(PWD)[m[31m ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules[m
+
+[36mclean:[m
+[31m        rm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order[m
+[35mendif[m
+[94m~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [m[27;103H1,1[10C全部[1;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H:[1;1H[27;94H3[1;1H[27;95H0[1;1H[27;96H3[1;1H[27;97H0[1;1H[27;98H/[1;1H[27;99H0[1;1H[27;100Ha[1;1H[27;101H0[1;1H[27;102Ha[1;1H[27;93H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;81mifneq[m ([1m[96m$(KERNELRELEASE)[m,)
+[1m[96m    obj-m [m:= simple_char_driver.o
+[38;5;81melse[m
+[1m[96m    KERNELDIR [m?= /home/ubuntu64-f7/Kernel/linux-6.6.68 [96m# 内核源码路径[m
+[1m[96m    PWD [m:= [1m[96m$([m[93mshell[m[1m[96m pwd)
+
+default:[m
+[95m        [m[1m[96m$(MAKE)[m[95m -C [m[1m[96m$(KERNELDIR)[m[95m M=[m[1m[96m$(PWD)[m[95m ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules[m
+
+[1m[96mclean:[m
+[95m        rm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order[m
+[38;5;81mendif[m
+[94m~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [m[27;103H1,1[10C全部"Makefile" 12L, 330B[1;1H[?25h[?25l[27;93Hi[1;1H[27;93H [1;1H[27;1H[1m-- 插入 --[m[27;12H[K[27;103H1,1[10C全部[1;1H[?25h[?25l[27;105H2[1;2H[?25h[?25l[27;105H3[1;3H[?25h[?25l[27;105H4[1;4H[?25h[?25l[27;105H5[1;5H[?25h[?25l[27;105H6[1;6H[?25h[?25l [46m([17C)[m[27;105H7[1;7H[?25h[?25l[27;105H8[1;8H[?25h[?25l([1C[1m[96m[46m([m[1m[96mKERNELRELEASE[m[1m[96m[46m)[m,)[27;105H9[1;9H[?25h[?25l[27;105H10[1;10H[?25h[?25l[1m[96m(KERNELRELEASE)[m,[27;106H1[1;11H[?25h[?25l[27;106H2[1;12H[?25h[?25l[27;106H3[1;13H[?25h[?25l[27;106H4[1;14H[?25h[?25l[27;106H5[1;15H[?25h[?25l[27;106H6[1;16H[?25h[?25l[27;106H7[1;17H[?25h[?25l[27;106H8[1;18H[?25h[?25l[27;106H9[1;19H[?25h[?25l[27;105H20[1;20H[?25h[?25l[27;106H1[1;21H[?25h[?25l[27;103H2[2;21H[?25h[?25l[27;106H2[2;22H[?25h[?25l[27;106H3[2;23H[?25h[?25l[27;106H4[2;24H[?25h[?25l[27;106H5[2;25H[?25h[?25l[27;106H6[2;26H[?25h[?25l[27;106H7[2;27H[?25h[?25l[27;106H8[2;28H[?25h[?25l[27;106H9[2;29H[?25h[?25l[27;105H30[2;30H[?25h[?25l[27;106H1[2;31H[?25h[?25l[27;106H2[2;32H[?25h[?25l2.o[27;106H3[2;33H[?25h[27;1H[K[2;32H[?25l[27;93H^[[2;32H[27;93H  [2;33H[27;103H2,32[9C全部[2;32H[?25h[?25l[27;93H:[2;32H[27;93H[K[27;1H:[?25hwq[?25l[?2004l[>4;m"Makefile" 12L, 331B 已写入[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ make
+[?2004lmake -C /home/ubuntu64-f7/Kernel/linux-6.6.68  M=/home/ubuntu64-f7/Test/Week9 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
+make[1]: 进入目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+  CC [M]  /home/ubuntu64-f7/Test/Week9/simple_char_driver2.o
+In file included from [01m[K./include/linux/linkage.h:7[m[K,
+                 from [01m[K./include/linux/kernel.h:17[m[K,
+                 from [01m[K./include/linux/cpumask.h:10[m[K,
+                 from [01m[K./include/linux/mm_types_task.h:14[m[K,
+                 from [01m[K./include/linux/mm_types.h:5[m[K,
+                 from [01m[K./include/linux/buildid.h:5[m[K,
+                 from [01m[K./include/linux/module.h:14[m[K,
+                 from [01m[K/home/ubuntu64-f7/Test/Week9/simple_char_driver2.c:1[m[K:
+[01m[K/home/ubuntu64-f7/Test/Week9/simple_char_driver2.c:[m[K In function ‘[01m[Kchar_dev_probe[m[K’:
+[01m[K./include/linux/export.h:29:22:[m[K [01;31m[Kerror: [m[Kpassing argument 1 of ‘[01m[Kclass_create[m[K’ from incompatible pointer type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Werror=incompatible-pointer-types]8;;[m[K]
+   29 | #define THIS_MODULE [01;31m[K(&__this_module)[m[K
+      |                     [01;31m[K~^~~~~~~~~~~~~~~[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[Kstruct module *[m[K
+[01m[K/home/ubuntu64-f7/Test/Week9/simple_char_driver2.c:83:43:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KTHIS_MODULE[m[K’
+   83 |     dev_data->device_class = class_create([01;36m[KTHIS_MODULE[m[K, CLASS_NAME);
+      |                                           [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K./include/linux/device.h:31[m[K,
+                 from [01m[K./include/linux/cdev.h:8[m[K,
+                 from [01m[K/home/ubuntu64-f7/Test/Week9/simple_char_driver2.c:5[m[K:
+[01m[K./include/linux/device/class.h:230:54:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kstruct module *[m[K’
+  230 | struct class * __must_check class_create([01;36m[Kconst char *name[m[K);
+      |                                          [01;36m[K~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu64-f7/Test/Week9/simple_char_driver2.c:83:30:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kclass_create[m[K’
+   83 |     dev_data->device_class = [01;31m[Kclass_create[m[K(THIS_MODULE, CLASS_NAME);
+      |                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K./include/linux/device/class.h:230:29:[m[K [01;36m[Knote: [m[Kdeclared here
+  230 | struct class * __must_check [01;36m[Kclass_create[m[K(const char *name);
+      |                             [01;36m[K^~~~~~~~~~~~[m[K
+cc1: some warnings being treated as errors
+make[3]: *** [scripts/Makefile.build:243：/home/ubuntu64-f7/Test/Week9/simple_char_driver2.o] 错误 1
+make[2]: *** [/home/ubuntu64-f7/Kernel/linux-6.6.68/Makefile:1921：/home/ubuntu64-f7/Test/Week9] 错误 2
+make[1]: *** [Makefile:234：__sub-make] 错误 2
+make[1]: 离开目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+make: *** [Makefile:8：default] 错误 2
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi t[K[K[K[Kla
+[?2004lMakefile  simple_char_driver2.c  .simple_char_driver2.o.d  test_DTS.c  test_simple_char_driver2.c
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi simple_char_driver2.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"simple_char_driver2.c" 208L, 6769B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<linux/module.h>[m
+[35m#include [m[31m<linux/fs.h>[m[2;22H[K[3;1H[35m#include [m[31m<linux/uaccess.h>[m[3;27H[K[4;1H[35m#include [m[31m<linux/init.h>[m
+[35m#include [m[31m<linux/cdev.h>[m
+[35m#include [m[31m<linux/device.h>[m
+[35m#include [m[31m<linux/ioctl.h>[m
+[35m#include [m[31m<linux/platform_device.h>[m
+[35m#include [m[31m<linux/of.h>[m
+[35m#include [m[31m<linux/slab.h>[m
+
+[35m#define DEVICE_NAME [m[31m"sample_device"[m
+[35m#define CLASS_NAME [m[31m"sample_device_class"[m
+[35m#define BUFFER_SIZE (PAGE_SIZE)
+#define IOCTL_SET_BUFFER_SIZE _IOR([m[31m'p'[m[35m, [m[31m1[m[35m, [m[32mint[m[35m)[m
+
+[34m// 设备私有数据结构[m
+[32mstruct[m char_device_data {
+    dev_t dev_num;
+    [32mstruct[m cdev mcdev;
+    [32mstruct[m class *device_class;
+    [32mchar[m *device_buffer;
+    [32msize_t[m buffer_size;
+    [32msize_t[m buffer_pointer;
+};[27;103H4,1[10C顶端[4;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H0[4;1H[27;94H3[4;1H[27;95H0[4;1H[27;96H/[4;1H[27;97H0[4;1H[27;98Ha[4;1H[27;99H0[4;1H[27;100Ha[4;1H[27;101H/[4;1H[27;102H2[4;1H[27;93H          [4;1H[27m[23m[29m[m[H[2J[1;1H[38;5;81m#include [m[95m<linux/module.h>[m
+[38;5;81m#include [m[95m<linux/fs.h>[m
+[38;5;81m#include [m[95m<linux/uaccess.h>[m
+[38;5;81m#include [m[95m<linux/init.h>[m
+[38;5;81m#include [m[95m<linux/cdev.h>[m
+[38;5;81m#include [m[95m<linux/device.h>[m
+[38;5;81m#include [m[95m<linux/ioctl.h>[m
+[38;5;81m#include [m[95m<linux/platform_device.h>[m
+[38;5;81m#include [m[95m<linux/of.h>[m
+[38;5;81m#include [m[95m<linux/slab.h>[m
+
+[38;5;81m#define DEVICE_NAME [m[95m"sample_device"[m
+[38;5;81m#define CLASS_NAME [m[95m"sample_device_class"[m
+[38;5;81m#define BUFFER_SIZE (PAGE_SIZE)
+#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m
+
+[96m// 设备私有数据结构[m
+[38;5;121mstruct[m char_device_data {
+    dev_t dev_num;
+    [38;5;121mstruct[m cdev mcdev;
+    [38;5;121mstruct[m class *device_class;
+    [38;5;121mchar[m *device_buffer;
+    [38;5;121msize_t[m buffer_size;
+    [38;5;121msize_t[m buffer_pointer;
+};[27;103H4,1[10C顶端"simple_char_driver2.c" 208L, 6769B[4;1H[?25h[?25l[27;93Hi[4;1H[27;93H [4;1H[27;1H[1m-- 插入 --[m[27;11H[K[27;103H4,1[10C顶端[4;1H[?25h[?25l[27;103H5[5;1H[?25h[?25l[27;103H6[6;1H[?25h[?25l[27;103H7[7;1H[?25h[?25l[27;103H8[8;1H[?25h[?25l[27;103H9[9;1H[?25h[?25l[27;103H10,1[10;1H[?25h[?25l[27;104H1[11;1H[?25h[?25l[27;104H2[12;1H[?25h[?25l[27;104H3[13;1H[?25h[?25l[27;104H4[14;1H[?25h[?25l[27;104H5[15;1H[?25h[?25l[27;104H6[16;1H[?25h[?25l[27;104H7[17;1H[?25h[?25l[27;104H8[18;1H[?25h[?25l[27;104H9[19;1H[?25h[?25l[27;103H20[20;1H[?25h[?25l[27;104H1[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[96m// 文件操作函数声明[m[27;103H[K[27;103H22,1[11C0%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[38;5;121mstatic[m [38;5;121mint[m dev_open([38;5;121mstruct[m inode *, [38;5;121mstruct[m file *);[27;103H[K[27;103H23,1[11C1%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[38;5;121mstatic[m [38;5;121mint[m dev_release([38;5;121mstruct[m inode *, [38;5;121mstruct[m file *);[27;103H[K[27;103H24,1[11C1%[21;1H[?25h[?25l[1;26r[1;1H[3M[1;27r[24;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_read([38;5;121mstruct[m file *, [38;5;121mchar[m __user *, [38;5;121msize_t[m, loff_t *);
+[38;5;121mstatic[m [38;5;121mssize_t[m dev_write([38;5;121mstruct[m file *, [38;5;121mconst[m [38;5;121mchar[m __user *, [38;5;121msize_t[m, loff_t *);
+[38;5;121mstatic[m [38;5;121mlong[m dev_ioctl([38;5;121mstruct[m file *, [38;5;121munsigned[m [38;5;121mint[m, [38;5;121munsigned[m [38;5;121mlong[m);[27;103H[K[27;103H27,1[11C3%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H28,1[11C3%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[38;5;121mstatic[m [38;5;121mstruct[m file_operations fops = {[27;103H[K[27;103H29,1[11C4%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H.owner = THIS_MODULE,[27;103H[K[27;103H30,1[11C4%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H.read = dev_read,[27;103H[K[27;103H31,1[11C5%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H.write = dev_write,[27;103H[K[27;103H32,1[11C6%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H.open = dev_open,[27;103H[K[27;103H33,1[11C6%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H.release = dev_release,[27;103H[K[27;103H34,1[11C7%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H.unlocked_ioctl = dev_ioctl,[27;103H[K[27;103H35,1[11C7%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H};[27;103H[K[27;103H36,1[11C8%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H37,1[11C8%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[96m// 平台驱动的probe函数[m[27;103H[K[27;103H38,1[11C9%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[38;5;121mstatic[m [38;5;121mint[m char_dev_probe([38;5;121mstruct[m platform_device *pdev) {[27;103H[K[27;103H39,1[11C9%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[38;5;121mstruct[m char_device_data *dev_data;[27;103H[K[27;103H40,1[10C10%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[38;5;121mint[m ret;[27;103H[K[27;103H41,1[10C10%[14;38H[46m{[21;1H}[?25h[?25l[1;26r[m[26;1H
+[1;27r[27;103H[K[27;103H42,1[10C11%[13;38H{[20;1H}
+[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 分配设备私有数据[m[27;103H[K[27;103H43,1[10C12%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hdev_data = devm_kzalloc(&pdev->dev, [93msizeof[m(*dev_data), GFP_KERNEL);[27;103H[K[27;103H44,1[10C12%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[93mif[m (!dev_data) {[27;103H[K[27;103H45,1[10C13%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hdev_err(&pdev->dev, [95m"Failed to allocate device data[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H46,1[10C13%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m -[95mENOMEM[m;[27;103H[K[27;103H47,1[10C14%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H48,1[10C14%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H49,1[10C15%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 初始化缓冲区[m[27;103H[K[27;103H50,1[10C15%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hdev_data->buffer_size = BUFFER_SIZE;[27;103H[K[27;103H51,1[10C16%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hdev_data->device_buffer = devm_kzalloc(&pdev->dev, dev_data->buffer_size, GFP_KERNEL);[27;103H[K[27;103H52,1[10C17%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[93mif[m (!dev_data->device_buffer) {[27;103H[K[27;103H53,1[10C17%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hdev_err(&pdev->dev, [95m"Failed to allocate buffer[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H54,1[10C18%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m -[95mENOMEM[m;[27;103H[K[27;103H55,1[10C18%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H56,1[10C19%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H57,1[10C19%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 分配设备号[m[27;103H[K[27;103H58,1[10C20%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hret = alloc_chrdev_region(&dev_data->dev_num, [95m0[m, [95m1[m, DEVICE_NAME);[27;103H[K[27;103H59,1[10C20%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H60,1[10C21%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hdev_err(&pdev->dev, [95m"Failed to allocate device number[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H61,1[10C21%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m ret;[27;103H[K[27;103H62,1[10C22%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H63,1[10C23%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H64,1[10C23%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 初始化字符设备[m[27;103H[K[27;103H65,1[10C24%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hcdev_init(&dev_data->mcdev, &fops);[27;103H[K[27;103H66,1[10C24%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hdev_data->mcdev.owner = THIS_MODULE;[27;103H[K[27;103H67,1[10C25%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H68,1[10C25%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 添加字符设备到系统[m[27;103H[K[27;103H69,1[10C26%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hret = cdev_add(&dev_data->mcdev, dev_data->dev_num, [95m1[m);[27;103H[K[27;103H70,1[10C26%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret) {[27;103H[K[27;103H71,1[10C27%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[27;103H[K[27;103H72,1[10C28%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hdev_err(&pdev->dev, [95m"Failed to add cdev[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H73,1[10C28%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m ret;[27;103H[K[27;103H74,1[10C29%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H75,1[10C29%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H76,1[10C30%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 创建设备类[m[27;103H[K[27;103H77,1[10C30%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hdev_data->device_class = class_create(THIS_MODULE, CLASS_NAME);[27;103H[K[27;103H78,1[10C31%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[93mif[m (IS_ERR(dev_data->device_class)) {[27;103H[K[27;103H79,1[10C31%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hcdev_del(&dev_data->mcdev);[27;103H[K[27;103H80,1[10C32%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[27;103H[K[27;103H81,1[10C32%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hdev_err(&pdev->dev, [95m"Failed to create class[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H82,1[10C33%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m PTR_ERR(dev_data->device_class);[27;103H[K[27;103H83,1[10C34%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H84,1[10C34%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;103H[K[27;103H85,1[10C35%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[96m// 创建设备节点[m[27;103H[K[27;103H86,1[10C35%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5H[93mif[m (!device_create(dev_data->device_class, [95mNULL[m, dev_data->dev_num, [95mNULL[m, DEVICE_NAME)) {[27;103H[K[27;103H87,1[10C36%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hclass_destroy(dev_data->device_class);[27;103H[K[27;103H88,1[10C36%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;9Hcdev_del(&dev_data->mcdev);[27;103H[K[27;103H89,1[10C37%[21;1H[?25h[?25l[27;104H8[20;1H[?25h[?25l[27;104H7[19;1H[?25h[?25l[27;104H6[18;1H[?25h[?25l[27;104H5[17;1H[?25h[?25l[27;104H4[16;1H[?25h[?25l[27;104H3[15;1H[?25h[?25li    dev_data->device_class = class_create(THIS_MODULE, CLASS_NAME);[27;106H2[15;2H[?25h[?25l[27;106H3[15;3H[?25h[?25l[27;106H4[15;4H[?25h[?25l[27;106H5[15;5H[?25h[?25l[27;106H6[15;6H[?25h[?25l[27;106H7[15;7H[?25h[?25l[27;106H8[15;8H[?25h[?25l[27;106H9[15;9H[?25h[?25l[27;106H10[15;10H[?25h[?25l[27;107H1[15;11H[?25h[?25l[27;107H2[15;12H[?25h[?25l[27;107H3[15;13H[?25h[?25l[27;107H4[15;14H[?25h[?25l[27;107H5[15;15H[?25h[?25l[27;107H6[15;16H[?25h[?25l[27;107H7[15;17H[?25h[?25l[27;107H8[15;18H[?25h[?25l[27;107H9[15;19H[?25h[?25l[27;107H8[15;18H[?25h[?25l[27;107H7[15;17H[?25h[?25l[27;107H6[15;16H[?25h[?25l[27;107H5[15;15H[?25h[?25l[27;107H4[15;14H[?25h[?25l[27;107H3[15;13H[?25h[?25l[27;107H2[15;12H[?25h[?25l[27;107H1[15;11H[?25h[?25l[27;107H0[15;10H[?25h[?25l[27;106H9 [15;9H[?25h[?25l[27;106H8[15;8H[?25h[?25l[27;106H7[15;7H[?25h[?25l[27;106H6[15;6H[?25h[?25l[27;106H5[15;5H[?25h[?25l[27;106H4[15;4H[?25h[?25l[27;106H3[15;3H[?25h[?25l[27;106H2[15;2H[?25h[?25l    dev_data->device_class = class_create(THIS_MODULE, CLASS_NAME);[15;68H[K[27;106H1[15;1H[?25h[?25l[27;106H2[15;2H[?25h[?25l[27;106H3[15;3H[?25h[?25l[27;106H4[15;4H[?25h[?25l[27;106H6[15;6H[?25h[?25l[27;106H7[15;7H[?25h[?25l[27;106H8[15;8H[?25h[?25l[27;106H9[15;9H[?25h[?25l[27;106H10[15;10H[?25h[?25l[27;107H1[15;11H[?25h[?25l[27;107H2[15;12H[?25h[?25l[27;107H3[15;13H[?25h[?25l[27;107H4[15;14H[?25h[?25l[27;107H5[15;15H[?25h[?25l[27;107H6[15;16H[?25h[?25l[27;107H7[15;17H[?25h[?25l[27;107H8[15;18H[?25h[?25l[27;107H9[15;19H[?25h[?25l[27;106H20[15;20H[?25h[?25l[27;107H1[15;21H[?25h[?25l[27;107H2[15;22H[?25h[?25l[27;107H3[15;23H[?25h[?25l[27;107H4[15;24H[?25h[?25l[27;107H5[15;25H[?25h[?25l[27;107H6[15;26H[?25h[?25l[27;107H7[15;27H[?25h[?25l[27;107H8[15;28H[?25h[?25l[27;107H9[15;29H[?25h[?25l[27;106H30[15;30H[?25h[?25l[27;107H1[15;31H[?25h[?25l[27;107H2[15;32H[?25h[?25l[27;107H3[15;33H[?25h[?25l[27;107H4[15;34H[?25h[?25l[27;107H5[15;35H[?25h[?25l[27;107H6[15;36H[?25h[?25l[27;107H7[15;37H[?25h[?25l[27;107H8[15;38H[?25h[?25l[27;107H9[15;39H[?25h[?25l[27;106H40[15;40H[?25h[?25l[27;107H1[15;41H[?25h[?25le[46m([23C)[m[27;107H2[15;42H[?25h[?25l[27;107H3[15;43H[?25h[?25l([23C)[27;107H4[15;44H[?25h[?25l[27;107H5[15;45H[?25h[?25l[27;107H6[15;46H[?25h[?25l[27;107H7[15;47H[?25h[?25l[27;107H8[15;48H[?25h[?25l[27;107H9[15;49H[?25h[?25l[27;106H50[15;50H[?25h[?25l[27;107H1[15;51H[?25h[?25l[27;107H2[15;52H[?25h[?25l[27;107H3[15;53H[?25h[?25l[27;107H4[15;54H[?25h[?25l[27;107H5[15;55H[?25h[?25l[27;107H6[15;56H[?25h[?25l[27;107H7[15;57H[?25h[?25l[27;107H6[15;56H[?25h[?25lCLASS_NAME);[15;67H[K[27;107H5[15;55H[?25h[?25lCLASS_NAME);[15;66H[K[27;107H4[15;54H[?25h[?25lCLASS_NAME);[15;65H[K[27;107H3[15;53H[?25h[?25lCLASS_NAME);[15;64H[K[27;107H2[15;52H[?25h[?25lCLASS_NAME);[15;63H[K[27;107H1[15;51H[?25h[?25lCLASS_NAME);[15;62H[K[27;107H0[15;50H[?25h[?25lCLASS_NAME);[15;61H[K[27;106H49[15;49H[?25h[?25lCLASS_NAME);[15;60H[K[27;107H8[15;48H[?25h[?25lCLASS_NAME);[15;59H[K[27;107H7[15;47H[?25h[?25lCLASS_NAME);[15;58H[K[27;107H6[15;46H[?25h[?25lCLASS_NAME);[15;57H[K[27;107H5[15;45H[?25h[?25lCLASS_NAME);[15;56H[K[27;107H4[15;44H[?25h[?25lCLASS_NAME);[15;55H[K[15;42H[46m([10C)[m[27;107H3[15;43H[?25h[?25l([10C)[27;104H2,23-18[14;18H[?25h[?25l[27;104H1,1    [13;1H[?25h[?25l[8;14H[46m{[12;5H}[m[27;104H0,6[12;6H[?25h[?25l[8;14H{[12;5H}[27;103H79,20[11;20H[?25h[?25l[27;104H8,43[10;43H[?25h[?25l[27;104H7[9;43H[?25h[?25l[8;14H[46m{[12;5H}[m[27;104H6,15[8;15H[?25h[?25l{[12;5H}[27;104H5,43[7;43H[?25h[?25l[27;104H4,35-26[6;26H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H73,1[10C36%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;9H[93mreturn[m ret;[27;103H[K[27;103H72,41[9C36%[6;41H[?25h[?25l[1;26r[1;1H[L[1;27r[1;9Hdev_err(&pdev->dev, [95m"Failed to allocate device number[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H71,40[9C35%[6;40H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H70,29-22      35%[6;22H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5Hret = alloc_chrdev_region(&dev_data->dev_num, [95m0[m, [95m1[m, DEVICE_NAME);[27;103H[K[27;103H69,1[10C34%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[96m// 分配设备号[m[27;103H[K[27;103H68,6[10C34%[3;18H[46m{[6;5H}[?25h[?25l[1;26r[m[1;1H[L[1;27r[27;103H[K[27;103H67,20[9C33%[4;18H{[7;5H}[6;20H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H66,43[9C32%[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;9H[93mreturn[m -[95mENOMEM[m;[27;103H[K[27;103H65,19[9C32%[6;18H[46m{[9;5H}[6;19H[?25h[?25l[1;26r[m[1;1H[L[1;27r[1;9Hdev_err(&pdev->dev, [95m"Failed to allocate buffer[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H64,43[9C31%[7;18H{[10;5H}[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[93mif[m (!dev_data->device_buffer) {[27;103H[K[27;103H63,23-18      31%[6;18H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5Hdev_data->device_buffer = devm_kzalloc(&pdev->dev, dev_data->buffer_size, GFP_KERNEL);[27;103H[K[27;103H62,1[10C30%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5Hdev_data->buffer_size = BUFFER_SIZE;[27;103H[K[27;103H61,6[10C30%[3;35H[46m{[6;5H}[?25h[?25l[1;26r[m[1;1H[L[1;27r[1;5H[96m// 初始化缓冲区[m[27;103H[K[27;103H60,24[9C29%[4;35H{[7;5H}[6;24H[?25h[?25l[1;26r[1;1H[L[1;27r[27;103H[K[27;103H59,43[9C29%[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H58,36[9C28%[6;35H[46m{[9;5H}[6;36H[?25h[?25l[1;26r[m[1;1H[L[1;27r[1;9H[93mreturn[m -[95mENOMEM[m;[27;103H[K[27;103H57,43[9C28%[6;43H[46m([45C)[m[7;35H{[10;5H}[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;9Hdev_err(&pdev->dev, [95m"Failed to allocate device data[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H56,41[9C27%[7;43H([45C)[6;41H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[93mif[m (!dev_data) {[27;103H[K[27;103H55,26-20      26%[6;20H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5Hdev_data = devm_kzalloc(&pdev->dev, [93msizeof[m(*dev_data), GFP_KERNEL);[27;103H[K[27;103H54,1[10C26%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[96m// 分配设备私有数据[m[27;103H[K[27;103H53,6[10C25%[3;20H[46m{[6;5H}[?25h[?25l[1;26r[m[1;1H[L[1;27r[27;103H[K[27;103H52,24[9C25%[4;20H{[7;5H}[6;24H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m ret;[27;103H[K[27;103H51,43[9C24%[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[38;5;121mstruct[m char_device_data *dev_data;[27;103H[K[27;103H50,21[9C24%[6;20H[46m{[9;5H}[6;21H[?25h[?25l[1;26r[m[1;1H[L[1;27r[1;1H[38;5;121mstatic[m [38;5;121mint[m char_dev_probe([38;5;121mstruct[m platform_device *pdev) {[27;103H[K[27;103H49,43[9C23%[7;20H{[10;5H}[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;1H[96m// 平台驱动的probe函数[m[27;103H[K[27;103H48,32-24      23%[6;24H[?25h[?25l[1;26r[1;1H[L[1;27r[27;103H[K[27;103H47,1[10C22%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;1H};[27;103H[K[27;103H46,13[9C21%[6;13H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H.unlocked_ioctl = dev_ioctl,[27;103H[K[27;103H45,39[9C21%[6;39H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H.release = dev_release,[27;103H[K[27;103H44,43[9C20%[6;43H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H.open = dev_open,[27;103H[K[27;103H43,30-23      20%[6;23H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H.write = dev_write,[27;103H[K[27;103H42,1[10C19%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H.read = dev_read,[27;103H[K[27;103H41,3[10C19%[6;3H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H.owner = THIS_MODULE,[27;103H[K[27;103H40,33[9C18%[6;33H[?25h[?25l[1;26r[1;1H[L[1;27r[1;1H[38;5;121mstatic[m [38;5;121mstruct[m file_operations fops = {[27;103H[K[27;103H39,28[9C18%[6;28H[?25h[?25l[1;26r[1;1H[L[1;27r[27;103H[K[27;103H38,22[9C17%[6;22H[?25h[?25l[27;104H9,28[7;28H[?25h[?25l[27;103H40,33[8;33H[?25h[?25l[27;104H1,3 [9;3H[?25h[?25l[27;104H2,1[10;1H[?25h[27;1H[K[10;1H[?25l[27;93H^[[10;1H[27;93H  [10;1H[27;103H42,0-1[8C17%[10;1H[?25h[?25l[27;93H:[10;1H[27;93H[K[27;1H:[?25hwq[?25l[?2004l[>4;m"simple_char_driver2.c" 208L, 6756B 已写入[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ make clean
+[?2004lrm -rf *.o *.ko *.mod.c .tmp_versions *.symvers *.order
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ make
+[?2004lmake -C /home/ubuntu64-f7/Kernel/linux-6.6.68  M=/home/ubuntu64-f7/Test/Week9 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
+make[1]: 进入目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+  CC [M]  /home/ubuntu64-f7/Test/Week9/simple_char_driver2.o
+  MODPOST /home/ubuntu64-f7/Test/Week9/Module.symvers
+  CC [M]  /home/ubuntu64-f7/Test/Week9/simple_char_driver2.mod.o
+  LD [M]  /home/ubuntu64-f7/Test/Week9/simple_char_driver2.ko
+make[1]: 离开目录“/home/ubuntu64-f7/Kernel/linux-6.6.68”
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ ls
+[?2004lMakefile        simple_char_driver2.c    simple_char_driver2.mod.c  test_DTS.c
+modules.order   simple_char_driver2.ko   simple_char_driver2.mod.o  test_simple_char_driver2.c
+Module.symvers  simple_char_driver2.mod  simple_char_driver2.o
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ cd[K[Karm-linux-gnueabi-gcc test_D[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ [K]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7msudo mount -o loop ./disk.img tmpfs/[27msudo mount -o loop ./disk.img tmpfs/
+[?2004l[sudo] ubuntu64-f7 的密码： 
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ sudo cp -r Teas[Kt[K[Kst/Week9/* tmpfa[Ks/
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd tmpfs
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs[00m$ ls
+[?2004l[0m[01;32ma.out[0m                   [01;34metc[0m             Makefile                simple_char_driver2.mod    test_driver_log2.txt
+[01;34mbin[0m                     Hello.c         modules.order           simple_char_driver2.mod.c  test_driver_log.txt
+[01;34mdev[0m                     insmod_log.txt  Module.symvers          simple_char_driver2.mod.o  test_DTS.c
+dmesg_AutoDownload.txt  [01;34mlib[0m             [01;34mproc[0m                    simple_char_driver2.o      test_log_2_1.txt
+dmesg_log_2_1.txt       [01;36mlinuxrc[0m         [01;34msbin[0m                    simple_char_driver.ko      [01;32mtest_simple_char_driver[0m
+dmesg_log2.txt          [01;34mlinux_work[0m      simple_char_driver2.c   [01;32mtest_driver[0m                test_simple_char_driver2.c
+dmesg_log.txt           [01;34mlost+found[0m      simple_char_driver2.ko  [01;32mtest_driver3[0m               [01;34musr[0m
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ sudo cp -r Test/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd tmpfs
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs[00m$ ls[K[Kmkdir Week9
+[?2004lmkdir: 无法创建目录 "Week9": 权限不够
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs[00m$ sudo mkdir Week9
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs[00m$ cd[K[Kcd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7msudo cp -r Test/Week9/* tmpfs/[27msudo cp -r Test/Week9/* tmpfs/Week9/
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd tmpfs/Week9/
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs/Week9[00m$ ls
+[?2004lMakefile        simple_char_driver2.c    simple_char_driver2.mod.c  test_DTS.c
+modules.order   simple_char_driver2.ko   simple_char_driver2.mod.o  test_simple_char_driver2.c
+Module.symvers  simple_char_driver2.mod  simple_char_driver2.o
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/tmpfs/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/tmpfs/Week9[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ sudo umpunt [K[K[K[K[Kount tmpfs
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/ar[27m[7mc[27m[7mh/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/vexpress-v2p-ca9.dtb -nographic -append "root=/dev/mm[27m[7mc[27m[7mblk0 rw console=ttyAMA0" -sd disk.img[27m[A[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/vexpress-v2p-ca9.dtb -nographic -append "root=/dev/mmcblk0 rw console=ttyAMA0" -sd disk.img
+[?2004lWARNING: Image format was not specified for 'disk.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP Tue Feb 25 17:52:34 HKT 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0 rw console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14900(90%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 488692K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19212K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 96.02MHz.
+Calibrating delay loop... 4338.48 BogoMIPS (lpj=21692416)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (4338.48 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+chrdev: Starting initialization
+chrdev: Allocated device number (250,0)
+chrdev: Device created successfully
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-03-13T10:41:24 UTC (1741862484)
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input0
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+mmc0: new SD card at address bc84
+mmcblk0: mmc0:bc84 QEMU! 512 MiB
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+EXT4-fs (mmcblk0): mounted filesystem 59e7573b-36b8-49c5-a7c4-8f62abe15ccc r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:0.
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+random: crng init done
+can't run '/etc/init.d/rcS': No such file or directory
+
+Please press Enter to activate this console. 
+~ # drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+amba 1000f000.wdt: deferred probe pending
+amba 10020000.clcd: deferred probe pending
+amba 100e0000.memory-controller: deferred probe pending
+amba 100e1000.memory-controller: deferred probe pending
+amba 100e5000.watchdog: deferred probe pending
+i2c 0-0039: deferred probe pending
+
+~ # ls
+[0;0mHello.c[m                     [1;34mproc[m
+[0;0mMakefile[m                    [1;34msbin[m
+[0;0mModule.symvers[m              [0;0msimple_char_driver.ko[m
+[1;34mWeek9[m                       [0;0msimple_char_driver2.c[m
+[1;32ma.out[m                       [0;0msimple_char_driver2.ko[m
+[1;34mbin[m                         [0;0msimple_char_driver2.mod[m
+[1;34mdev[m                         [0;0msimple_char_driver2.mod.c[m
+[0;0mdmesg_AutoDownload.txt[m      [0;0msimple_char_driver2.mod.o[m
+[0;0mdmesg_log.txt[m               [0;0msimple_char_driver2.o[m
+[0;0mdmesg_log2.txt[m              [0;0mtest_DTS.c[m
+[0;0mdmesg_log_2_1.txt[m           [1;32mtest_driver[m
+[1;34metc[m                         [1;32mtest_driver3[m
+[0;0minsmod_log.txt[m              [0;0mtest_driver_log.txt[m
+[1;34mlib[m                         [0;0mtest_driver_log2.txt[m
+[1;34mlinux_work[m                  [0;0mtest_log_2_1.txt[m
+[1;36mlinuxrc[m                     [1;32mtest_simple_char_driver[m
+[1;34mlost+found[m                  [0;0mtest_simple_char_driver2.c[m
+[0;0mmodules.order[m               [1;34musr[m
+~ # cd Week9[J[J[J[J[J[J[J[Jvi test_driver3
+[?1049h[999;999H[6n[H[J[1;1H^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@(^@^A^@^@^@.^E^A^@4^@^@^@.^[^@^@^@^B^@^E4^@ ^@ ^@(^@^^^@^]^@^A^@^@p.^K^@^@.^K^A^@.^K^A^[2;1H^@^@D ^A^@^V^K^@^@^H@-.C^@^@.^H...^D.-.^D...^N...^H....^Z^@^@^@...^A.......^@...^A.......^@...^A.......^@...^A.......^@.[3;1H*...^C^@..^D.K.^@...^L^_^A^@h   ^A^@|   ^A^@.   ^A^@^Ap^D..     ^A^@.   ^A^@^H[4;1H^A^@8[5;1H^A^@X[6;1H^A^@.[7;1H^A^@.[8;1H^A^@.[9;1H^A^@.[10;1H^A^@^H@-.^H...^A^@^B^@>^@^@^@A^@^@^@^L^@^@^@A^@^@^@^Q^@^@^@A^@^@^@'^@^@^@A^@^@^@6^@^@^@A^@^@^@^C^@^@^@A^@^@^@^F^@^@^@A^@[11;1H^@^@^@A^@^@^@^K^@^@^@A^@^@^@^@^@^@^@^@^@^@^@/dev/sample_device^@^@Failed to open the device...^@^@^@^@Setting buffer siz[12;1H^@Failed to set buffer size via ioctl.^@^@^@^@Buffer size set successfully.^@^@^@Hello, simple char driver with dynamic[13;1H^@^@^@^@Failed to write the message to the device.^@^@Failed to read the message from the device.^@Received message from[14;1H^@Test passed, data matches.^@^@Test failed, data does not match.^@^@^@>^@^@^@A^@^@^@^L^@^@^@A^@^@^@^Q^@^@^@A^@^@^@'^@^@[15;1H^@^@^@A^@^@^@^K^@^@^@A^@^@^@^@^@^@^@^@^@^@^@$..^?^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[16;1H^@^@^@.^@^@^@^K^@^@^@^P^@^@^@^U^@^@^@^@^@^@^@^C^@^@^@^@ ^A^@^B^@^@^@x^@^@^@^T^@^@^@^Q^@^@^@^W^@^@^@x^D^A^@^Q^@^@^@h^D^A^[17;1H^@^@^@^@^@.^D^A^@^@^@^@^@^C^@^K^@^@^@^@^@.^D^A^@^@^@^@^@^C^@^L^@^@^@^@^@.^E^A^@^@^@^@^@^C^@^M^@^@^@^@^@.^H^A^@^@^@^@^@^C[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[1;2H[27;1H[K- test_driver3 1/16 6%[1;2H[1;2H[27;1H[K- test_driver3 1/16 6%[1;2H[27;1H[K:q[1;2H[1;2H[27;1H[K- test_driver3 1/16 6%[1;2H[27;1H[K[?1049l~ # insmod [J[J[J[J[J[J[Jcd Week9
+/Week9 # ls
+[0;0mMakefile[m                    [0;0msimple_char_driver2.mod.c[m
+[0;0mModule.symvers[m              [0;0msimple_char_driver2.mod.o[m
+[0;0mmodules.order[m               [0;0msimple_char_driver2.o[m
+[0;0msimple_char_driver2.c[m       [0;0mtest_DTS.c[m
+[0;0msimple_char_driver2.ko[m      [0;0mtest_simple_char_driver2.c[m
+[0;0msimple_char_driver2.mod[m
+/Week9 # insmod simple_char_driver2.ko
+simple_char_driver2: loading out-of-tree module taints kernel.
+simple_char_driver2: module is already loaded
+insmod: can't insert 'simple_char_driver2.ko': invalid parameter
+/Week9 # dmesg | grep -i "device tree"
+/Week9 # # ?????OF: fdt: Machine model: My Custom Device
+/Week9 # dmesg | grep "probed"
+/Week9 # dmesg | grep -i "device tree"
+/Week9 # .test_driver3
+-/bin/sh: .test_driver3: not found
+/Week9 # cd
+~ # .test_driver3
+-/bin/sh: .test_driver3: not found
+~ # ./test_driver3
+chrdev: Device opened
+Setting buffer size to 1024 bytes...
+Buffer size set successfully.
+Writing message to /dev/sample_device: 'Hello, simple char driver with dynamic buffer!'
+chrdev: Received 46 characters from user
+chrdev: Sent 46 characters to user
+Received message from /dev/sample_device: 'Hello, simple char driver with dynamic buffer!'
+Test passed, data matches.
+chrdev: Device closed
+~ # ls /proc/device-tree/sample_device
+ls: /proc/device-tree/sample_device: No such file or directory
+~ # ;s[J[Jls proc
+~ # qemu-system-arm: terminating on signal 15 from pid 6161 ()
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd Test/Week9
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ ls
+[?2004lMakefile        simple_char_driver2.c    simple_char_driver2.mod.c  test_DTS.c
+modules.order   simple_char_driver2.ko   simple_char_driver2.mod.o  test_simple_char_driver2.c
+Module.symvers  simple_char_driver2.mod  simple_char_driver2.o
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ cd[K[Kvi DTS[K[K[Ktest_DTS.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"test_DTS.c" 56L, 1321B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;9H[38;5;130mreturn[m errno;
+    }[2;6H[K[3;1H[K[4;5H[34m// 写入数据[m
+    printf([31m"Writing: [m[35m%s\n[m[31m"[m, TEST_STRING);
+    ret = write(fd, TEST_STRING, strlen(TEST_STRING));
+    [38;5;130mif[m (ret < [31m0[m) {[8;9Hperror([31m"write failed"[m);[9;9Hclose(fd);[10;9H[38;5;130mreturn[m errno;
+    }[13;5H[34m// 读取数据[m
+    memset(read_buffer, [31m0[m, [38;5;130msizeof[m(read_buffer));
+    ret = read(fd, read_buffer, strlen(TEST_STRING));
+    [38;5;130mif[m (ret < [31m0[m) {[17;9Hperror([31m"read failed"[m);[18;9Hclose(fd);[19;9H[38;5;130mreturn[m errno;
+    }
+    printf([31m"Read: [m[35m%s\n[m[31m"[m, read_buffer);[23;5H[34m// 关闭设备[m
+    close(fd);
+    [38;5;130mreturn[m [31m0[m;
+}[27;103H56,1[9C底端[26;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H0[26;1H[27;94H3[26;1H[27;95H0[26;1H[27;96H/[26;1H[27;97H0[26;1H[27;98Ha[26;1H[27;99H0[26;1H[27;100Ha[26;1H[27;101H/[26;1H[27;102H2[26;1H[27;93H          [26;1H[27m[23m[29m[m[H[2J[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 写入数据[m
+    printf([95m"Writing: [m[38;5;224m%s\n[m[95m"[m, TEST_STRING);
+    ret = write(fd, TEST_STRING, strlen(TEST_STRING));
+    [93mif[m (ret < [95m0[m) {[8;9Hperror([95m"write failed"[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret < [95m0[m) {[17;9Hperror([95m"read failed"[m);[18;9Hclose(fd);[19;9H[93mreturn[m errno;
+    }
+    printf([95m"Read: [m[38;5;224m%s\n[m[95m"[m, read_buffer);[23;5H[96m// 关闭设备[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;103H56,1[9C底端"test_DTS.c" 56L, 1321B[26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [25;1H[27;104H5[25;1H[?25h[?25l[27;93H~@k[25;1H[27;93H   [24;1H[27;104H4[24;1H[?25h[?25l[27;93H~@k[24;1H[27;93H   [23;1H[27;104H3[23;1H[?25h[?25l[27;93H~@k[23;1H[27;93H   [22;1H[27;104H2,0-1[22;1H[?25h[?25l[27;93H~@k[22;1H[27;93H   [21;1H[27;104H1,1  [21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [20;1H[27;104H0[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [19;1H[27;103H49[19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [18;1H[27;104H8[18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [17;1H[27;104H7[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [16;1H[27;104H6[16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [15;1H[27;104H5[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [14;1H[27;104H4[14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [13;1H[27;104H3[13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [12;1H[27;104H2,0-1[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [11;1H[27;104H1,1  [11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [10;1H[27;104H0[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [9;1H[27;103H39[9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [8;1H[27;104H8[8;1H[?25h[?25l[27;104H7[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [6;1H[27;104H6[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hclose(fd);[27;1H[K[27;103H35,1[10C96%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"ioctl failed"[m);[27;103H[K[27;103H34,1[10C93%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H33,0-1[8C90%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hret = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[27;103H[K[27;103H32,1[10C86%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m...[m[38;5;224m\n[m[95m"[m, new_size);[27;103H[K[27;103H31,1[10C83%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[96m// 设置缓冲区大小[m[27;103H[K[27;103H30,1[10C80%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H29,1[10C76%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H28,1[10C73%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9H[93mreturn[m errno;[27;103H[K[27;103H27,1[10C70%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"Failed to open device"[m);[27;103H[K[27;103H26,1[10C66%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (fd < [95m0[m) {[27;103H[K[27;103H25,1[10C63%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hfd = open(DEVICE_PATH, O_RDWR);[27;103H[K[27;103H24,0-1[8C60%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H23,1[10C56%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m new_size = [95m1024[m;[27;103H[K[27;103H22,1[10C53%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mchar[m read_buffer[BUFFER_SIZE];[27;103H[K[27;103H21,1[10C50%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m fd, ret;[27;103H[K[27;103H20,1[10C46%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;121mint[m main() {[27;103H[K[27;103H19,1[10C43%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H18,0-1[8C40%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m[27;103H[K[27;103H17,1[10C36%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define BUFFER_SIZE [m[95m256[m[27;103H[K[27;103H16,1[10C33%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define TEST_STRING [m[95m"Hello, DTS-enabled driver!"[m[27;103H[K[27;103H15,1[10C30%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#define DEVICE_PATH [m[95m"/dev/sample_device"[m[38;5;81m [m[96m// 修改为驱动中的DEVICE_NAME[m[27;103H[K[27;103H14,1[10C26%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H13,0-1[8C23%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<errno.h>[m[27;103H[K[27;103H12,1[10C20%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<sys/ioctl.h>[m[27;103H[K[27;103H11,1[10C16%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<string.h>[m[27;103H[K[27;103H10,1[10C13%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<unistd.h>[m[27;103H[K[27;103H9,1[11C10%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<fcntl.h>[m[27;103H[K[27;103H8,0-1[10C6%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<stdlib.h>[m[27;103H[K[27;103H7,1[12C3%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m#include [m[95m<stdio.h>[m[27;103H[K[27;103H6,1[10C顶端[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [5;1H[27;103H5[5;1H[?25h[?25l[27;93H~@k[5;1H[27;93H   [4;1H[27;103H4[4;1H[?25h[?25l[27;93H~@k[4;1H[27;93H   [5;1H[27;103H5[5;1H[?25h[?25l[27;93H~@k[5;1H[27;93H   [6;1H[27;103H6[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [7;1H[27;103H7[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [8;1H[27;103H8,0-1[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [9;1H[27;103H9,1  [9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [10;1H[27;103H10,1[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [11;1H[27;104H1[11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [12;1H[27;104H2[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [13;1H[27;104H3,0-1[13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [14;1H[27;104H4,1  [14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [15;1H[27;104H5[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [16;1H[27;104H6[16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [17;1H[27;104H7[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [18;1H[27;104H8,0-1[18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [19;1H[27;104H9,1  [19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [20;1H[27;103H20[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [21;1H[27;104H1[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[27;103H[K[27;103H22,1[11C3%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H23,1[11C6%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"ioctl failed"[m);[27;103H[K[27;103H24,0-1[8C10%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H25,1[10C13%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H26,1[10C16%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H27,1[10C20%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H28,1[10C23%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 写入数据[m[27;103H[K[27;103H29,1[10C26%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Writing: [m[38;5;224m%s\n[m[95m"[m, TEST_STRING);[27;103H[K[27;103H30,1[10C30%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret = write(fd, TEST_STRING, strlen(TEST_STRING));[27;103H[K[27;103H31,1[10C33%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H32,1[10C36%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"write failed"[m);[27;103H[K[27;103H33,0-1[8C40%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H34,1[10C43%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H35,1[10C46%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H36,1[10C50%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H37,1[10C53%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 读取数据[m[27;103H[K[27;103H38,1[10C56%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hmemset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));[27;103H[K[27;103H39,1[10C60%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret = read(fd, read_buffer, strlen(TEST_STRING));[27;103H[K[27;103H40,1[10C63%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H41,1[10C66%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"read failed"[m);[27;103H[K[27;103H42,0-1[8C70%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H43,1[10C73%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H44,1[10C76%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H45,1[10C80%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Read: [m[38;5;224m%s\n[m[95m"[m, read_buffer);[27;103H[K[27;103H46,1[10C83%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H47,1[10C86%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 关闭设备[m[27;103H[K[27;103H48,1[10C90%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hclose(fd);[27;103H[K[27;103H49,1[10C93%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mreturn[m [95m0[m;[27;103H[K[27;103H50,1[10C96%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;1H}[27;103H[K[27;103H51,1[9C底端[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [22;1H[27;104H2,0-1[22;1H[?25h[?25l[27;93H~@k[22;1H[27;93H   [23;1H[27;104H3,1  [23;1H[?25h[?25l[27;93H~@k[23;1H[27;93H   [22;1H[27;104H2,0-1[22;1H[?25h[?25l[27;93H~@k[22;1H[27;93H   [21;1H[27;104H1,1  [21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [20;1H[27;104H0[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [19;1H[27;103H49[19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [18;1H[27;104H8[18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [17;1H[27;104H7[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [16;1H[27;104H6[16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [15;1H[27;104H5[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [14;1H[27;104H4[14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [13;1H[27;104H3[13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [12;1H[27;104H2,0-1[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [11;1H[27;104H1,1  [11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [10;1H[27;104H0[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [9;1H[27;103H39[9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [8;1H[27;104H8[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [7;1H[27;104H7[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [6;1H[27;104H6[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;9Hclose(fd);[27;103H[K[27;103H35,1[10C96%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"ioctl failed"[m);[27;103H[K[27;103H34,1[10C93%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H33,0-1[8C90%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hret = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[27;103H[K[27;103H32,1[10C86%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m...[m[38;5;224m\n[m[95m"[m, new_size);[27;103H[K[27;103H31,1[10C83%[6;1H[?25h[?25l[1;26r[1;1H[L[1;27r[1;5H[96m// 设置缓冲区大小[m[27;103H[K[27;103H30,1[10C80%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H29,1[10C76%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H}[27;103H[K[27;103H28,1[10C73%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9H[93mreturn[m errno;[27;103H[K[27;103H27,1[10C70%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Hperror([95m"Failed to open device"[m);[27;103H[K[27;103H26,1[10C66%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[93mif[m (fd < [95m0[m) {[27;103H[K[27;103H25,1[10C63%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5Hfd = open(DEVICE_PATH, O_RDWR);[27;103H[K[27;103H24,0-1[8C60%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H23,1[10C56%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;5H[38;5;121mint[m new_size = [95m1024[m;[27;103H[K[27;103H22,1[10C53%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [7;1H[27;104H3[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [8;1H[27;104H4,0-1[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [9;1H[27;104H5,1  [9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [10;1H[27;104H6[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [11;1H[27;104H7[11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [12;1H[27;104H8[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [13;1H[27;104H9[13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [14;1H[27;103H30[14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [15;1H[27;104H1[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [16;1H[27;104H2[16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [17;1H[27;104H3,0-1[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [18;1H[27;104H4,1  [18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [19;1H[27;104H5[19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [20;1H[27;104H6[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [21;1H[27;104H7[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 读取数据[m[27;103H[K[27;103H38,1[10C56%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hmemset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));[27;103H[K[27;103H39,1[10C60%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret = read(fd, read_buffer, strlen(TEST_STRING));[27;103H[K[27;103H40,1[10C63%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret < [95m0[m) {[27;103H[K[27;103H41,1[10C66%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"read failed"[m);[27;103H[K[27;103H42,0-1[8C70%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H43,1[10C73%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H44,1[10C76%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H45,1[10C80%[21;1H[?25h[?25l[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Read: [m[38;5;224m%s\n[m[95m"[m, read_buffer);[27;103H[K[27;103H46,1[10C83%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H47,1[10C86%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 关闭设备[m[27;103H[K[27;103H48,1[10C90%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hclose(fd);[27;103H[K[27;103H49,1[10C93%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mreturn[m [95m0[m;[27;103H[K[27;103H50,1[10C96%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;1H}[27;103H[K[27;103H51,1[9C底端[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [22;1H[27;104H2,0-1[22;1H[?25h[?25l[27;93H~@k[22;1H[27;93H   [23;1H[27;104H3,1  [23;1H[?25h[?25l[27;93H~@k[23;1H[27;93H   [24;1H[27;104H4[24;1H[?25h[?25l[27;93H~@k[24;1H[27;93H   [25;1H[27;104H5[25;1H[?25h[?25l[27;93H~@k[25;1H[27;93H   [26;1H[27;104H6[26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H~@k[26;1H[27;93H   [26;1H[?25h[?25l[27;93H^[[26;1H[27;93H  [26;1H[27;93H^[[26;1H[27;93H  [26;1H[?25h[?25l[27;93H:[26;1H[27;93H[K[27;1H:[?25hw[?25l[27;2H[K[27;2H[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[27;1H[K[27;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi [7mtest_simple_char_driver2.c[27mtest_simple_char_driver2.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"test_simple_char_driver2.c" 70L, 2069B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m[2;20H[K[3;1H[35m#include [m[31m<fcntl.h>[m[3;19H[K[4;1H[35m#include [m[31m<unistd.h>[m
+[35m#include [m[31m<string.h>[m
+[35m#include [m[31m<sys/ioctl.h>[m
+[35m#include [m[31m<errno.h>[m [34m// 包含errno的定义[m
+
+[35m#define DEVICE_PATH [m[31m"/dev/simple_char_driver2"[m
+[35m#define TEST_STRING [m[31m"Hello, simple char driver with dynamic buffer!"[m
+[35m#define BUFFER_SIZE [m[31m256[m
+
+[34m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m
+[35m#define IOCTL_SET_BUFFER_SIZE _IOR([m[31m'p'[m[35m, [m[31m1[m[35m, [m[32mint[m[35m)[m
+
+[32mint[m main() {
+    [32mint[m fd; [34m// 文件描述符[m
+    [32mchar[m read_buffer[BUFFER_SIZE];
+    [32mint[m new_size = [31m1024[m; [34m// 新的缓冲区大小[m
+    [32mint[m ret_val;[22;5H[34m// 打开设备文件[m
+    fd = open(DEVICE_PATH, O_RDWR);
+    [38;5;130mif[m (fd < [31m0[m) {[25;9Hperror([31m"Failed to open the device..."[m);[26;9H[38;5;130mreturn[m errno;[27;103H1,1[10C顶端[1;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H:[1;1H[27;94H3[1;1H[27;95H0[1;1H[27;96H3[1;1H[27;97H0[1;1H[27;98H/[1;1H[27;99H0[1;1H[27;100Ha[1;1H[27;101H0[1;1H[27;102Ha[1;1H[27;93H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;81m#include [m[95m<stdio.h>[m
+[38;5;81m#include [m[95m<stdlib.h>[m
+[38;5;81m#include [m[95m<fcntl.h>[m
+[38;5;81m#include [m[95m<unistd.h>[m
+[38;5;81m#include [m[95m<string.h>[m
+[38;5;81m#include [m[95m<sys/ioctl.h>[m
+[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m
+
+[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m
+[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m
+[38;5;81m#define BUFFER_SIZE [m[95m256[m
+
+[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m
+[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m
+
+[38;5;121mint[m main() {
+    [38;5;121mint[m fd; [96m// 文件描述符[m
+    [38;5;121mchar[m read_buffer[BUFFER_SIZE];
+    [38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m
+    [38;5;121mint[m ret_val;[22;5H[96m// 打开设备文件[m
+    fd = open(DEVICE_PATH, O_RDWR);
+    [93mif[m (fd < [95m0[m) {[25;9Hperror([95m"Failed to open the device..."[m);[26;9H[93mreturn[m errno;[27;103H1,1[10C顶端"test_simple_char_driver2.c" 70L, 2069B[1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [2;1H[27;103H2[2;1H[?25h[?25l[27;93H~@k[2;1H[27;93H   [3;1H[27;103H3[3;1H[?25h[?25l[27;93H~@k[3;1H[27;93H   [4;1H[27;103H4[4;1H[?25h[?25l[27;93H~@k[4;1H[27;93H   [5;1H[27;103H5[5;1H[?25h[?25l[27;93H~@k[5;1H[27;93H   [6;1H[27;103H6[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [7;1H[27;103H7[7;1H[?25h[?25l[27;93H~@k[7;1H[27;93H   [8;1H[27;103H8,0-1[8;1H[?25h[?25l[27;93H~@k[8;1H[27;93H   [9;1H[27;103H9,1  [9;1H[?25h[?25l[27;93H~@k[9;1H[27;93H   [10;1H[27;103H10,1[10;1H[?25h[?25l[27;93H~@k[10;1H[27;93H   [11;1H[27;104H1[11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [12;1H[27;104H2,0-1[12;1H[?25h[?25l[27;93H~@k[12;1H[27;93H   [13;1H[27;104H3,1  [13;1H[?25h[?25l[27;93H~@k[13;1H[27;93H   [14;1H[27;104H4[14;1H[?25h[?25l[27;93H~@k[14;1H[27;93H   [15;1H[27;104H5,0-1[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [16;1H[27;104H6,1  [16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [17;1H[27;104H7[17;1H[?25h[?25l[27;93H~@k[17;1H[27;93H   [18;1H[27;104H8[18;1H[?25h[?25l[27;93H~@k[18;1H[27;93H   [19;1H[27;104H9[19;1H[?25h[?25l[27;93H~@k[19;1H[27;93H   [20;1H[27;103H20[20;1H[?25h[?25l[27;93H~@k[20;1H[27;93H   [21;1H[27;104H1,0-1[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;1H[K[27;103H22,1[11C2%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H23,1[11C4%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 使用ioctl调整缓冲区大小[m[27;103H[K[27;103H24,1[11C6%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m bytes...[m[38;5;224m\n[m[95m"[m, new_size);[27;103H[K[27;103H25,1[11C9%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret_val = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[27;103H[K[27;103H26,1[10C11%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H27,1[10C13%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"Failed to set buffer size via ioctl."[m);[27;103H[K[27;103H28,0-1[8C15%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H29,1[10C18%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H30,1[10C20%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H31,1[10C22%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Buffer size set successfully.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H32,1[10C25%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H33,1[10C27%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 写入数据到设备[m[27;103H[K[27;103H34,1[10C29%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Writing message to [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, TEST_STRING);[27;103H[K[27;103H35,1[10C31%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret_val = write(fd, TEST_STRING, strlen(TEST_STRING));[27;103H[K[27;103H36,1[10C34%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H37,1[10C36%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"Failed to write the message to the device."[m);[27;103H[K[27;103H38,0-1[8C38%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H39,1[10C40%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H40,1[10C43%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H41,1[10C45%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H42,1[10C47%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 清空读缓冲区并从设备读取数据[m[27;103H[K[27;103H43,1[10C50%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hmemset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));[27;103H[K[27;103H44,1[10C52%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hret_val = read(fd, read_buffer, strlen(TEST_STRING));[27;103H[K[27;103H45,1[10C54%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (ret_val < [95m0[m) {[27;103H[K[27;103H46,1[10C56%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hperror([95m"Failed to read the message from the device."[m);[27;103H[K[27;103H47,0-1[8C59%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hclose(fd);[27;103H[K[27;103H48,1[10C61%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9H[93mreturn[m errno;[27;103H[K[27;103H49,1[10C63%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H50,1[10C65%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H51,1[10C68%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 显示从设备读取的数据[m[27;103H[K[27;103H52,1[10C70%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hprintf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[27;103H[K[27;103H53,1[10C72%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H54,1[10C75%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 检查读取的数据是否与写入的数据匹配[m[27;103H[K[27;103H55,1[10C77%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[27;103H[K[27;103H56,0-1[8C79%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H57,1[10C81%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H} [93melse[m {[27;103H[K[27;103H58,1[10C84%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);[27;103H[K[27;103H59,0-1[8C86%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H}[27;103H[K[27;103H60,1[10C88%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H61,1[10C90%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[96m// 关闭设备文件[m[27;103H[K[27;103H62,1[10C93%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5Hclose(fd);[27;103H[K[27;103H63,1[10C95%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;5H[93mreturn[m [95m0[m;[27;103H[K[27;103H64,1[10C97%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;1H}[27;103H[K[27;103H65,1[9C底端[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [22;1H[27;104H6,0-1[22;1H[?25h[?25l[27;93H~@k[22;1H[27;93H   [23;1H[27;104H7,1  [23;1H[?25h[?25l[27;93H~@k[23;1H[27;93H   [24;1H[27;104H8[24;1H[?25h[?25l[27;93H~@k[24;1H[27;93H   [25;1H[27;104H9[25;1H[?25h[?25l[27;93H~@k[25;1H[27;93H   [26;1H[27;103H70[26;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[8;9Hperror([95m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[16;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[18;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[20;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[23;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;109H70,1[9C底端[26;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[8;9Hperror([95m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[16;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[18;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[20;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[23;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;103H70,1[9C底端[26;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[8;9Hperror([95m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[16;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[18;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[20;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[23;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;108H70,1[9C底端[26;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[8;9Hperror([95m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[16;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[18;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[20;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[23;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;109H70,1[9C底端[26;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;9H[93mreturn[m errno;
+    }[4;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[8;9Hperror([95m"Failed to read the message from the device."[m);[9;9Hclose(fd);[10;9H[93mreturn[m errno;
+    }[13;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[16;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[18;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[20;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[23;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[27;103H70,1[9C底端[26;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;5Hret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[3;9Hperror([95m"Failed to read the message from the device."[m);[4;9Hclose(fd);[5;9H[93mreturn[m errno;
+    }[8;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[11;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[13;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[15;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[18;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[22;57H70,1[9C底端[21;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;5H[96m// 清空读缓冲区并从设备读取数据[m
+    memset(read_buffer, [95m0[m, [93msizeof[m(read_buffer));
+    ret_val = read(fd, read_buffer, strlen(TEST_STRING));
+    [93mif[m (ret_val < [95m0[m) {[5;9Hperror([95m"Failed to read the message from the device."[m);[6;9Hclose(fd);[7;9H[93mreturn[m errno;
+    }[10;5H[96m// 显示从设备读取的数据[m
+    printf([95m"Received message from [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, read_buffer);[13;5H[96m// 检查读取的数据是否与写入的数据匹配[m
+    [93mif[m (strncmp(TEST_STRING, read_buffer, strlen(TEST_STRING)) == [95m0[m) {[15;9Hprintf([95m"Test passed, data matches.[m[38;5;224m\n[m[95m"[m);
+    } [93melse[m {[17;9Hprintf([95m"Test failed, data does not match.[m[38;5;224m\n[m[95m"[m);
+    }[20;5H[96m// 关闭设备文件[m
+    close(fd);
+    [93mreturn[m [95m0[m;
+}[24;63H70,1[9C底端[23;1H[?25h[?25l[24;63H69[22;1H[?25h[?25l[24;53H~@k[22;1H[24;53H   [21;1H[24;64H8[21;1H[?25h[?25l[24;53H~@k[21;1H[24;53H   [20;1H[24;64H7[20;1H[?25h[?25l[24;53H~@k[20;1H[24;53H   [19;1H[24;64H6,0-1[19;1H[?25h[?25l[24;53H~@k[19;1H[24;53H   [18;1H[24;64H5,1  [18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [17;1H[24;64H4[17;1H[?25h[?25l[24;53H~@k[17;1H[24;53H   [16;1H[24;64H3[16;1H[?25h[?25l[24;53H~@k[16;1H[24;53H   [15;1H[24;64H2[15;1H[?25h[?25l[24;53H~@k[15;1H[24;53H   [14;1H[24;64H1[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [13;1H[24;64H0[13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H   [12;1H[24;63H59,0-1[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [11;1H[24;64H8,1  [11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [10;1H[24;64H7[10;1H[?25h[?25l[24;53H~@k[10;1H[24;53H   [9;1H[24;64H6,0-1[9;1H[?25h[?25l[24;53H~@k[9;1H[24;53H   [8;1H[24;64H5,1  [8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [7;1H[24;64H4[7;1H[?25h[?25l[24;53H~@k[7;1H[24;53H   [6;1H[24;64H3[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H52,1[10C97%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H51,1[10C95%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m errno;[24;63H[K[24;63H50,1[10C93%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hclose(fd);[24;63H[K[24;63H49,1[10C91%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hperror([95m"Failed to write the message to the device."[m);[24;63H[K[24;63H48,1[10C89%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[93mif[m (ret_val < [95m0[m) {[24;63H[K[24;63H47,0-1[8C87%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hret_val = write(fd, TEST_STRING, strlen(TEST_STRING));[24;63H[K[24;63H46,1[10C85%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hprintf([95m"Writing message to [m[38;5;224m%s[m[95m: '[m[38;5;224m%s[m[95m'[m[38;5;224m\n[m[95m"[m, DEVICE_PATH, TEST_STRING);[24;63H[K[24;63H45,1[10C82%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[96m// 写入数据到设备[m[24;63H[K[24;63H44,1[10C80%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H43,1[10C78%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hprintf([95m"Buffer size set successfully.[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H42,1[10C76%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H41,1[10C74%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m errno;[24;63H[K[24;63H40,1[10C72%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hclose(fd);[24;63H[K[24;63H39,1[10C70%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hperror([95m"Failed to set buffer size via ioctl."[m);[24;63H[K[24;63H38,0-1[8C68%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[93mif[m (ret_val < [95m0[m) {[24;63H[K[24;63H37,1[10C65%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hret_val = ioctl(fd, IOCTL_SET_BUFFER_SIZE, &new_size);[24;63H[K[24;63H36,1[10C63%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hprintf([95m"Setting buffer size to [m[38;5;224m%d[m[95m bytes...[m[38;5;224m\n[m[95m"[m, new_size);[24;63H[K[24;63H35,1[10C61%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[96m// 使用ioctl调整缓冲区大小[m[24;63H[K[24;63H34,1[10C59%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H33,1[10C57%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H32,1[10C55%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m errno;[24;63H[K[24;63H31,1[10C53%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;9Hperror([95m"Failed to open the device..."[m);[24;63H[K[24;63H30,1[10C51%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[93mif[m (fd < [95m0[m) {[24;63H[K[24;63H29,1[10C48%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5Hfd = open(DEVICE_PATH, O_RDWR);[24;63H[K[24;63H28,0-1[8C46%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[96m// 打开设备文件[m[24;63H[K[24;63H27,1[10C44%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H26,1[10C42%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m ret_val;[24;63H[K[24;63H25,1[10C40%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m new_size = [95m1024[m; [96m// 新的缓冲区大小[m[24;63H[K[24;63H24,1[10C38%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mchar[m read_buffer[BUFFER_SIZE];[24;63H[K[24;63H23,1[10C36%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m fd; [96m// 文件描述符[m[24;63H[K[24;63H22,1[10C34%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;121mint[m main() {[24;63H[K[24;63H21,0-1[8C31%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H20,1[10C29%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m[24;63H[K[24;63H19,1[10C27%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[96m// 定义IOCTL命令，需要与内核模块中的定义保持一致[m[24;63H[K[24;63H18,1[10C25%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H17,1[10C23%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define BUFFER_SIZE [m[95m256[m[24;63H[K[24;63H16,1[10C21%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define TEST_STRING [m[95m"Hello, simple char driver with dynamic buffer!"[m[24;63H[K[24;63H15,0-1[8C19%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define DEVICE_PATH [m[95m"/dev/simple_char_driver2"[m[24;63H[K[24;63H14,1[10C17%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[24;63H[K[24;63H13,1[10C14%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<errno.h>[m [96m// 包含errno的定义[m[24;63H[K[24;63H12,0-1[8C12%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<sys/ioctl.h>[m[24;63H[K[24;63H11,1[10C10%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<string.h>[m[24;63H[K[24;63H10,1[11C8%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<unistd.h>[m[24;63H[K[24;63H9,1[12C6%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<fcntl.h>[m[24;63H[K[24;63H8,0-1[10C4%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<stdlib.h>[m[24;63H[K[24;63H7,1[12C2%[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [6;1H[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<stdio.h>[m[24;63H[K[24;63H6,1[10C顶端[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [5;1H[24;63H5[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [3;1H[24;63H3[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;1H[24;63H2[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;1H[24;63H1[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53H:[1;1H[24;53H[K[24;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[24;1H[K[24;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubunt
