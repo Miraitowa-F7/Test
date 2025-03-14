@@ -1,0 +1,1084 @@
+Script started on 2025-03-14 10:58:15+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a[27m[7m9[27m[7m -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.[27m[7m6[27m[7m.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 [27m[7mr[27m[7mw console=ttyAMA0" -sd disk.img[27m[A[A[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 rw console=ttyAMA0" -sd disk.img
+[?2004l
+
+WARNING: Image format was not specified for 'disk.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP Tue Feb 25 17:52:34 HKT 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0 rw console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14900(90%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 488692K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19212K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 93.33MHz.
+Calibrating delay loop... 1239.85 BogoMIPS (lpj=6199296)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (1239.85 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+chrdev: Starting initialization
+chrdev: Allocated device number (250,0)
+chrdev: Device created successfully
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-03-14T02:58:36 UTC (1741921116)
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input0
+mmc0: new SD card at address 8fb2
+mmcblk0: mmc0:8fb2 QEMU! 512 MiB
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+EXT4-fs (mmcblk0): recovery complete
+EXT4-fs (mmcblk0): mounted filesystem 59e7573b-36b8-49c5-a7c4-8f62abe15ccc r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:0.
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+random: crng init done
+can't run '/etc/init.d/rcS': No such file or directory
+
+Please press Enter to activate this console. 
+
+~ # 
+~ # drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+amba 1000f000.wdt: deferred probe pending
+amba 10020000.clcd: deferred probe pending
+amba 100e0000.memory-controller: deferred probe pending
+amba 100e1000.memory-controller: deferred probe pending
+amba 100e5000.watchdog: deferred probe pending
+i2c 0-0039: deferred probe pending
+
+~ # dmesg | grep simple_char_driver3
+~ # mount -t proc proc /proc
+~ # ls /proc
+[1;34m1[m              [1;34m30[m             [1;34m51[m             [1;34mcpu[m            [0;0mmodules[m
+[1;34m10[m             [1;34m31[m             [1;34m52[m             [0;0mcpuinfo[m        [1;36mmounts[m
+[1;34m11[m             [1;34m32[m             [1;34m56[m             [0;0mcrypto[m         [0;0mmtd[m
+[1;34m12[m             [1;34m33[m             [1;34m57[m             [1;36mdevice-tree[m    [1;36mnet[m
+[1;34m13[m             [1;34m34[m             [1;34m58[m             [0;0mdevices[m        [0;0mpagetypeinfo[m
+[1;34m14[m             [1;34m35[m             [1;34m59[m             [0;0mdiskstats[m      [0;0mpartitions[m
+[1;34m15[m             [1;34m36[m             [1;34m6[m              [1;34mdriver[m         [1;36mself[m
+[1;34m16[m             [1;34m37[m             [1;34m60[m             [0;0mexecdomains[m    [0;0mslabinfo[m
+[1;34m17[m             [1;34m38[m             [1;34m63[m             [0;0mfb[m             [0;0msoftirqs[m
+[1;34m18[m             [1;34m39[m             [1;34m64[m             [0;0mfilesystems[m    [0;0mstat[m
+[1;34m19[m             [1;34m4[m              [1;34m65[m             [1;34mfs[m             [0;0mswaps[m
+[1;34m2[m              [1;34m40[m             [1;34m66[m             [0;0minterrupts[m     [1;34msys[m
+[1;34m20[m             [1;34m41[m             [1;34m7[m              [0;0miomem[m          [0;0msysrq-trigger[m
+[1;34m21[m             [1;34m42[m             [1;34m70[m             [0;0mioports[m        [1;34msysvipc[m
+[1;34m22[m             [1;34m43[m             [1;34m8[m              [1;34mirq[m            [1;36mthread-self[m
+[1;34m23[m             [1;34m44[m             [1;34m9[m              [0;0mkallsyms[m       [0;0mtimer_list[m
+[1;34m24[m             [1;34m45[m             [1;34masound[m         [0;0mkmsg[m           [1;34mtty[m
+[1;34m25[m             [1;34m46[m             [0;0mbuddyinfo[m      [0;0mkpagecount[m     [0;0muptime[m
+[1;34m26[m             [1;34m47[m             [1;34mbus[m            [0;0mkpageflags[m     [0;0mversion[m
+[1;34m27[m             [1;34m48[m             [0;0mcgroups[m        [0;0mloadavg[m        [0;0mvmallocinfo[m
+[1;34m28[m             [1;34m49[m             [0;0mcmdline[m        [0;0mlocks[m          [0;0mvmstat[m
+[1;34m29[m             [1;34m5[m              [0;0mconfig.gz[m      [0;0mmeminfo[m        [0;0mzoneinfo[m
+[1;34m3[m              [1;34m50[m             [0;0mconsoles[m       [0;0mmisc[m
+~ # cat /proc/devices
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 /dev/vc/0
+  4 tty
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 29 fb
+ 90 mtd
+116 alsa
+128 ptm
+136 pts
+180 usb
+189 usb_device
+204 ttyAMA
+226 drm
+248 rpmb
+249 usbmon
+250 sample_device
+251 ptp
+252 pps
+253 rtc
+254 gpiochip
+
+Block devices:
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+254 virtblk
+259 blkext
+~ # cd dev
+/dev # ls
+[1;35msample_device[m        [1;35mtty1[m                 [1;35mtty3[m
+[1;35msimple_char_driver2[m  [1;35mtty2[m                 [1;35mtty4[m
+/dev # cat simple_char_driver2
+cat: can't open 'simple_char_driver2': No such device or address
+/dev # cd
+~ # insmod simple_char_driver3.ko
+insmod: can't read 'simple_char_driver3.ko': No such file or directory
+~ # cd Week9
+/Week9 # insmod simple_char_driver3.ko
+simple_char_driver3: loading out-of-tree module taints kernel.
+/Week9 # cd
+~ # cd dev
+/dev # ls
+[1;35msample_device[m        [1;35mtty1[m                 [1;35mtty3[m
+[1;35msimple_char_driver2[m  [1;35mtty2[m                 [1;35mtty4[m
+/dev # cd
+~ # cat /proc/devices
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 /dev/vc/0
+  4 tty
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 29 fb
+ 90 mtd
+116 alsa
+128 ptm
+136 pts
+180 usb
+189 usb_device
+204 ttyAMA
+226 drm
+248 rpmb
+249 usbmon
+250 sample_device
+251 ptp
+252 pps
+253 rtc
+254 gpiochip
+
+Block devices:
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+254 virtblk
+259 blkext
+~ # qemu-system-arm: terminating on signal 15 from pid 3618 ()
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mpr_info("simple_char_driver3:[27m[7m [27m[7mprobe function called\n");[27m[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ pr_info("simple_char_driver3: [1Pprobe function called\n")[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd Test/Week9
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ ls
+[?2004lMakefile               simple_char_driver3.ko     simple_char_driver3.o
+modules.order          simple_char_driver3.mod    [0m[01;32mtest_dts3[0m
+Module.symvers         simple_char_driver3.mod.c  test_DTS.c
+simple_char_driver3.c  simple_char_driver3.mod.o  test_simple_char_driver3.c
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi simple_char_dri ver3.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"simple_char_driver3.c" 208L, 6769B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;13H}
+            [38;5;130mif[m (new_size != dev_data->buffer_size) {[2;53H[K[3;1H                [32mchar[m *new_buffer = krealloc(dev_data->device_buffer, new_size, GG[4;1HFP_KERNEL);[5;17H[38;5;130mif[m (!new_buffer) {[6;21H[38;5;130mreturn[m -[31mENOMEM[m;[7;17H}[8;17Hdev_data->device_buffer = new_buffer;[9;17Hdev_data->buffer_size = new_size;[10;17H[38;5;130mif[m (dev_data->buffer_pointer > new_size) {[11;21Hdev_data->buffer_pointer = new_size;[12;17H}[13;13H}[14;13H[38;5;130mreturn[m [31m0[m;[15;9H[38;5;130mdefault[m:[16;13H[38;5;130mreturn[m -[31mENOTTY[m;
+    }
+}
+
+MODULE_LICENSE([31m"GPL"[m);
+MODULE_AUTHOR([31m"F7"[m);
+MODULE_DESCRIPTION([31m"A DTS-enabled platform character driver"[m);
+MODULE_VERSION([31m"0.2"[m);[24;63H208,22[7C底端[23;22H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[24;53H0[23;22H[24;54H3[23;22H[24;55H0[23;22H[24;56H/[23;22H[24;57H0[23;22H[24;58Ha[23;22H[24;59H0[23;22H[24;60Ha[23;22H[24;61H/[23;22H[24;62H2[23;22H[24;53H          [23;22H[27m[23m[29m[m[H[2J[1;13H}[2;13H[93mif[m (new_size != dev_data->buffer_size) {[3;17H[38;5;121mchar[m *new_buffer = krealloc(dev_data->device_buffer, new_size, GG[4;1HFP_KERNEL);[5;17H[93mif[m (!new_buffer) {[6;21H[93mreturn[m -[95mENOMEM[m;[7;17H}[8;17Hdev_data->device_buffer = new_buffer;[9;17Hdev_data->buffer_size = new_size;[10;17H[93mif[m (dev_data->buffer_pointer > new_size) {[11;21Hdev_data->buffer_pointer = new_size;[12;17H}[13;13H}[14;13H[93mreturn[m [95m0[m;[15;9H[93mdefault[m:[16;13H[93mreturn[m -[95mENOTTY[m;
+    }
+}
+
+MODULE_LICENSE([95m"GPL"[m);
+MODULE_AUTHOR([95m"F7"[m);
+MODULE_DESCRIPTION([95m"A DTS-enabled platform character driver"[m);
+MODULE_VERSION([95m"0.2"[m);[24;63H208,22[7C底端"simple_char_driver3.c" 208L, 6769B[23;22H[?25h[?25l[24;53Hi[23;22H[24;53H [23;22H
+[1m-- 插入 --[m[24;11H[K[24;63H208,22[7C底端[23;22H[?25h[?25l[24;65H7[22;22H[?25h[?25l[24;65H6,21[21;21H[?25h[?25l[20;15H[46m([5C)[m[24;65H5,22[20;22H[?25h[?25l[20;15H([5C)[24;65H4,1 [19;1H[?25h[?25l[24;65H3,2[18;2H[?25h[?25l[24;65H2,6[17;6H[?25h[?25l[24;65H1,22[16;22H[?25h[?25l[24;65H0,17[15;17H[?25h[?25l[24;63H199,22[14;22H[?25h[?25l[2;52H[46m{[13;13H}[m[24;65H8,14[13;14H[?25h[?25l[2;52H{[10;58H[46m{[12;17H}[m[13;13H}[24;65H7,18[12;18H[?25h[?25l[10;58H{[12;17H}[24;65H6,22[11;22H[?25h[?25l[24;65H5[10;22H[?25h[?25l[24;65H4[9;22H[?25h[?25l[24;65H3[8;22H[?25h[?25l[5;34H[46m{[7;17H}[m[24;65H2,18[7;18H[?25h[?25l[5;34H{[7;17H}[24;65H1,22[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H[93mreturn[m -[95mEINVAL[m;[24;63H[K[24;63H190,22[8C99%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;13H}[2;13H[93mif[m (new_size <= [95m0[m) {[24;63H[K[24;63H189,22[8C98%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H[93mreturn[m -[95mEFAULT[m;[24;63H[K[24;63H188,22[8C97%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H[93mif[m (get_user(new_size, ([38;5;121mint[m __user *)arg)) {[24;63H[K[24;63H187,14[8C97%[4;32H[46m{[6;13H}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;9H[93mcase[m IOCTL_SET_BUFFER_SIZE:[24;63H[K[24;63H186,22[8C96%[5;32H{[7;13H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mswitch[m (cmd) {[24;63H[K[24;63H185,22[8C96%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H184,14[8C95%[4;56H[46m{[6;13H}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5H[38;5;121mint[m new_size;[24;63H[K[24;63H183,22[8C95%[5;56H{[7;13H}[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[38;5;121mstruct[m char_device_data *dev_data = container_of(file->private_data, [38;5;121mstruct[m  [2;1Hchar_device_data, mcdev);[24;63H[K[24;63H182,22[8C94%[7;22H[?25h[?25l[24;65H1[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mlong[m dev_ioctl([38;5;121mstruct[m file *file, [38;5;121munsigned[m [38;5;121mint[m cmd, [38;5;121munsigned[m [38;5;121mlong[m arg) {[24;63H[K[24;63H180,19[8C93%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H179,1[9C93%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H}[24;63H[K[24;63H178,18[8C92%[6;18H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5Hprintk(KERN_INFO [95m"chrdev: Device closed[m[38;5;224m\n[m[95m"[m);
+    [93mreturn[m [95m0[m;[24;63H[K[24;63H177,22[8C91%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m dev_release([38;5;121mstruct[m inode *inodep, [38;5;121mstruct[m file *filep) {[24;63H[K[24;63H176,22[8C90%[6;22H[46m([54C)[6;22H[?25h[?25l[1;23r[m[1;1H[L[1;24r[24;63H[K[24;63H175,1[9C90%[7;22H([54C)[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H}[24;63H[K[24;63H174,2[9C89%[3;66H[46m{
+
+
+}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5H[93mreturn[m bytes_written;[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H173,14[8C89%[4;66H{
+
+
+}[6;14H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5Hprintk(KERN_INFO [95m"chrdev: Received [m[38;5;224m%d[m[95m characters from user[m[38;5;224m\n[m[95m"[m, bytes_writtenn[2;1H);[24;63H[K[24;63H172,22[8C88%[7;22H[?25h[?25l[24;65H1[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H170,1[9C88%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hbytes_written++;[24;63H[K[24;63H169,2[9C87%[6;2H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9H[93mif[m (copy_from_user(&dev_data->device_buffer[dev_data->buffer_pointer++],,[2;1H buffer + bytes_written, [95m1[m) != [95m0[m) [93mbreak[m;[24;63H[K[24;63H168,22[8C86%[7;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[93mwhile[m (bytes_written < len && dev_data->buffer_pointer < dev_data->buffer_sii[2;1Hze) {[24;63H[K[24;63H167,22[8C85%[7;22H[?25h[?25l[2;5H[46m{[6;5H}[m[24;65H6,6 [6;6H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H165,22[8C85%[3;5H{[7;5H}[6;22H[?25h[?25l[1;23r[1;1H[3L[1;24r[1;5H[38;5;121mstruct[m char_device_data *dev_data = container_of(filep->private_data, [38;5;121mstructt[m[2;1H char_device_data, mcdev);
+    [38;5;121mint[m bytes_written = [95m0[m;[24;63H[K[24;63H164,22[8C83%[7;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_write([38;5;121mstruct[m file *filep, [38;5;121mconst[m [38;5;121mchar[m __user *buffer, [38;5;121msize_t[m ll[2;1Hen, loff_t *offset) {[24;63H[K[24;63H163,22[8C83%[7;22H[?25h[?25l[24;65H2,1 [6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H161,22[8C82%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[93mreturn[m bytes_read;
+}[24;63H[K[24;63H160,22[8C81%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H}
+    printk(KERN_INFO [95m"chrdev: Sent [m[38;5;224m%d[m[95m characters to user[m[38;5;224m\n[m[95m"[m, bytes_read);[24;63H[K[24;63H159,22[8C80%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9Hmemmove(dev_data->device_buffer, dev_data->device_buffer + [95m1[m, --dev_dataa[2;1H->buffer_pointer);[24;63H[K[24;63H158,1[9C79%[7;1H[?25h[?25l[24;65H7,2[6;2H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hbytes_read++;[24;63H[K[24;63H156,22[8C79%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9H[93mif[m (copy_to_user(buffer + bytes_read, dev_data->device_buffer, [95m1[m) != [95m0[m)  [2;1H[93mbreak[m;[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H155,22[8C78%[7;22H[?25h[?25l[24;65H4,6 [6;6H[?25h[?25l[1;23r[1;1H[2L[1;24r[2;5H[93mwhile[m (bytes_read < len && dev_data->buffer_pointer > [95m0[m) {[24;63H[K[24;63H153,22[8C77%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m bytes_read = [95m0[m;[24;63H[K[24;63H152,22[8C76%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[38;5;121mstruct[m char_device_data *dev_data = container_of(filep->private_data, [38;5;121mstructt[m[2;1H char_device_data, mcdev);[24;63H[K[24;63H151,22[8C76%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_read([38;5;121mstruct[m file *filep, [38;5;121mchar[m __user *buffer, [38;5;121msize_t[m len, loff[2;1Hf_t *offset) {[24;63H[K[24;63H150,22[8C75%[7;22H[?25h[?25l[24;64H49,1 [6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H148,22[8C75%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[93mreturn[m [95m0[m;
+}[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H147,22[8C74%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m dev_open([38;5;121mstruct[m inode *inodep, [38;5;121mstruct[m file *filep) {
+    printk(KERN_INFO [95m"chrdev: Device opened[m[38;5;224m\n[m[95m"[m);[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H146,22[8C73%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 文件操作函数实现[m[24;63H[K[24;63H145,1[9C73%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H144,2[9C73%[3;63H[46m{
+
+
+}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1Hmodule_platform_driver(char_dev_driver);[24;63H[K[24;63H143,14[8C72%[4;63H{
+
+
+}[6;14H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H142,22[8C71%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H};[24;63H[K[24;63H141,22[8C71%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H},[24;63H[K[24;63H140,28-20     70%[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H.of_match_table = char_dev_of_match,[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H139,1[9C70%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H.owner = THIS_MODULE,[24;63H[K[24;63H138,22[8C70%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H.name = [95m"simple_char_driver3"[m,[24;63H[K[24;63H137,1[9C69%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H.driver = {[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H136,3[9C69%[6;3H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H.remove = char_dev_remove,[24;63H[K[24;63H135,7[9C68%[6;7H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H.probe = char_dev_probe,[24;63H[K[24;63H134,22[8C68%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mstruct[m platform_driver char_dev_driver = {[24;63H[K[24;63H133,22[8C67%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 平台驱动结构体[m[24;63H[K[24;63H132,22[8C67%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H131,16[8C66%[6;15H[46m{[10;5H}[6;16H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1HMODULE_DEVICE_TABLE(of, char_dev_of_match);[24;63H[K[24;63H130,22[8C66%[7;15H{[11;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H};[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H129,22[8C66%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H{},[24;63H[K[24;63H128,22[8C65%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H{ .compatible = [95m"my-company,simple_char_driver3"[m },[24;63H[K[24;63H127,25-18     65%[6;18H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mconst[m [38;5;121mstruct[m of_device_id char_dev_of_match[] = {[24;63H[K[24;63H126,1[9C64%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 设备树匹配表[m[24;63H[K[24;63H125,22[8C64%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H124,3[9C63%[6;3H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H}[24;63H[K[24;63H123,8[9C63%[6;8H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mreturn[m [95m0[m;[24;63H[K[24;63H122,22[8C62%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdev_info(&pdev->dev, [95m"Device removed[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H121,22[8C62%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H120,22-16     61%[6;16H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H119,1[9C61%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hcdev_del(&dev_data->mcdev);[24;63H[K[24;63H118,2[9C60%[6;2H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hclass_destroy(dev_data->device_class);[24;63H[K[24;63H117,14[8C60%[6;14H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdevice_destroy(dev_data->device_class, dev_data->dev_num);[24;63H[K[24;63H116,22[8C59%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H115,1[9C58%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mstruct[m char_device_data *dev_data = platform_get_drvdata(pdev);[24;63H[K[24;63H114,22[8C58%[6;22H[?25h[?25l[24;65H5,1 [7;1H[?25h[?25l[24;65H4,22[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m char_dev_remove([38;5;121mstruct[m platform_device *pdev) {[24;63H[K[24;63H113,22[8C57%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 平台驱动的remove函数[m[24;63H[K[24;63H112,22[8C57%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H111,22[8C56%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H}[24;63H[K[24;63H110,1[9C56%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mreturn[m [95m0[m;[24;63H[K[24;63H109,22[8C55%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdev_info(&pdev->dev, [95m"Device probed successfully[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H108,22[8C55%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H107,28-22     54%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hplatform_set_drvdata(pdev, dev_data);[24;63H[K[24;63H106,1[9C54%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[96m// 保存设备私有数据到平台设备[m[24;63H[K[24;63H105,2[9C53%[6;2H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H104,14[8C52%[6;14H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H103,22[8C52%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m -[95mENOMEM[m;[24;63H[K[24;63H102,1[9C51%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hdev_err(&pdev->dev, [95m"Failed to create device[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H101,22[8C51%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H100,29-22     50%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hcdev_del(&dev_data->mcdev);[24;63H[K[24;63H99,1[10C50%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hclass_destroy(dev_data->device_class);[24;63H[K[24;63H98,6[10C49%[6;6H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[93mif[m (!device_create(dev_data->device_class, [95mNULL[m, dev_data->dev_num, [95mNULL[m, DEE[2;1HVICE_NAME)) {[24;63H[K[24;63H97,22[9C48%[7;22H[?25h[?25l[24;64H6[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[96m// 创建设备节点[m[24;63H[K[24;63H95,22[9C48%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H94,22[9C47%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H93,22[9C47%[6;22H[46m([22C)[6;22H[?25h[?25l[1;23r[m[1;1H[2L[1;24r[1;9Hdev_err(&pdev->dev, [95m"Failed to create class[m[38;5;224m\n[m[95m"[m);[2;9H[93mreturn[m PTR_ERR(dev_data->device_class);[24;63H[K[24;63H92,22[9C46%[8;22H([22C)[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H91,26-20      45%[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hcdev_del(&dev_data->mcdev);[24;63H[K[24;63H90,1[10C45%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mif[m (IS_ERR(dev_data->device_class)) {[24;63H[K[24;63H89,6[10C44%[1;41H[46m{[6;5H}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5Hdev_data->device_class = class_create(CLASS_NAME);[24;63H[K[24;63H88,22[9C44%[2;41H{[7;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[96m// 创建设备类[m[24;63H[K[24;63H87,22[9C43%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H86,22[9C43%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H85,22[9C42%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m ret;[24;63H[K[24;63H84,22[9C41%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hdev_err(&pdev->dev, [95m"Failed to add cdev[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H83,22[9C41%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H82,23-18      40%[6;18H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mif[m (ret) {[24;63H[K[24;63H81,1[10C40%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hret = cdev_add(&dev_data->mcdev, dev_data->dev_num, [95m1[m);[24;63H[K[24;63H80,6[10C39%[2;14H[46m{[6;5H}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5H[96m// 添加字符设备到系统[m[24;63H[K[24;63H79,20[9C39%[3;14H{[7;5H}[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H78,22[9C38%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdev_data->mcdev.owner = THIS_MODULE;[24;63H[K[24;63H77,22[9C38%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hcdev_init(&dev_data->mcdev, &fops);[24;63H[K[24;63H76,15[9C37%[6;14H[46m{[10;5H}[6;15H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5H[96m// 初始化字符设备[m[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H75,22[9C37%[7;14H{[11;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H74,29-22      36%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H73,1[10C36%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m ret;[24;63H[K[24;63H72,22[9C35%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hdev_err(&pdev->dev, [95m"Failed to allocate device number[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H71,22[9C35%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mif[m (ret < [95m0[m) {[24;63H[K[24;63H70,29-22      34%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hret = alloc_chrdev_region(&dev_data->dev_num, [95m0[m, [95m1[m, DEVICE_NAME);[24;63H[K[24;63H69,1[10C34%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[96m// 分配设备号[m[24;63H[K[24;63H68,6[10C33%[3;18H[46m{[6;5H}[?25h[?25l[1;23r[m[1;1H[L[1;24r[24;63H[K[24;63H67,20[9C32%[4;18H{[7;5H}[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H66,22[9C32%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H[93mreturn[m -[95mENOMEM[m;[24;63H[K[24;63H65,19[9C31%[6;18H[46m{[9;5H}[6;19H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;9Hdev_err(&pdev->dev, [95m"Failed to allocate buffer[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H64,22[9C31%[7;18H{[10;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mif[m (!dev_data->device_buffer) {[24;63H[K[24;63H63,23-18      30%[6;18H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5Hdev_data->device_buffer = devm_kzalloc(&pdev->dev, dev_data->buffer_size, GFF[2;1HP_KERNEL);[24;63H[K[24;63H62,1[10C30%[7;1H[?25h[?25l[3;35H[46m{[6;5H}[m[24;64H1,6[6;6H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdev_data->buffer_size = BUFFER_SIZE;[24;63H[K[24;63H60,22[9C29%[4;35H{[7;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[96m// 初始化缓冲区[m[24;63H[K[24;63H59,22[9C29%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H58,22[9C28%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9H[93mreturn[m -[95mENOMEM[m;
+    }[24;63H[K[24;63H57,22[9C27%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hdev_err(&pdev->dev, [95m"Failed to allocate device data[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H56,22[9C26%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[93mif[m (!dev_data) {[24;63H[K[24;63H55,26-20      26%[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdev_data = devm_kzalloc(&pdev->dev, [93msizeof[m(*dev_data), GFP_KERNEL);[24;63H[K[24;63H54,1[10C25%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[96m// 分配设备私有数据[m[24;63H[K[24;63H53,6[10C25%[3;20H[46m{[6;5H}[?25h[?25l[1;23r[m[1;1H[L[1;24r[24;63H[K[24;63H52,22[9C24%[4;20H{[7;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m ret;[24;63H[K[24;63H51,22[9C24%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mstruct[m char_device_data *dev_data;[24;63H[K[24;63H50,21[9C23%[6;20H[46m{[9;5H}[6;21H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m char_dev_probe([38;5;121mstruct[m platform_device *pdev) {[24;63H[K[24;63H49,22[9C23%[7;20H{[10;5H}[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 平台驱动的probe函数[m[24;63H[K[24;63H48,29-22      22%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H47,1[10C22%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H};[24;63H[K[24;63H46,13[9C21%[6;13H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H.unlocked_ioctl = dev_ioctl,[24;63H[K[24;63H45,22[9C20%[6;22H[?25h[?25l[24;67H1[6;21H[?25h[?25l[24;67H0[6;20H[?25h[?25l[24;66H19[6;19H[?25h[?25l[24;67H8[6;18H[?25h[?25l[24;67H7[6;17H[?25h[?25l[24;67H6[6;16H[?25h[?25l[24;67H5[6;15H[?25h[?25l[24;67H4[6;14H[?25h[?25l[24;67H3[6;13H[?25h[?25l[24;67H2[6;12H[?25h[?25l[24;67H1[6;11H[?25h[?25l[24;67H0[6;10H[?25h[?25l[24;66H9 [6;9H[?25h[?25l[24;66H8[6;8H[?25h[?25l[24;66H7[6;7H[?25h[?25l[24;66H6[6;6H[?25h[?25l[24;66H5[6;5H[?25h[?25l[24;66H4[6;4H[?25h[?25l[7;23r[7;1H[L[1;24r[6;5H[K[7;9H[38;5;121mstruct[m char_device_data *dev_data;[24;63H[K[24;63H46,8[10C20%[7;8H[?25h[?25l\        [38;5;121mstruct[m char_device_data *dev_data;[24;66H9[7;9H[?25h[?25l [38;5;121mstruct[m char_device_data *dev_data;[7;43H[K[24;66H8[7;8H[?25h[?25l[24;66H7[7;7H[?25h[?25l[24;66H6[7;6H[?25h[?25l[24;66H5[7;5H[?25h[?25l[24;64H5,4[6;4H[?25h[?25lpr_info([95m"simple_char_driver3: probe function called[m[38;5;224m\n[m[95m"[m);[?25h[?25l[24;66H60[6;60H[?25h[24;1H[K[6;59H[?25l[24;53H^[[6;59H[24;53H  [6;60H[24;63H45,59[9C20%[6;59H[?25h[?25l[24;53H:[6;59H[24;53H[K[24;1H:[?25h[?25l[24;1H[K[6;59H[24;63H45,59[9C20%[6;59H[?25h[?25l[24;53H:[6;59H[24;53H[K[24;1H:[?25hwq[?25l[?2004l[>4;m"simple_char_driver3.c" 209L, 6830B 已写入[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ [7mvi simple_char_dri[27m[7mv[27m[7mer3.c[27m[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ vi simple_char_driver3.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"simple_char_driver3.c" 209L, 6830B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[32mstatic[m [32mstruct[m file_operations fops = {
+    .owner = THIS_MODULE,[2;26H[K[3;1H    .read = dev_read,[3;22H[K[4;5H.write = dev_write,
+    .open = dev_open,
+    .release = dev_release,
+    .unlocked_ioctl = dev_ioctl,
+};
+
+[34m// 平台驱动的probe函数[m
+[32mstatic[m [32mint[m char_dev_probe([32mstruct[m platform_device *pdev) {
+   pr_info([31m"simple_char_driver3: probe function called[m[35m\n[m[31m"[m);[13;9H[32mstruct[m char_device_data *dev_data;
+    [32mint[m ret;[16;5H[34m// 分配设备私有数据[m
+    dev_data = devm_kzalloc(&pdev->dev, [38;5;130msizeof[m(*dev_data), GFP_KERNEL);
+    [38;5;130mif[m (!dev_data) {[19;9Hdev_err(&pdev->dev, [31m"Failed to allocate device data[m[35m\n[m[31m"[m);[20;9H[38;5;130mreturn[m -[31mENOMEM[m;
+    }[23;5H[34m// 初始化缓冲区[m[24;63H45,59[9C17%[12;59H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[24;53H:[12;59H[24;54H3[12;59H[24;55H0[12;59H[24;56H3[12;59H[24;57H0[12;59H[24;58H/[12;59H[24;59H0[12;59H[24;60Ha[12;59H[24;61H0[12;59H[24;62Ha[12;59H[24;53H          [12;59H[27m[23m[29m[m[H[2J[1;1H[38;5;121mstatic[m [38;5;121mstruct[m file_operations fops = {
+    .owner = THIS_MODULE,
+    .read = dev_read,
+    .write = dev_write,
+    .open = dev_open,
+    .release = dev_release,
+    .unlocked_ioctl = dev_ioctl,
+};
+
+[96m// 平台驱动的probe函数[m
+[38;5;121mstatic[m [38;5;121mint[m char_dev_probe([38;5;121mstruct[m platform_device *pdev) {
+   pr_info([95m"simple_char_driver3: probe function called[m[38;5;224m\n[m[95m"[m);[13;9H[38;5;121mstruct[m char_device_data *dev_data;
+    [38;5;121mint[m ret;[16;5H[96m// 分配设备私有数据[m
+    dev_data = devm_kzalloc(&pdev->dev, [93msizeof[m(*dev_data), GFP_KERNEL);
+    [93mif[m (!dev_data) {[19;9Hdev_err(&pdev->dev, [95m"Failed to allocate device data[m[38;5;224m\n[m[95m"[m);[20;9H[93mreturn[m -[95mENOMEM[m;
+    }[23;5H[96m// 初始化缓冲区[m[24;63H45,59[9C17%"simple_char_driver3.c" 209L, 6830B[12;59H[?25h[?25l[24;53Hi[12;59H[24;53H [12;59H[24;1H[1m-- 插入 --[m[24;11H[K[24;63H45,59[9C17%[12;59H[?25h[?25l[24;64H4,58[11;58H[?25h[?25l[24;64H3,30-23[10;23H[?25h[?25l[24;64H2,1    [9;1H[?25h[?25l[24;64H1,3[8;3H[?25h[?25l[24;64H0,33[7;33H[?25h[?25l[24;63H39,28[6;28H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H38,22[9C17%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mlong[m dev_ioctl([38;5;121mstruct[m file *, [38;5;121munsigned[m [38;5;121mint[m, [38;5;121munsigned[m [38;5;121mlong[m);[24;63H[K[24;63H37,24[9C16%[6;24H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_write([38;5;121mstruct[m file *, [38;5;121mconst[m [38;5;121mchar[m __user *, [38;5;121msize_t[m, loff_t *);[24;63H[K[24;63H36,22[9C16%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_read([38;5;121mstruct[m file *, [38;5;121mchar[m __user *, [38;5;121msize_t[m, loff_t *);[24;63H[K[24;63H35,26[9C15%[6;26H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m dev_release([38;5;121mstruct[m inode *, [38;5;121mstruct[m file *);[24;63H[K[24;63H34,39[9C15%[6;38H[46m{[13;1H}[6;39H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m dev_open([38;5;121mstruct[m inode *, [38;5;121mstruct[m file *);[24;63H[K[24;63H33,1[10C14%[7;38H{[14;1H}[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 文件操作函数声明[m[24;63H[K[24;63H32,59[9C13%[6;59H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H31,59[9C13%[6;59H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H};[24;63H[K[24;63H30,59[9C12%[6;59H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121msize_t[m buffer_pointer;[24;63H[K[24;63H29,55[9C12%[6;55H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121msize_t[m buffer_size;[24;63H[K[24;63H28,52[9C11%[6;52H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mchar[m *device_buffer;[24;63H[K[24;63H27,28-20      11%[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mstruct[m class *device_class;[24;63H[K[24;63H26,1[10C10%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mstruct[m cdev mcdev;[24;63H[K[24;63H25,3[10C10%[6;3H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hdev_t dev_num;[24;63H[K[24;63H24,27[10C9%[6;27H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;121mstruct[m char_device_data {[24;63H[K[24;63H23,24[10C9%[6;24H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 设备私有数据结构[m[24;63H[K[24;63H22,25[10C8%[6;25H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H21,32[10C8%[6;32H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define IOCTL_SET_BUFFER_SIZE _IOR([m[95m'p'[m[38;5;81m, [m[95m1[m[38;5;81m, [m[38;5;121mint[m[38;5;81m)[m[24;63H[K[24;63H20,23[10C7%[6;23H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define BUFFER_SIZE (PAGE_SIZE)[m[24;63H[K[24;63H19,19[10C6%[6;19H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#define CLASS_NAME [m[95m"sample_device_class_1"[m[24;63H[K[24;63H18,26[10C6%[6;25H[46m{[13;1H}[6;26H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[38;5;81m#define DEVICE_NAME [m[95m"simple_char_driver3"[m[24;63H[K[24;63H17,28-20[7C5%[7;25H{[14;1H}[6;20H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H16,1[11C5%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/slab.h>[m[24;63H[K[24;63H15,48[10C4%[6;35H[38;5;81m[46m([11C)[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/of.h>[m[24;63H[K[24;63H14,32[10C4%[6;21H[38;5;81m[46m([9C)[m[7;35H[38;5;81m([11C)[6;32H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/platform_device.h>[m[24;63H[K[24;63H13,43[10C3%[7;21H[38;5;81m([9C)[6;43H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/ioctl.h>[m[24;63H[K[24;63H12,42[10C3%[6;42H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/device.h>[m[24;63H[K[24;63H11,1[11C2%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/cdev.h>[m[24;63H[K[24;63H10,24[10C2%[6;24H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/init.h>[m[24;63H[K[24;63H9,22[11C1%[6;22H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/uaccess.h>[m[24;63H[K[24;63H8,35[11C1%[6;35H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/fs.h>[m[24;63H[K[24;63H7,25[11C0%[6;25H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[38;5;81m#include [m[95m<linux/module.h>[m[24;63H[K[24;63H6,26[9C顶端[6;26H[?25h[?25l[24;63H5,24[5;24H[?25h[?25l[24;63H4[4;24H[?25h[?25l[24;63H3,27[3;27H[?25h[?25l[24;63H2,22[2;22H[?25h[?25l[24;63H1,26[1;26H[?25h[?25l[24;63H2,22[2;22H[?25h[?25l[24;63H3,27[3;27H[?25h[?25l[24;63H4,24[4;24H[?25h[?25l[24;63H5[5;24H[?25h[?25l[24;63H6,26[6;26H[?25h[?25l[24;63H7,25[7;25H[?25h[?25l[24;63H8,3[8;35H[?25h[?25l[24;63H9,22[9;22H[?25h[?25l[24;63H10,24[10;24H[?25h[?25l[24;64H1,1 [11;1H[?25h[?25l[24;64H2,42[12;42H[?25h[?25l[24;64H3,43[13;43H[?25h[?25l[14;21H[38;5;81m[46m([9C)[m[24;64H4,32[14;32H[?25h[?25l[14;21H[38;5;81m([9C)[m[15;35H[38;5;81m[46m([11C)[m[24;64H5,48[15;48H[?25h[?25l[15;35H[38;5;81m([11C)[m[24;64H6,1 [16;1H[?25h[?25l[24;64H7,28-20[17;20H[?25h[?25l[24;64H8,26   [18;26H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[38;5;121msize_t[m buffer_pointer;[24;63H[K[24;63H19,19[10C0%[18;19H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H};[24;63H[K[24;63H20,23[10C1%[18;23H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H21,32[10C1%[18;32H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m// 文件操作函数声明[m[24;63H[K[24;63H22,25[10C2%[18;25H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mint[m dev_open([38;5;121mstruct[m inode *, [38;5;121mstruct[m file *);[24;63H[K[24;63H23,24[10C2%[18;24H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mint[m dev_release([38;5;121mstruct[m inode *, [38;5;121mstruct[m file *);[24;63H[K[24;63H24,27[10C3%[18;27H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_read([38;5;121mstruct[m file *, [38;5;121mchar[m __user *, [38;5;121msize_t[m, loff_t *);[24;63H[K[24;63H25,3[11C3%[18;3H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_write([38;5;121mstruct[m file *, [38;5;121mconst[m [38;5;121mchar[m __user *, [38;5;121msize_t[m, loff_t *);[24;63H[K[24;63H26,1[11C4%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mlong[m dev_ioctl([38;5;121mstruct[m file *, [38;5;121munsigned[m [38;5;121mint[m, [38;5;121munsigned[m [38;5;121mlong[m);[24;63H[K[24;63H27,28-20[7C4%[18;20H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H28,52[10C5%[18;52H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mstruct[m file_operations fops = {[24;63H[K[24;63H29,55[10C5%[18;55H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.owner = THIS_MODULE,[24;63H[K[24;63H30,59[10C6%[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.read = dev_read,[24;63H[K[24;63H31,59[10C6%[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.write = dev_write,[24;63H[K[24;63H32,59[10C7%[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.open = dev_open,[24;63H[K[24;63H33,1[11C8%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.release = dev_release,[24;63H[K[24;63H34,39[10C8%[18;39H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.unlocked_ioctl = dev_ioctl,[24;63H[K[24;63H35,26[10C9%[18;26H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H};[24;63H[K[24;63H36,22[10C9%[18;22H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H37,24[9C10%[18;24H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m// 平台驱动的probe函数[m[24;63H[K[24;63H38,22[9C10%[18;22H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mint[m char_dev_probe([38;5;121mstruct[m platform_device *pdev) {[24;63H[K[24;63H39,28[9C11%[18;28H[?25h[?25l[1;23r[23;1H
+[1;24r[23;4Hpr_info([95m"simple_char_driver3: probe function called[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H40,33[9C11%[18;33H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H[38;5;121mstruct[m char_device_data *dev_data;[24;63H[K[24;63H41,3[10C12%[18;3H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[38;5;121mint[m ret;[24;63H[K[24;63H42,1[10C12%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H43,30-23      13%[18;23H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[96m// 分配设备私有数据[m[24;63H[K[24;63H44,58[9C13%[18;58H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hdev_data = devm_kzalloc(&pdev->dev, [93msizeof[m(*dev_data), GFP_KERNEL);[24;63H[K[24;63H45,59[9C14%[18;11H[46m([46C)[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5H[93mif[m (!dev_data) {[24;63H[K[24;63H46,40-43      15%[17;11H([46C)[18;43H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hdev_err(&pdev->dev, [95m"Failed to allocate device data[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H47,13[9C15%[18;13H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H[93mreturn[m -[95mENOMEM[m;[24;63H[K[24;63H48,1[10C16%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[24;63H[K[24;63H49,32-24      16%[18;24H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H50,59[9C17%[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[96m// 初始化缓冲区[m[24;63H[K[24;63H51,21[9C17%[18;20H[46m{[21;5H}[18;21H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5Hdev_data->buffer_size = BUFFER_SIZE;[24;63H[K[24;63H52,59[9C18%[17;20H{[20;5H}[18;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5Hdev_data->device_buffer = devm_kzalloc(&pdev->dev, dev_data->buffer_size, GFF[23;1HP_KERNEL);[24;63H[K[24;63H53,24[9C19%[17;24H[?25h[?25l[15;20H[46m{[18;5H}[m[24;64H4,6 [18;6H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mif[m (!dev_data->device_buffer) {[24;63H[K[24;63H55,1[10C19%[14;20H{[17;5H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hdev_err(&pdev->dev, [95m"Failed to allocate buffer[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H56,26-20      20%[18;20H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H[93mreturn[m -[95mENOMEM[m;[24;63H[K[24;63H57,41[9C20%[18;41H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H}[24;63H[K[24;63H58,59[9C21%[17;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[96m// 分配设备号[m[24;63H[K[24;63H59,36[9C22%[18;35H[46m{[21;5H}[18;36H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5Hret = alloc_chrdev_region(&dev_data->dev_num, [95m0[m, [95m1[m, DEVICE_NAME);[24;63H[K[24;63H60,59[9C22%[17;35H{[18;16H[46m([41C)[m[20;5H}[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mif[m (ret < [95m0[m) {[24;63H[K[24;63H61,24[9C23%[17;16H([41C)[18;24H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hdev_err(&pdev->dev, [95m"Failed to allocate device number[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H62,6[10C24%[15;35H[46m{[18;5H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;9H[93mreturn[m ret;[24;63H[K[24;63H63,1[10C24%[14;35H{[17;5H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[24;63H[K[24;63H64,23-18      25%[18;18H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H65,59[9C25%[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[96m// 初始化字符设备[m[24;63H[K[24;63H66,19[9C26%[18;18H[46m{[21;5H}[18;19H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5Hcdev_init(&dev_data->mcdev, &fops);[24;63H[K[24;63H67,59[9C26%[17;18H{[20;5H}[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hdev_data->mcdev.owner = THIS_MODULE;[24;63H[K[24;63H68,20[9C27%[18;20H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H69,6[10C27%[15;18H[46m{[18;5H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5H[96m// 添加字符设备到系统[m[24;63H[K[24;63H70,1[10C28%[14;18H{[17;5H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hret = cdev_add(&dev_data->mcdev, dev_data->dev_num, [95m1[m);[24;63H[K[24;63H71,29-22      28%[18;22H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mif[m (ret) {[24;63H[K[24;63H72,40[9C29%[18;40H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H73,41[9C29%[18;41H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hdev_err(&pdev->dev, [95m"Failed to add cdev[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H74,1[10C30%[18;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9H[93mreturn[m ret;
+    }[24;63H[K[24;63H75,35-26      31%[17;26H[?25h[?25l[18;19H[46m([38C)[m[24;64H6,59   [18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H77,15[9C31%[17;19H([38C)[18;14H[46m{[22;5H}[18;15H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5H[96m// 创建设备类[m[24;63H[K[24;63H78,56[9C32%[17;14H{[21;5H}[18;56H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hdev_data->device_class = class_create(CLASS_NAME);[24;63H[K[24;63H79,53[9C32%[18;53H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mif[m (IS_ERR(dev_data->device_class)) {[24;63H[K[24;63H80,20[9C33%[18;20H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hcdev_del(&dev_data->mcdev);[24;63H[K[24;63H81,6[10C33%[14;14H[46m{[18;5H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H82,1[10C34%[13;14H{[17;5H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hdev_err(&pdev->dev, [95m"Failed to create class[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H83,23-18      34%[18;18H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H[93mreturn[m PTR_ERR(dev_data->device_class);[24;63H[K[24;63H84,55[9C35%[18;55H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[24;63H[K[24;63H85,42[9C36%[18;41H[46m{[23;5H}[18;42H[?25h[?25l[1;23r[m[23;1H
+[1;24r[24;63H[K[24;63H86,36[9C36%[17;41H{[22;5H}[18;36H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[96m// 创建设备节点[m[24;63H[K[24;63H87,56[9C37%[18;56H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H[93mif[m (!device_create(dev_data->device_class, [95mNULL[m, dev_data->dev_num, [95mNULL[m, DEE[23;1HVICE_NAME)) {[24;63H[K[24;63H88,57[9C37%[17;57H[?25h[?25l[24;64H9,48[18;48H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hclass_destroy(dev_data->device_class);[24;63H[K[24;63H90,6[10C38%[13;41H[46m{[18;5H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;9Hcdev_del(&dev_data->mcdev);[24;63H[K[24;63H91,1[10C39%[12;41H{[17;5H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H92,26-20      39%[18;20H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9Hdev_err(&pdev->dev, [95m"Failed to create device[m[38;5;224m\n[m[95m"[m);[23;9H[93mreturn[m -[95mENOMEM[m;[24;63H[K[24;63H93,59[9C40%[17;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[24;63H[K[24;63H94,47[9C41%[18;47H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H95,36[9C41%[18;36H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[96m// 保存设备私有数据到平台设备[m[24;63H[K[24;63H96,56[9C42%[18;56H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hplatform_set_drvdata(pdev, dev_data);[24;63H[K[24;63H97,58[9C42%[18;58H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H98,24[9C43%[18;24H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hdev_info(&pdev->dev, [95m"Device probed successfully[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H99,6[10C43%[12;13H[46m{[18;5H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5H[93mreturn[m [95m0[m;[24;63H[K[24;63H100,1[9C44%[11;13H{[17;5H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H}[24;63H[K[24;63H101,47-34     44%[18;34H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H102,42[8C45%[18;42H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m// 平台驱动的remove函数[m[24;63H[K[24;63H103,1[9C45%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mint[m char_dev_remove([38;5;121mstruct[m platform_device *pdev) {[24;63H[K[24;63H104,58[8C46%[18;58H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[38;5;121mstruct[m char_device_data *dev_data = platform_get_drvdata(pdev);[24;63H[K[24;63H105,14[8C47%[18;14H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H106,2[9C47%[18;2H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hdevice_destroy(dev_data->device_class, dev_data->dev_num);[24;63H[K[24;63H107,1[9C48%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hclass_destroy(dev_data->device_class);[24;63H[K[24;63H108,31-24     48%[18;24H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hcdev_del(&dev_data->mcdev);[24;63H[K[24;63H109,59[8C49%[18;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5Hunregister_chrdev_region(dev_data->dev_num, [95m1[m);[24;63H[K[24;63H110,59[8C50%[17;59H[?25h[?25l[24;65H1,1 [18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hdev_info(&pdev->dev, [95m"Device removed[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H112,59[8C50%[18;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mreturn[m [95m0[m;[24;63H[K[24;63H113,43[8C51%[18;43H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H}[24;63H[K[24;63H114,32[8C51%[18;32H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H115,52[8C52%[18;52H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m// 设备树匹配表[m[24;63H[K[24;63H116,1[9C52%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mconst[m [38;5;121mstruct[m of_device_id char_dev_of_match[] = {[24;63H[K[24;63H117,46[8C53%[18;46H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H{ .compatible = [95m"my-company,simple_char_driver3"[m },[24;63H[K[24;63H118,14[8C53%[18;14H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H{},[24;63H[K[24;63H119,2[9C54%[8;58H[46m{[18;1H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;1H};[24;63H[K[24;63H120,1[9C54%[7;58H{[17;1H}
+[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HMODULE_DEVICE_TABLE(of, char_dev_of_match);[24;63H[K[24;63H121,22-16     55%[18;16H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H122,57[8C55%[18;56H[46m{
+
+
+}[18;57H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;1H[96m// 平台驱动结构体[m[24;63H[K[24;63H123,56[8C56%[17;56H{
+
+
+}[18;56H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mstruct[m platform_driver char_dev_driver = {[24;63H[K[24;63H124,8[9C56%[18;8H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.probe = char_dev_probe,[24;63H[K[24;63H125,3[9C57%[18;3H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.remove = char_dev_remove,[24;63H[K[24;63H126,44[8C58%[18;44H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H.driver = {[24;63H[K[24;63H127,1[9C58%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H.name = [95m"simple_char_driver3"[m,[24;63H[K[24;63H128,25-18     59%[18;18H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H.owner = THIS_MODULE,[24;63H[K[24;63H129,50[8C59%[18;50H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H.of_match_table = char_dev_of_match,[24;63H[K[24;63H130,29[8C60%[18;29H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H},[24;63H[K[24;63H131,31[8C60%[18;31H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H};[24;63H[K[24;63H132,16[8C61%[18;15H[46m{[22;5H}[18;16H[?25h[?25l[1;23r[m[23;1H
+[1;24r[24;63H[K[24;63H133,39[8C61%[17;15H{[21;5H}[18;39H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1Hmodule_platform_driver(char_dev_driver);[24;63H[K[24;63H134,30[8C62%[18;30H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H135,45[8C62%[18;45H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[96m// 文件操作函数实现[m[24;63H[K[24;63H136,7[9C63%[18;7H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[38;5;121mstatic[m [38;5;121mint[m dev_open([38;5;121mstruct[m inode *inodep, [38;5;121mstruct[m file *filep) {[24;63H[K[24;63H137,3[9C63%[18;3H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hprintk(KERN_INFO [95m"chrdev: Device opened[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H138,1[9C64%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mreturn[m [95m0[m;[24;63H[K[24;63H139,41[8C65%[18;41H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H}[24;63H[K[24;63H140,1[9C65%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H141,28-20     66%[18;20H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_read([38;5;121mstruct[m file *filep, [38;5;121mchar[m __user *buffer, [38;5;121msize_t[m len, loff[23;1Hf_t *offset) {[24;63H[K[24;63H142,59[8C66%[17;59H[?25h[?25l[24;65H3,4[18;49H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H[38;5;121mstruct[m char_device_data *dev_data = container_of(filep->private_data, [38;5;121mstructt[m[23;1H char_device_data, mcdev);[24;63H[K[24;63H144,14[8C67%[17;14H[?25h[?25l[15;63H[46m{
+
+
+}[m[24;65H5,2 [18;2H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[38;5;121mint[m bytes_read = [95m0[m;[24;63H[K[24;63H146,1[9C68%[14;63H{
+
+
+}
+[?25h[?25l[1;23r[1;1H[2M[1;24r[23;5H[93mwhile[m (bytes_read < len && dev_data->buffer_pointer > [95m0[m) {[24;63H[K[24;63H147,59[8C69%[17;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9H[93mif[m (copy_to_user(buffer + bytes_read, dev_data->device_buffer, [95m1[m) != [95m0[m)  [23;1H[93mbreak[m;[24;63H[K[24;63H148,59[8C69%[17;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hbytes_read++;[24;63H[K[24;63H149,24[8C70%[18;24H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9Hmemmove(dev_data->device_buffer, dev_data->device_buffer + [95m1[m, --dev_dataa[23;1H->buffer_pointer);[24;63H[K[24;63H150,1[9C71%[17;1H[?25h[?25l[24;65H1,59[18;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H}
+    printk(KERN_INFO [95m"chrdev: Sent [m[38;5;224m%d[m[95m characters to user[m[38;5;224m\n[m[95m"[m, bytes_read);[24;63H[K[24;63H152,59[8C72%[17;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[93mreturn[m bytes_read;[24;63H[K[24;63H153,22[8C72%[18;22H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H}[24;63H[K[24;63H154,59[8C73%[17;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_write([38;5;121mstruct[m file *filep, [38;5;121mconst[m [38;5;121mchar[m __user *buffer, [38;5;121msize_t[m ll[23;1Hen, loff_t *offset) {[24;63H[K[24;63H155,6[9C74%[11;62H[46m{[17;5H}[?25h[?25l[m[11;62H{[17;5H}[24;65H6,59[18;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H[38;5;121mstruct[m char_device_data *dev_data = container_of(filep->private_data, [38;5;121mstructt[m[23;1H char_device_data, mcdev);[24;63H[K[24;63H157,23[8C75%[17;23H[?25h[?25l[4;14H[46m{[18;1H}[m[24;65H8,2 [18;2H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H[38;5;121mint[m bytes_written = [95m0[m;[24;63H[K[24;63H159,1[9C75%[3;14H{[17;1H}
+[?25h[?25l[1;23r[1;1H[3M[1;24r[22;5H[93mwhile[m (bytes_written < len && dev_data->buffer_pointer < dev_data->buffer_sii[23;1Hze) {[24;63H[K[24;63H160,59[8C76%[16;59H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9H[93mif[m (copy_from_user(&dev_data->device_buffer[dev_data->buffer_pointer++],,[23;1H buffer + bytes_written, [95m1[m) != [95m0[m) [93mbreak[m;[24;63H[K[24;63H161,59[8C77%[16;59H[?25h[?25l[24;65H2,27[18;27H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hbytes_written++;[24;63H[K[24;63H163,1[9C77%[18;1H[?25h[?25l[1;23r[1;1H[4M[1;24r[20;5H}
+    printk(KERN_INFO [95m"chrdev: Received [m[38;5;224m%d[m[95m characters from user[m[38;5;224m\n[m[95m"[m, bytes_writtenn[22;1H);
+    [93mreturn[m bytes_written;[24;63H[K[24;63H164,59[8C79%[15;59H[?25h[?25l[24;65H5[17;59H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H}[24;63H[K[24;63H166,25[8C79%[18;25H[?25h[?25l[1;23r[1;1H[2M[1;24r[23;1H[38;5;121mstatic[m [38;5;121mint[m dev_release([38;5;121mstruct[m inode *inodep, [38;5;121mstruct[m file *filep) {[24;63H[K[24;63H167,6[9C80%[13;5H[46m{[17;5H}[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;5Hprintk(KERN_INFO [95m"chrdev: Device closed[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H168,59[8C81%[12;5H{[16;5H}[17;59H[?25h[?25l[12;5H[46m{[16;5H}[m[24;65H7,6 [16;6H[?25h[?25l[12;5H{[16;5H}[24;65H6,25[15;25H[?25h[?25l[24;65H5,59[13;59H[?25h[?25l[24;65H4[11;59H[?25h[?25l[24;65H3,1 [10;1H[?25h[?25l[24;65H2,27[9;27H[?25h[?25l[24;65H1,59[7;59H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[24;63H[K[24;63H160,59[8C80%[6;59H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9Hmemmove(dev_data->device_buffer, dev_data->device_buffer + [95m1[m, --dev_dataa[2;1H->buffer_pointer);[24;63H[K[24;63H159,1[9C79%[7;1H[?25h[?25l[24;65H8,2[6;2H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hbytes_read++;[24;63H[K[24;63H157,23[8C79%[6;23H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9H[93mif[m (copy_to_user(buffer + bytes_read, dev_data->device_buffer, [95m1[m) != [95m0[m)  [2;1H[93mbreak[m;[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H156,59[8C78%[7;59H[?25h[?25l[24;65H5,6 [6;6H[?25h[?25l[1;23r[1;1H[2L[1;24r[2;5H[93mwhile[m (bytes_read < len && dev_data->buffer_pointer > [95m0[m) {[24;63H[K[24;63H154,59[8C77%[6;59H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H[38;5;121mint[m bytes_read = [95m0[m;[24;63H[K[24;63H153,22[8C77%[6;22H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[38;5;121mstruct[m char_device_data *dev_data = container_of(filep->private_data, [38;5;121mstructt[m[2;1H char_device_data, mcdev);[24;63H[K[24;63H152,59[8C76%[6;59H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mssize_t[m dev_read([38;5;121mstruct[m file *filep, [38;5;121mchar[m __user *buffer, [38;5;121msize_t[m len, loff[2;1Hf_t *offset) {[24;63H[K[24;63H151,59[8C76%[7;59H[?25h[?25l[24;65H0,1 [6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H149,24[8C75%[6;24H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H[93mreturn[m [95m0[m;
+}[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H148,59[8C74%[6;59H[?25h[?25l[1;23r[1;1H[2L[1;24r[1;1H[38;5;121mstatic[m [38;5;121mint[m dev_open([38;5;121mstruct[m inode *inodep, [38;5;121mstruct[m file *filep) {
+    printk(KERN_INFO [95m"chrdev: Device opened[m[38;5;224m\n[m[95m"[m);[23;1H[94m@@@                                                                             [m[24;63H[K[24;63H147,59[8C73%[6;59H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m// 文件操作函数实现[m[24;63H[K[24;63H146,1[9C73%[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[24;63H[K[24;63H145,2[9C73%[3;63H[46m{
+
+
+}[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1Hmodule_platform_driver(char_dev_driver);[24;63H[K[24;63H144,14[8C72%[4;63H{
+
+
+}[6;14H[?25h[24;1H[K[6;13H[?25l[24;53H^[[6;13H[24;53H  [6;14H[24;63H144,13[8C72%[6;13H[?25h[?25l[24;53H:[6;13H[24;53H[K[24;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[24;1H[K[24;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Test/Week9[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Test/Week9[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a[27m[7m9[27m[7m -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.[27m[7m6[27m[7m.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 [27m[7mr[27m[7mw console=ttyAMA0" -sd disk.img[27m[A[A[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 rw console=ttyAMA0" -sd disk.img
+[?2004lWARNING: Image format was not specified for 'disk.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP Tue Feb 25 17:52:34 HKT 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0 rw console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14900(90%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 488692K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19212K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 91.10MHz.
+Calibrating delay loop... 1777.66 BogoMIPS (lpj=8888320)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (1777.66 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+chrdev: Starting initialization
+chrdev: Allocated device number (250,0)
+chrdev: Device created successfully
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-03-14T03:29:55 UTC (1741922995)
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+mmc0: new SD card at address a46d
+mmcblk0: mmc0:a46d QEMU! 512 MiB
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input1
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+EXT4-fs (mmcblk0): recovery complete
+EXT4-fs (mmcblk0): mounted filesystem 59e7573b-36b8-49c5-a7c4-8f62abe15ccc r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:0.
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+random: crng init done
+can't run '/etc/init.d/rcS': No such file or directory
+
+Please press Enter to activate this console. 
+~ # drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+amba 1000f000.wdt: deferred probe pending
+amba 10020000.clcd: deferred probe pending
+amba 100e0000.memory-controller: deferred probe pending
+amba 100e1000.memory-controller: deferred probe pending
+amba 100e5000.watchdog: deferred probe pending
+i2c 0-0039: deferred probe pending
+
+~ # dmesg | grep simple_char_driver3
+~ # mount -t proc proc /proc
+~ # ls /proc
+[1;34m1[m              [1;34m30[m             [1;34m51[m             [1;34mcpu[m            [0;0mmodules[m
+[1;34m10[m             [1;34m31[m             [1;34m52[m             [0;0mcpuinfo[m        [1;36mmounts[m
+[1;34m11[m             [1;34m32[m             [1;34m56[m             [0;0mcrypto[m         [0;0mmtd[m
+[1;34m12[m             [1;34m33[m             [1;34m57[m             [1;36mdevice-tree[m    [1;36mnet[m
+[1;34m13[m             [1;34m34[m             [1;34m58[m             [0;0mdevices[m        [0;0mpagetypeinfo[m
+[1;34m14[m             [1;34m35[m             [1;34m59[m             [0;0mdiskstats[m      [0;0mpartitions[m
+[1;34m15[m             [1;34m36[m             [1;34m6[m              [1;34mdriver[m         [1;36mself[m
+[1;34m16[m             [1;34m37[m             [1;34m60[m             [0;0mexecdomains[m    [0;0mslabinfo[m
+[1;34m17[m             [1;34m38[m             [1;34m63[m             [0;0mfb[m             [0;0msoftirqs[m
+[1;34m18[m             [1;34m39[m             [1;34m64[m             [0;0mfilesystems[m    [0;0mstat[m
+[1;34m19[m             [1;34m4[m              [1;34m65[m             [1;34mfs[m             [0;0mswaps[m
+[1;34m2[m              [1;34m40[m             [1;34m66[m             [0;0minterrupts[m     [1;34msys[m
+[1;34m20[m             [1;34m41[m             [1;34m7[m              [0;0miomem[m          [0;0msysrq-trigger[m
+[1;34m21[m             [1;34m42[m             [1;34m70[m             [0;0mioports[m        [1;34msysvipc[m
+[1;34m22[m             [1;34m43[m             [1;34m8[m              [1;34mirq[m            [1;36mthread-self[m
+[1;34m23[m             [1;34m44[m             [1;34m9[m              [0;0mkallsyms[m       [0;0mtimer_list[m
+[1;34m24[m             [1;34m45[m             [1;34masound[m         [0;0mkmsg[m           [1;34mtty[m
+[1;34m25[m             [1;34m46[m             [0;0mbuddyinfo[m      [0;0mkpagecount[m     [0;0muptime[m
+[1;34m26[m             [1;34m47[m             [1;34mbus[m            [0;0mkpageflags[m     [0;0mversion[m
+[1;34m27[m             [1;34m48[m             [0;0mcgroups[m        [0;0mloadavg[m        [0;0mvmallocinfo[m
+[1;34m28[m             [1;34m49[m             [0;0mcmdline[m        [0;0mlocks[m          [0;0mvmstat[m
+[1;34m29[m             [1;34m5[m              [0;0mconfig.gz[m      [0;0mmeminfo[m        [0;0mzoneinfo[m
+[1;34m3[m              [1;34m50[m             [0;0mconsoles[m       [0;0mmisc[m
+~ # insmod char_[J[J[J[J[Jsimple_cg[Jhar_driver3.ko
+insmod: can't read 'simple_char_driver3.ko': No such file or directory
+~ # cd [J[J[Jqemu-system-arm: terminating on signal 15 from pid 3998 ()
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a[27m[7m9[27m[7m -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.[27m[7m6[27m[7m.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 [27m[7mr[27m[7mw console=ttyAMA0" -sd disk.img[27m[A[A[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 rw console=ttyAMA0" -sd disk.img
+[?2004lWARNING: Image format was not specified for 'disk.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP Tue Feb 25 17:52:34 HKT 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0 rw console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14900(90%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 488692K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19212K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 86.87MHz.
+Calibrating delay loop... 1449.16 BogoMIPS (lpj=7245824)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (1449.16 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+chrdev: Starting initialization
+chrdev: Allocated device number (250,0)
+chrdev: Device created successfully
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-03-14T03:40:15 UTC (1741923615)
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+mmc0: new SD card at address c913
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input0
+mmcblk0: mmc0:c913 QEMU! 512 MiB
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+EXT4-fs (mmcblk0): recovery complete
+EXT4-fs (mmcblk0): mounted filesystem 59e7573b-36b8-49c5-a7c4-8f62abe15ccc r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:0.
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+random: crng init done
+can't run '/etc/init.d/rcS': No such file or directory
+
+Please press Enter to activate this console. 
+~ # 
+~ # drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+amba 1000f000.wdt: deferred probe pending
+amba 10020000.clcd: deferred probe pending
+amba 100e0000.memory-controller: deferred probe pending
+amba 100e1000.memory-controller: deferred probe pending
+amba 100e5000.watchdog: deferred probe pending
+i2c 0-0039: deferred probe pending
+
+~ # mount -t proc proc /proc
+~ # ls /proc
+[1;34m1[m              [1;34m30[m             [1;34m51[m             [1;34mcpu[m            [0;0mmodules[m
+[1;34m10[m             [1;34m31[m             [1;34m52[m             [0;0mcpuinfo[m        [1;36mmounts[m
+[1;34m11[m             [1;34m32[m             [1;34m56[m             [0;0mcrypto[m         [0;0mmtd[m
+[1;34m12[m             [1;34m33[m             [1;34m57[m             [1;36mdevice-tree[m    [1;36mnet[m
+[1;34m13[m             [1;34m34[m             [1;34m58[m             [0;0mdevices[m        [0;0mpagetypeinfo[m
+[1;34m14[m             [1;34m35[m             [1;34m59[m             [0;0mdiskstats[m      [0;0mpartitions[m
+[1;34m15[m             [1;34m36[m             [1;34m6[m              [1;34mdriver[m         [1;36mself[m
+[1;34m16[m             [1;34m37[m             [1;34m60[m             [0;0mexecdomains[m    [0;0mslabinfo[m
+[1;34m17[m             [1;34m38[m             [1;34m63[m             [0;0mfb[m             [0;0msoftirqs[m
+[1;34m18[m             [1;34m39[m             [1;34m64[m             [0;0mfilesystems[m    [0;0mstat[m
+[1;34m19[m             [1;34m4[m              [1;34m65[m             [1;34mfs[m             [0;0mswaps[m
+[1;34m2[m              [1;34m40[m             [1;34m66[m             [0;0minterrupts[m     [1;34msys[m
+[1;34m20[m             [1;34m41[m             [1;34m68[m             [0;0miomem[m          [0;0msysrq-trigger[m
+[1;34m21[m             [1;34m42[m             [1;34m7[m              [0;0mioports[m        [1;34msysvipc[m
+[1;34m22[m             [1;34m43[m             [1;34m8[m              [1;34mirq[m            [1;36mthread-self[m
+[1;34m23[m             [1;34m44[m             [1;34m9[m              [0;0mkallsyms[m       [0;0mtimer_list[m
+[1;34m24[m             [1;34m45[m             [1;34masound[m         [0;0mkmsg[m           [1;34mtty[m
+[1;34m25[m             [1;34m46[m             [0;0mbuddyinfo[m      [0;0mkpagecount[m     [0;0muptime[m
+[1;34m26[m             [1;34m47[m             [1;34mbus[m            [0;0mkpageflags[m     [0;0mversion[m
+[1;34m27[m             [1;34m48[m             [0;0mcgroups[m        [0;0mloadavg[m        [0;0mvmallocinfo[m
+[1;34m28[m             [1;34m49[m             [0;0mcmdline[m        [0;0mlocks[m          [0;0mvmstat[m
+[1;34m29[m             [1;34m5[m              [0;0mconfig.gz[m      [0;0mmeminfo[m        [0;0mzoneinfo[m
+[1;34m3[m              [1;34m50[m             [0;0mconsoles[m       [0;0mmisc[m
+~ # insmod [J[J[J[J[J[J[Jcd Week9
+/Week9 # s[Jls
+[0;0mMakefile[m                    [0;0msimple_char_driver3.mod.c[m
+[0;0mModule.symvers[m              [0;0msimple_char_driver3.mod.o[m
+[0;0mmodules.order[m               [0;0msimple_char_driver3.o[m
+[0;0msimple_char_driver3.c[m       [0;0mtest_DTS.c[m
+[0;0msimple_char_driver3.ko[m      [1;32mtest_dts3[m
+[0;0msimple_char_driver3.mod[m     [0;0mtest_simple_char_driver3.c[m
+/Week9 # insmod simple_char_driver3.ko
+simple_char_driver3: loading out-of-tree module taints kernel.
+simple_char_driver3 simple_char_driver3: Device probed successfully
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+/Week9 # drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+
+/Week9 # cd[J[Jqemu-system-arm: terminating on signal 15 from pid 4208 ()
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-14 11:43:14+08:00 [COMMAND_EXIT_CODE="0"]
