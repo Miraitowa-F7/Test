@@ -1,0 +1,520 @@
+Script started on 2025-03-14 09:35:12+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="27"]
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/ar[27m[7mc[27m[7mh/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 [27m[7mr[27m[7mw console=ttyAMA0" -sd disk.img[27m[A[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 rw console=ttyAMA0" -sd disk.img
+[?2004lWARNING: Image format was not specified for 'disk.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP Tue Feb 25 17:52:34 HKT 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0 rw console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14900(90%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 488692K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19212K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 82.93MHz.
+Calibrating delay loop... 1430.32 BogoMIPS (lpj=7151616)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (1430.32 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+chrdev: Starting initialization
+chrdev: Allocated device number (250,0)
+chrdev: Device created successfully
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-03-14T01:35:29 UTC (1741916129)
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input0
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+mmc0: new SD card at address eacd
+mmcblk0: mmc0:eacd QEMU! 512 MiB
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+EXT4-fs (mmcblk0): recovery complete
+EXT4-fs (mmcblk0): mounted filesystem 59e7573b-36b8-49c5-a7c4-8f62abe15ccc r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:0.
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+random: crng init done
+can't run '/etc/init.d/rcS': No such file or directory
+
+Please press Enter to activate this console. 
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+amba 1000f000.wdt: deferred probe pending
+amba 10020000.clcd: deferred probe pending
+amba 100e0000.memory-controller: deferred probe pending
+amba 100e1000.memory-controller: deferred probe pending
+amba 100e5000.watchdog: deferred probe pending
+i2c 0-0039: deferred probe pending
+~ # 
+~ # 
+~ # cd proc
+/proc # ls
+/proc # mount | grep proc
+mount: no /proc/mounts
+/proc # cd
+~ # mount -t proc proc /proc
+~ # mount | grep proc
+proc on /proc type proc (rw,relatime)
+~ # qemu-system-arm: terminating on signal 15 from pid 4886 (killall)
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd Kernel/linux-6.6.69[K8
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68[00m$ ls
+[?2004l[0m[01;34march[0m        CREDITS        [01;34minclude[0m   Kconfig      Makefile                 Module.symvers  [01;34mscripts[0m     [01;34musr[0m
+[01;34mblock[0m       [01;34mcrypto[0m         [01;34minit[0m      [01;34mkernel[0m       [01;34mmm[0m                       [01;34mnet[0m             [01;34msecurity[0m    [01;34mvirt[0m
+built-in.a  [01;34mDocumentation[0m  [01;34mio_uring[0m  [01;34mlib[0m          modules.builtin          README          [01;34msound[0m       [01;32mvmlinux[0m
+[01;34mcerts[0m       [01;34mdrivers[0m        [01;34mipc[0m       [01;34mLICENSES[0m     modules.builtin.modinfo  [01;34mrust[0m            System.map  vmlinux.a
+COPYING     [01;34mfs[0m             Kbuild    MAINTAINERS  modules.order            [01;34msamples[0m         [01;34mtools[0m       vmlinux.o
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68[00m$ [7mgrep CONFIG_OF .config[27mgrep CONFIG_OF .config
+[?2004l[01;31m[KCONFIG_OF[m[K=y
+# [01;31m[KCONFIG_OF[m[K_UNITTEST is not set
+[01;31m[KCONFIG_OF[m[K_FLATTREE=y
+[01;31m[KCONFIG_OF[m[K_EARLY_FLATTREE=y
+[01;31m[KCONFIG_OF[m[K_KOBJ=y
+[01;31m[KCONFIG_OF[m[K_ADDRESS=y
+[01;31m[KCONFIG_OF[m[K_IRQ=y
+[01;31m[KCONFIG_OF[m[K_RESERVED_MEM=y
+# [01;31m[KCONFIG_OF[m[K_OVERLAY is not set
+[01;31m[KCONFIG_OF[m[K_MDIO=y
+[01;31m[KCONFIG_OF[m[K_GPIO=y
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68[00m$ grep [7mCONFIG_OF_FDT[27mCONFIG_OF_FDT .config
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68[00m$ grep [7mCONFIG_PROC_FS[27mCONFIG_PROC_FS .config
+[?2004l[01;31m[KCONFIG_PROC_FS[m[K=y
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68[00m$ cd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ cd T[K[K[K[Kcd Kernel/linux-6.6.68/arch/arm/n[Kboot
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ ls
+[?2004l[0m[01;34mbootp[0m  [01;34mcompressed[0m  [01;32mdeflate_xip_data.sh[0m  [01;34mdtb[0m  [01;34mdts[0m  [01;32mImage[0m  [01;32minstall.sh[0m  Makefile  [01;32mzImage[0m
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot[00m$ cd dts
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts[00m$ cd arm
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[00m$ ls
+[?2004larm-realview-eb-11mp-bbrevd-ctrevb.dts  arm-realview-pb1176.dts  mps2-an399.dts         vexpress-v2p-ca15_a7.dtb
+arm-realview-eb-11mp-bbrevd.dts         arm-realview-pb11mp.dts  mps2.dtsi              vexpress-v2p-ca15_a7.dts
+arm-realview-eb-11mp-ctrevb.dts         arm-realview-pba8.dts    my-device2.dtb         vexpress-v2p-ca15-tc1.dtb
+arm-realview-eb-11mp.dts                arm-realview-pbx-a9.dts  [0m[01;32mmy-device.dtb[0m          vexpress-v2p-ca15-tc1.dts
+arm-realview-eb-a9mp-bbrevd.dts         arm-realview-pbx.dtsi    my-device.dts          vexpress-v2p-ca5s.dtb
+arm-realview-eb-a9mp.dts                integratorap.dts         output.dts             vexpress-v2p-ca5s.dts
+arm-realview-eb-bbrevd.dts              integratorap-im-pd1.dts  versatile-ab.dts       vexpress-v2p-ca9.dtb
+arm-realview-eb-bbrevd.dtsi             integratorcp.dts         versatile-ab-ib2.dts   vexpress-v2p-ca9.dts
+arm-realview-eb.dts                     integrator.dtsi          versatile-pb.dts
+arm-realview-eb.dtsi                    Makefile                 vexpress-v2m.dtsi
+arm-realview-eb-mp.dtsi                 mps2-an385.dts           vexpress-v2m-rs1.dtsi
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[00m$ file my-device2.dtb
+[?2004lmy-device2.dtb: Device Tree Blob version 17, size=14221, boot CPU=0, string block size=917, DT structure block size=13248
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[00m$ [7mdtc -I dtb -O dts -o decomp[27m[7mi[27m[7mled.dts my-device.dtb[27m[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[00m$ dtc -I dtb -O dts -o decompiled.dts my-device.dtb2.dtb[C[C[C[C
+[?2004ldecompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/flash@0,00000000: simple-bus unit address format error, expected "0"
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/psram@2,00000000: simple-bus unit address format error, expected "200000000"
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/ethernet@3,02000000: simple-bus unit address format error, expected "302000000"
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/usb@3,03000000: simple-bus unit address format error, expected "303000000"
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000: simple-bus unit address format error, expected "700000000"
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/fixed-regulator-0: missing or empty reg/ranges property
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/clk24mhz: missing or empty reg/ranges property
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/refclk1mhz: missing or empty reg/ranges property
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/refclk32khz: missing or empty reg/ranges property
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/leds: missing or empty reg/ranges property
+decompiled.dts: Warning (simple_bus_reg): /bus@40000000/motherboard-bus@40000000/mcc: missing or empty reg/ranges property
+[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[00m$ vi [7mdecompiled.dts[27mdecompiled.dts
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"decompiled.dts" 728L, 18091B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35m/dts-v1/[m;[2;1H[K[3;1H/ {[3;4H[K[4;9Hmodel = [31m"V2P-CA9"[m;[5;9Harm,hbi = [31m<0x191>[m;[6;9Harm,vexpress,site = [31m<0x0f>[m;[7;9Hcompatible = [31m"arm,vexpress,v2p-ca9\0arm,vexpress"[m;[8;9Hinterrupt-parent = [31m<0x01>[m;[9;9H#address-cells = [31m<0x01>[m;[10;9H#size-cells = [31m<0x01>[m;[12;9H[32msimple_char_driver3 [m{[13;17Hcompatible = [31m"my-company,simple_char_driver3"[m;[14;17Hstatus = [31m"okay"[m;[15;9H};[17;9H[32mbus@40000000 [m{[18;17Hcompatible = [31m"simple-bus"[m;[19;17H#address-cells = [31m<0x01>[m;[20;17H#size-cells = [31m<0x01>[m;[21;17Hranges = [31m<0x40000000 0x40000000 0x10000000 0x10000000 0x10000000 0x20000>[m;[22;17H#interrupt-cells = [31m<0x01>[m;[23;17Hinterrupt-map-mask = [31m<0x00 0x3f>[m;[24;17Hinterrupt-map = [31m<0x00 0x00 0x01 0x00 0x00 0x04 0x00 0x01 0x01 0x00 0x01 0x04 0x00 0x02 0x01 0x00 0x02 0xx[25;1H04 0x00 0x03 0x01 0x00 0x03 0x04 0x00 0x04 0x01 0x00 0x04 0x04 0x00 0x05 0x01 0x00 0x05 0x04 0x00 0x06 0x01 0x00 0x06 0xx[26;1H04 0x00 0x07 0x01 0x00 0x07 0x04 0x00 0x08 0x01 0x00 0x08 0x04 0x00 0x09 0x01 0x00 0x09 0x04 0x00 0x0a 0x01 0x00 0x0a 0x[m[26;1H[94m@@@                                                                                                                     [m[27;103H1,1[10C顶端[1;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[27;93H:[1;1H[27;94H3[1;1H[27;95H0[1;1H[27;96H3[1;1H[27;97H0[1;1H[27;98H/[1;1H[27;99H0[1;1H[27;100Ha[1;1H[27;101H0[1;1H[27;102Ha[1;1H[27;93H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;81m/dts-v1/[m;
+
+/ {[4;9Hmodel = [95m"V2P-CA9"[m;[5;9Harm,hbi = [95m<0x191>[m;[6;9Harm,vexpress,site = [95m<0x0f>[m;[7;9Hcompatible = [95m"arm,vexpress,v2p-ca9\0arm,vexpress"[m;[8;9Hinterrupt-parent = [95m<0x01>[m;[9;9H#address-cells = [95m<0x01>[m;[10;9H#size-cells = [95m<0x01>[m;[12;9H[38;5;121msimple_char_driver3 [m{[13;17Hcompatible = [95m"my-company,simple_char_driver3"[m;[14;17Hstatus = [95m"okay"[m;[15;9H};[17;9H[38;5;121mbus@40000000 [m{[18;17Hcompatible = [95m"simple-bus"[m;[19;17H#address-cells = [95m<0x01>[m;[20;17H#size-cells = [95m<0x01>[m;[21;17Hranges = [95m<0x40000000 0x40000000 0x10000000 0x10000000 0x10000000 0x20000>[m;[22;17H#interrupt-cells = [95m<0x01>[m;[23;17Hinterrupt-map-mask = [95m<0x00 0x3f>[m;[24;17Hinterrupt-map = [95m<0x00 0x00 0x01 0x00 0x00 0x04 0x00 0x01 0x01 0x00 0x01 0x04 0x00 0x02 0x01 0x00 0x02 0xx[25;1H04 0x00 0x03 0x01 0x00 0x03 0x04 0x00 0x04 0x01 0x00 0x04 0x04 0x00 0x05 0x01 0x00 0x05 0x04 0x00 0x06 0x01 0x00 0x06 0xx[26;1H04 0x00 0x07 0x01 0x00 0x07 0x04 0x00 0x08 0x01 0x00 0x08 0x04 0x00 0x09 0x01 0x00 0x09 0x04 0x00 0x0a 0x01 0x00 0x0a 0x[m[26;1H[94m@@@                                                                                                                     [m[27;103H1,1[10C顶端"decompiled.dts" 728L, 18091B[1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [2;1H[27;103H2,0-1[2;1H[?25h[?25l[27;93H~@k[2;1H[27;93H   [3;1H[27;103H3,1  [3;1H[?25h[?25l[27;93H~@k[3;1H[27;93H   [4;8H[27;103H4,1-8[4;8H[?25h[?25l[27;93H~@k[4;8H[27;93H   [5;8H[27;103H5[5;8H[?25h[?25l[27;93H~@k[5;8H[27;93H   [6;8H[27;103H6[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [7;8H[27;103H7[7;8H[?25h[?25l[27;93H~@k[7;8H[27;93H   [8;8H[27;103H8[8;8H[?25h[?25l[27;93H~@k[8;8H[27;93H   [9;8H[27;103H9[9;8H[?25h[?25l[27;93H~@k[9;8H[27;93H   [10;8H[27;103H10,1-8[10;8H[?25h[?25l[27;93H~@k[10;8H[27;93H   [11;1H[27;104H1,0-1[11;1H[?25h[?25l[27;93H~@k[11;1H[27;93H   [12;8H[27;104H2,1-8[12;8H[?25h[?25l[27;93H~@k[12;8H[27;93H   [13;8H[27;104H3[13;8H[?25h[?25l[27;93H~@k[13;8H[27;93H   [14;8H[27;104H4[14;8H[?25h[?25l[27;93H~@k[14;8H[27;93H   [15;8H[27;104H5[15;8H[?25h[?25l[27;93H~@k[15;8H[27;93H   [16;1H[27;104H6,0-1[16;1H[?25h[?25l[27;93H~@k[16;1H[27;93H   [17;8H[27;104H7,1-8[17;8H[?25h[?25l[27;93H~@k[17;8H[27;93H   [18;8H[27;104H8[18;8H[?25h[?25l[27;93H~@k[18;8H[27;93H   [19;8H[27;104H9[19;8H[?25h[?25l[27;93H~@k[19;8H[27;93H   [20;8H[27;103H20[20;8H[?25h[?25l[27;93H~@k[20;8H[27;93H   [21;8H[27;104H1[21;8H[?25h[?25l[27;93H~@k[21;8H[27;93H   [13;8H[1;26r[1;1H[9M[1;27r[17;1H[95m04 0x00 0x07 0x01 0x00 0x07 0x04 0x00 0x08 0x01 0x00 0x08 0x04 0x00 0x09 0x01 0x00 0x09 0x04 0x00 0x0a 0x01 0x00 0x0a 0xx[18;1H04 0x00 0x0b 0x01 0x00 0x0b 0x04 0x00 0x0c 0x01 0x00 0x0c 0x04 0x00 0x0d 0x01 0x00 0x0d 0x04 0x00 0x0e 0x01 0x00 0x0e 0xx[19;1H04 0x00 0x0f 0x01 0x00 0x0f 0x04 0x00 0x10 0x01 0x00 0x10 0x04 0x00 0x11 0x01 0x00 0x11 0x04 0x00 0x12 0x01 0x00 0x12 0xx[20;1H04 0x00 0x13 0x01 0x00 0x13 0x04 0x00 0x14 0x01 0x00 0x14 0x04 0x00 0x15 0x01 0x00 0x15 0x04 0x00 0x16 0x01 0x00 0x16 0xx[21;1H04 0x00 0x17 0x01 0x00 0x17 0x04 0x00 0x18 0x01 0x00 0x18 0x04 0x00 0x19 0x01 0x00 0x19 0x04 0x00 0x1a 0x01 0x00 0x1a 0xx[22;1H04 0x00 0x1b 0x01 0x00 0x1b 0x04 0x00 0x1c 0x01 0x00 0x1c 0x04 0x00 0x1d 0x01 0x00 0x1d 0x04 0x00 0x1e 0x01 0x00 0x1e 0xx[23;1H04 0x00 0x1f 0x01 0x00 0x1f 0x04 0x00 0x20 0x01 0x00 0x20 0x04 0x00 0x21 0x01 0x00 0x21 0x04 0x00 0x22 0x01 0x00 0x22 0xx[24;1H04 0x00 0x23 0x01 0x00 0x23 0x04 0x00 0x24 0x01 0x00 0x24 0x04 0x00 0x25 0x01 0x00 0x25 0x04 0x00 0x26 0x01 0x00 0x26 0xx[25;1H04 0x00 0x27 0x01 0x00 0x27 0x04 0x00 0x28 0x01 0x00 0x28 0x04 0x00 0x29 0x01 0x00 0x29 0x04 0x00 0x2a 0x01 0x00 0x2a 0xx[26;1H04>[m;[27;1H[K[27;103H22,1-8[9C1%[13;8H[?25h[?25l[27;93H~@k[13;8H[27;93H   [14;8H[27;104H3[14;8H[?25h[?25l[27;93H~@k[14;8H[27;93H   [10;8H[1;26r[1;1H[5M[1;27r[23;17H[38;5;121mmotherboard-bus@40000000 [m{[24;25Harm,hbi = [95m<0x190>[m;[25;25Harm,vexpress,site = [95m<0x00>[m;[26;25Hcompatible = [95m"arm,vexpress,v2m-p1\0simple-bus"[m;[27;103H[K[27;103H24,1-8[9C1%[10;8H[?25h[?25l[27;93H~@k[10;8H[27;93H   [21;1H[1;26r[26;1H
+[1;27r[26;25H#address-cells = [95m<0x02>[m;[27;103H[K[27;103H25,0-1[9C2%[21;1H[?25h[?25l[27;93H~@k[21;1H[27;93H   [21;8H[1;26r[26;1H
+[1;27r[26;25H#size-cells = [95m<0x01>[m;[27;103H[K[27;103H26,1-8[9C2%[21;8H[?25h[?25l[1;26r[1;1H[2M[1;27r[25;25Hranges = [95m<0x00 0x00 0x40000000 0x4000000 0x01 0x00 0x44000000 0x4000000 0x02 0x00 0x48000000 0x44[26;1H000000 0x03 0x00 0x4c000000 0x4000000 0x07 0x00 0x10000000 0x20000>[m;[27;103H[K[27;103H27,1-8[9C2%[20;8H[?25h[?25l[27;93H~@k[20;8H[27;93H   [21;8H[27;104H8[21;8H[?25h[?25l[27;93H~@k[21;8H[27;93H   [21;8H[1;26r[26;1H
+[1;27r[27;103H[K[27;103H29,1-8[9C2%[21;8H[?25h[?25l[27;93H~@k[21;8H[27;93H   [21;8H[1;26r[26;1H
+[1;27r[26;25Hflash@0,[38;5;121m00000000 [m{[27;103H[K[27;103H30,1-8[9C2%[21;8H[?25h[?25l[27;93H~@k[21;8H[27;93H   [21;8H[1;26r[26;1H
+[1;27r[26;33Hcompatible = [95m"arm,vexpress-flash\0cfi-flash"[m;[27;103H[K[27;103H31,1-8[9C2%[21;8H[?25h[?25l[27;93H~@k[21;8H[27;93H   [20;8H[27;104H0[20;8H[?25h[?25l[27;93H~@k[20;8H[27;93H   [19;8H[27;103H29[19;8H[?25h[?25l[27;93H~@k[19;8H[27;93H   [18;8H[27;104H8[18;8H[?25h[?25l[27;93H~@k[18;8H[27;93H   [17;8H[27;104H7[17;8H[?25h[?25l[27;93H~@k[17;8H[27;93H   [16;8H[27;104H6[16;8H[?25h[?25l[27;93H~@k[16;8H[27;93H   [15;1H[27;104H5,0-1[15;1H[?25h[?25l[27;93H~@k[15;1H[27;93H   [6;8H[1;26r[1;1H[3L[1;27r[1;17H#address-cells = [95m<0x01>[m;[2;17H#size-cells = [95m<0x01>[m;[3;17Hranges = [95m<0x40000000 0x40000000 0x10000000 0x10000000 0x10000000 0x20000>[m;[27;103H[K[27;103H24,1-8[9C2%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;17Hcompatible = [95m"simple-bus"[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H23,1-8[9C2%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9H[38;5;121mbus@40000000 [m{[27;103H[K[27;103H22,1-8[9C2%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H21,1-8[9C2%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9H};[27;103H[K[27;103H20,1-8[9C1%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;17Hstatus = [95m"okay"[m;[27;103H[K[27;103H19,1-8[9C1%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;17Hcompatible = [95m"my-company,simple_char_driver3"[m;[27;103H[K[27;103H18,1-8[9C1%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9H[38;5;121msimple_char_driver3 [m{[27;103H[K[27;103H17,1-8[9C1%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[27;103H[K[27;103H16,0-1[9C1%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9H#size-cells = [95m<0x01>[m;[27;103H[K[27;103H15,1-8[9C1%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9H#address-cells = [95m<0x01>[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H14,1-8[9C1%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9Hinterrupt-parent = [95m<0x01>[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H13,1-8[9C0%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9Hcompatible = [95m"arm,vexpress,v2p-ca9\0arm,vexpress"[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H12,1-8[9C0%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;1H[1;26r[1;1H[L[1;27r[1;9Harm,vexpress,site = [95m<0x0f>[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H11,0-1[9C0%[6;1H[?25h[?25l[27;93H~@k[6;1H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9Harm,hbi = [95m<0x191>[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H10,1-8[9C0%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;9Hmodel = [95m"V2P-CA9"[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H9,1-8[10C0%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;1H/ {[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H8,1-8[10C0%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H7,1-8[10C0%[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [6;8H[1;26r[1;1H[L[1;27r[1;1H[38;5;81m/dts-v1/[m;[26;1H[94m@@@                                                                                                                     [m[27;103H[K[27;103H6,1-8[8C顶端[6;8H[?25h[?25l[27;93H~@k[6;8H[27;93H   [5;8H[27;103H5[5;8H[?25h[?25l[27;93H~@k[5;8H[27;93H   [4;8H[27;103H4[4;8H[?25h[?25l[27;93H~@k[4;8H[27;93H   [3;1H[27;103H3,1  [3;1H[?25h[?25l[27;93H~@k[3;1H[27;93H   [2;1H[27;103H2,0-1[2;1H[?25h[?25l[27;93H~@k[2;1H[27;93H   [1;1H[27;103H1,1  [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H~@k[1;1H[27;93H   [1;1H[?25h[?25l[27;93H^[[1;1H[27;93H  [1;1H[27;93H^[[1;1H[27;93H  [1;1H[?25h[?25l[27;93H:[1;1H[27;93H[K[27;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[27;1H[K[27;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~/Kernel/linux-6.6.68/arch/arm/boot/dts/arm[00m$ cd[K[Kcd
+[?2004l[?2004h]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ [7mqemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/ar[27m[7mc[27m[7mh/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 [27m[7mr[27m[7mw console=ttyAMA0" -sd disk.img[27m[A[A]0;ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform: ~[01;32mubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform[00m:[01;34m~[00m$ qemu-system-arm -M vexpress-a9 -m 512M -kernel Kernel/linux-6.6.68/arch/arm/boot/zImage -dtb  Kernel/linux-6.6.68/arch/arm/boot/dts/arm/my-device2.dtb -nographic -append "root=/dev/mmcblk0 rw console=ttyAMA0" -sd disk.img
+[?2004lWARNING: Image format was not specified for 'disk.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+Booting Linux on physical CPU 0x0
+Linux version 6.6.68 (ubuntu64-f7@ubuntu64-f7-VMware-Virtual-Platform) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP Tue Feb 25 17:52:34 HKT 2025
+CPU: ARMv7 Processor [410fc090] revision 0 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+OF: fdt: Machine model: V2P-CA9
+Memory policy: Data cache writeback
+Reserved memory: created DMA memory pool at 0x4c000000, size 8 MiB
+OF: reserved mem: initialized node vram@4c000000, compatible id shared-dma-pool
+OF: reserved mem: 0x4c000000..0x4c7fffff (8192 KiB) nomap non-reusable vram@4c000000
+cma: Reserved 16 MiB at 0x7f000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000060000000-0x000000007fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000060000000-0x000000007fffffff]
+Initmem setup node 0 [mem 0x0000000060000000-0x000000007fffffff]
+CPU: All CPU(s) started in SVC mode.
+percpu: Embedded 16 pages/cpu s34900 r8192 d22444 u65536
+Kernel command line: root=/dev/mmcblk0 rw console=ttyAMA0
+printk: log_buf_len individual max cpu contribution: 4096 bytes
+printk: log_buf_len total cpu_extra contributions: 12288 bytes
+printk: log_buf_len min size: 16384 bytes
+printk: log_buf_len: 32768 bytes
+printk: early log buf free: 14900(90%)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 488692K/524288K available (9216K kernel code, 691K rwdata, 2072K rodata, 1024K init, 176K bss, 19212K reserved, 16384K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+trace event string verifier disabled
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+GIC CPU mask not found - kernel will fail to boot.
+GIC CPU mask not found - kernel will fail to boot.
+L2C: platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C: DT/platform modifies aux control register: 0x02020000 -> 0x02420000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating disabled, standby mode disabled
+L2C-310 cache controller enabled, 8 ways, 128 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46420001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+clocksource: arm,sp804: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+smp_twd: clock not found -2
+Console: colour dummy device 80x30
+Calibrating local timer... 99.98MHz.
+Calibrating delay loop... 1833.36 BogoMIPS (lpj=9166848)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x60100000 - 0x60100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated (1833.36 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+hw-breakpoint: debug architecture 0x4 unsupported.
+Serial: AMBA PL011 UART driver
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+/clcd@10020000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/clcd@1f000
+/bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@39: Fixed dependency cycle(s) with /clcd@10020000
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm,sp804
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+9p: Installing v9fs 9p2000 file system support
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+chrdev: Starting initialization
+chrdev: Allocated device number (250,0)
+chrdev: Device created successfully
+OF: graph: no port node found in /bus@40000000/motherboard-bus@40000000/iofpga@7,00000000/i2c@16000/dvi-transmitter@60
+sii902x 0-0060: supply iovcc not found, using dummy regulator
+sii902x 0-0060: supply cvcc12 not found, using dummy regulator
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+simple-pm-bus bus@40000000:motherboard-bus@40000000:iofpga@7,00000000: Failed to create device link (0x180) with dcc:tcrefclk
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x40000000-0x43ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+physmap-flash 40000000.flash: physmap platform flash device: [mem 0x44000000-0x47ffffff]
+40000000.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Concatenating MTD devices:
+(0): "40000000.flash"
+(1): "40000000.flash"
+into device "40000000.flash"
+physmap-flash 48000000.psram: physmap platform flash device: [mem 0x48000000-0x49ffffff]
+smsc911x 4e000000.ethernet eth0: MAC Address: 52:54:00:12:34:56
+isp1760 4f000000.usb: isp1760 bus width: 32, oc: digital
+isp1760 4f000000.usb: NXP ISP1760 USB Host Controller
+isp1760 4f000000.usb: new USB bus registered, assigned bus number 1
+isp1760 4f000000.usb: Scratch test failed. 0x00000000
+isp1760 4f000000.usb: can't setup: -19
+isp1760 4f000000.usb: USB bus 1 deregistered
+usbcore: registered new interface driver usb-storage
+rtc-pl031 10017000.rtc: registered as rtc0
+rtc-pl031 10017000.rtc: setting system clock to 2025-03-14T02:17:06 UTC (1741918626)
+mmci-pl18x 10005000.mmci: Got CD GPIO
+mmci-pl18x 10005000.mmci: Got WP GPIO
+mmci-pl18x 10005000.mmci: mmc0: PL181 manf 41 rev0 at 0x10005000 irq 35,36 (pio)
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+aaci-pl041 10004000.aaci: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+aaci-pl041 10004000.aaci: FIFO 512 entries
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Registering SWP/SWPB emulation handler
+mmc0: new SD card at address 88db
+mmcblk0: mmc0:88db QEMU! 512 MiB
+10009000.serial: ttyAMA0 at MMIO 0x10009000 (irq = 38, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+input: AT Raw Set 2 keyboard as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10006000.kmi/serio0/input/input0
+1000a000.serial: ttyAMA1 at MMIO 0x1000a000 (irq = 39, base_baud = 0) is a PL011 rev1
+1000b000.serial: ttyAMA2 at MMIO 0x1000b000 (irq = 40, base_baud = 0) is a PL011 rev1
+1000c000.serial: ttyAMA3 at MMIO 0x1000c000 (irq = 41, base_baud = 0) is a PL011 rev1
+drm-clcd-pl111 1001f000.clcd: assigned reserved memory node vram@4c000000
+drm-clcd-pl111 1001f000.clcd: using device-specific reserved memory
+drm-clcd-pl111 1001f000.clcd: core tile graphics present
+drm-clcd-pl111 1001f000.clcd: this device will be deactivated
+drm-clcd-pl111 1001f000.clcd: Versatile Express init failed - -19
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+clk: Disabling unused clocks
+ALSA device list:
+  #0: ARM AC'97 Interface PL041 rev0 at 0x10004000, irq 37
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/bus@40000000/bus@40000000:motherboard-bus@40000000/bus@40000000:motherboard-bus@40000000:iofpga@7,00000000/10007000.kmi/serio1/input/input2
+drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+EXT4-fs (mmcblk0): recovery complete
+EXT4-fs (mmcblk0): mounted filesystem 59e7573b-36b8-49c5-a7c4-8f62abe15ccc r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:0.
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+random: crng init done
+can't run '/etc/init.d/rcS': No such file or directory
+
+Please press Enter to activate this console. 
+
+~ # 
+~ # drm-clcd-pl111 10020000.clcd: DVI muxed to daughterboard 1 (core tile) CLCD
+drm-clcd-pl111 10020000.clcd: initializing Versatile Express PL111
+amba 1000f000.wdt: deferred probe pending
+amba 10020000.clcd: deferred probe pending
+amba 100e0000.memory-controller: deferred probe pending
+amba 100e1000.memory-controller: deferred probe pending
+amba 100e5000.watchdog: deferred probe pending
+i2c 0-0039: deferred probe pending
+
+~ # lsblk
+-/bin/sh: lsblk: not found
+~ # mount -t proc proc /proc
+~ # ls /proc
+[1;34m1[m              [1;34m30[m             [1;34m51[m             [1;34mcpu[m            [0;0mmodules[m
+[1;34m10[m             [1;34m31[m             [1;34m52[m             [0;0mcpuinfo[m        [1;36mmounts[m
+[1;34m11[m             [1;34m32[m             [1;34m56[m             [0;0mcrypto[m         [0;0mmtd[m
+[1;34m12[m             [1;34m33[m             [1;34m57[m             [1;36mdevice-tree[m    [1;36mnet[m
+[1;34m13[m             [1;34m34[m             [1;34m58[m             [0;0mdevices[m        [0;0mpagetypeinfo[m
+[1;34m14[m             [1;34m35[m             [1;34m59[m             [0;0mdiskstats[m      [0;0mpartitions[m
+[1;34m15[m             [1;34m36[m             [1;34m6[m              [1;34mdriver[m         [1;36mself[m
+[1;34m16[m             [1;34m37[m             [1;34m60[m             [0;0mexecdomains[m    [0;0mslabinfo[m
+[1;34m17[m             [1;34m38[m             [1;34m63[m             [0;0mfb[m             [0;0msoftirqs[m
+[1;34m18[m             [1;34m39[m             [1;34m64[m             [0;0mfilesystems[m    [0;0mstat[m
+[1;34m19[m             [1;34m4[m              [1;34m65[m             [1;34mfs[m             [0;0mswaps[m
+[1;34m2[m              [1;34m40[m             [1;34m66[m             [0;0minterrupts[m     [1;34msys[m
+[1;34m20[m             [1;34m41[m             [1;34m68[m             [0;0miomem[m          [0;0msysrq-trigger[m
+[1;34m21[m             [1;34m42[m             [1;34m7[m              [0;0mioports[m        [1;34msysvipc[m
+[1;34m22[m             [1;34m43[m             [1;34m8[m              [1;34mirq[m            [1;36mthread-self[m
+[1;34m23[m             [1;34m44[m             [1;34m9[m              [0;0mkallsyms[m       [0;0mtimer_list[m
+[1;34m24[m             [1;34m45[m             [1;34masound[m         [0;0mkmsg[m           [1;34mtty[m
+[1;34m25[m             [1;34m46[m             [0;0mbuddyinfo[m      [0;0mkpagecount[m     [0;0muptime[m
+[1;34m26[m             [1;34m47[m             [1;34mbus[m            [0;0mkpageflags[m     [0;0mversion[m
+[1;34m27[m             [1;34m48[m             [0;0mcgroup
